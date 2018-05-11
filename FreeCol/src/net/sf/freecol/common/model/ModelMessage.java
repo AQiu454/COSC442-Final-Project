@@ -1,5 +1,6 @@
 /**
  *  Copyright (C) 2002-2015   The FreeCol Team
+
  *
  *  This file is part of FreeCol.
  *
@@ -40,6 +41,10 @@ import org.w3c.dom.Element;
 public class ModelMessage extends StringTemplate {
 
     /** Constants describing the type of message. */
+    /**
+     * @author Kolbe
+     *
+     */
     public static enum MessageType implements Named {
 
         DEFAULT(""),
@@ -68,6 +73,10 @@ public class ModelMessage extends StringTemplate {
             this.optionName = optionName;
         }
 
+        
+        /**
+         * @return
+         */
         public String getOptionName() {
             return optionName;
         }
