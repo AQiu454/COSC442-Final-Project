@@ -337,7 +337,9 @@ public class UnitTypeOption extends AbstractOption<UnitType> {
      * {@inheritDoc}
      */
     @Override
-    public String getXMLTagName() { return getXMLElementTagName(); }
+    public String getXMLTagName() { 
+    	return getXMLElementTagName(); 
+    	}
 
     /**
      * Gets the tag name of the root element representing this object.

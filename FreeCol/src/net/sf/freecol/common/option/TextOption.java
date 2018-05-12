@@ -24,8 +24,8 @@ import java.util.logging.Logger;
 import javax.xml.stream.XMLStreamException;
 
 import net.sf.freecol.common.io.FreeColXMLWriter;
-import net.sf.freecol.common.util.Utils;
 import net.sf.freecol.common.model.Specification;
+import net.sf.freecol.common.util.Utils;
 
 /**
  * Represents an option that can be an arbitrary string.
@@ -138,7 +138,9 @@ public class TextOption extends AbstractOption<String> {
      * {@inheritDoc}
      */
     @Override
-    public String getXMLTagName() { return getXMLElementTagName(); }
+    public String getXMLTagName() { 
+    	return getXMLElementTagName(); 
+    	}
 
     /**
      * Gets the tag name of the root element representing this object.

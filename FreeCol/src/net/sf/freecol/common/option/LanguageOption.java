@@ -32,9 +32,10 @@ import java.util.logging.Logger;
 import javax.xml.stream.XMLStreamException;
 
 import net.sf.freecol.common.i18n.Messages;
-import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.io.FreeColDirectories;
+import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.model.Specification;
+
 import static net.sf.freecol.common.util.CollectionUtils.*;
 import net.sf.freecol.common.util.Utils;
 
@@ -49,6 +50,7 @@ public class LanguageOption extends AbstractOption<LanguageOption.Language> {
 
     /** Extra languages with alternate names. */
     private static final Map<String, String> languageNames = new HashMap<>();
+    
     static { // Add non-standard language names here.
         languageNames.put("arz", "\u0645\u0635\u0631\u064A");
         languageNames.put("hsb", "Serb\u0161\u0107ina");
@@ -134,7 +136,10 @@ public class LanguageOption extends AbstractOption<LanguageOption.Language> {
          */
         @Override
         public boolean equals(Object o) {
-            if (this == o) return true;
+            if (this == o) 
+            	{
+            		return true;
+            	}
             if (o instanceof Language) {
                 Language l = (Language)o;
                 return Utils.equals(this.key, l.key)
@@ -199,7 +204,10 @@ public class LanguageOption extends AbstractOption<LanguageOption.Language> {
      * Initialize the languages list.
      */
     private static void initializeLanguages() {
-        if (!languages.isEmpty()) return;
+        if (!languages.isEmpty()) 
+        	{
+        		return;
+        	}
 
         File i18nDirectory = FreeColDirectories.getI18nDirectory();
         File[] files = i18nDirectory.listFiles();
@@ -211,7 +219,10 @@ public class LanguageOption extends AbstractOption<LanguageOption.Language> {
             String nam = file.getName();
             if (nam == null
                 || !nam.startsWith(Messages.MESSAGE_FILE_PREFIX)
-                || !nam.endsWith(Messages.MESSAGE_FILE_SUFFIX)) continue;
+                || !nam.endsWith(Messages.MESSAGE_FILE_SUFFIX)) 
+            	{
+            		continue;
+            	}
             String languageId
                 = nam.substring(Messages.MESSAGE_FILE_PREFIX.length(),
                     nam.length() - Messages.MESSAGE_FILE_SUFFIX.length());
@@ -325,7 +336,9 @@ public class LanguageOption extends AbstractOption<LanguageOption.Language> {
      * {@inheritDoc}
      */
     @Override
-    public String getXMLTagName() { return getXMLElementTagName(); }
+    public String getXMLTagName() { 
+    	return getXMLElementTagName(); 
+    	}
 
     /**
      * Gets the tag name of the root element representing this object.

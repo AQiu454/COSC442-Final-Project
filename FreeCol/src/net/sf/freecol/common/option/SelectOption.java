@@ -122,7 +122,10 @@ public class SelectOption extends IntegerOption {
      */
     public void setValue(Integer value) {
         Set<Integer> keys = getItemValues().keySet();
-        if (keys.isEmpty()) return; // May not have been read yet
+        if (keys.isEmpty()) 
+        	{
+        		return; // May not have been read yet
+        	}
 
         Integer fallback = null;
         for (Integer i : keys) {
@@ -130,7 +133,10 @@ public class SelectOption extends IntegerOption {
                 super.setValue(value);
                 return;
             }
-            if (fallback == null) fallback = i;
+            if (fallback == null) 
+            	{
+            		fallback = i;
+            	}
         }
         logger.warning(getXMLElementTagName() + ".setValue invalid value: "
             + value + ", using fallback: " + fallback);
@@ -238,7 +244,9 @@ public class SelectOption extends IntegerOption {
      * {@inheritDoc}
      */
     @Override
-    public String getXMLTagName() { return getXMLElementTagName(); }
+    public String getXMLTagName() { 
+    	return getXMLElementTagName(); 
+    	}
 
     /**
      * Gets the tag name of the root element representing this object.

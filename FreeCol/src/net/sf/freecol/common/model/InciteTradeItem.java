@@ -177,8 +177,8 @@ public class InciteTradeItem extends TradeItem {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder(16);
-        sb.append("[").append(getId())
-            .append(" ").append(victim.getId()).append("]");
+        sb.append('[').append(getId())
+            .append(' ').append(victim.getId()).append(']');
         return sb.toString();
     }
 

@@ -29,8 +29,8 @@ import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.model.AbstractUnit;
 import net.sf.freecol.common.model.Specification;
-import net.sf.freecol.common.option.UnitTypeOption.TypeSelector;
 import net.sf.freecol.common.model.Role;
+import net.sf.freecol.common.option.UnitTypeOption.TypeSelector;
 
 
 /**
@@ -295,7 +295,8 @@ public class AbstractUnitOption extends AbstractOption<AbstractUnit> {
      * {@inheritDoc}
      */
     @Override
-    public String getXMLTagName() { return getXMLElementTagName(); }
+    public String getXMLTagName() { return getXMLElementTagName(); 
+    }
 
     /**
      * Gets the tag name of the root element representing this object.

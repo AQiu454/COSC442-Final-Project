@@ -63,7 +63,10 @@ public class RangeOption extends SelectOption {
     public int getValueRank() {
         int rank = 0;
         for (Integer i : getItemValues().keySet()) {
-            if (i.equals(getValue())) return rank;
+            if (i.equals(getValue())) 
+            	{
+            		return rank;
+            	}
             rank++;
         }
         return 0; // Actually invalid
@@ -80,7 +83,10 @@ public class RangeOption extends SelectOption {
         Iterator<Integer> iterator = getItemValues().keySet().iterator();
 
         while (rank >= 0) {
-            if (!iterator.hasNext()) break;
+            if (!iterator.hasNext()) 
+            	{
+            		break;
+            	}
             curValue = iterator.next();
             rank--;
         }
@@ -105,7 +111,9 @@ public class RangeOption extends SelectOption {
      * {@inheritDoc}
      */
     @Override
-    public String getXMLTagName() { return getXMLElementTagName(); }
+    public String getXMLTagName() { 
+    	return getXMLElementTagName(); 
+    	}
 
     /**
      * Gets the tag name of the root element representing this object.

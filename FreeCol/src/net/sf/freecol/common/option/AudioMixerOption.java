@@ -31,6 +31,7 @@ import javax.xml.stream.XMLStreamException;
 import net.sf.freecol.common.i18n.Messages;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.model.Specification;
+
 import static net.sf.freecol.common.util.CollectionUtils.*;
 
 /**
@@ -129,12 +130,13 @@ public class AudioMixerOption extends AbstractOption<AudioMixerOption.MixerWrapp
 
     /** The autodetected mixer. */
     private static final Mixer AUTODETECTED_MIXER;
+    
     static {
         Mixer mixer = null;
         try {
             mixer = AudioSystem.getMixer(null);
         } catch (IllegalArgumentException e) {
-        	//needs catch
+        //needs catch
         }
         AUTODETECTED_MIXER = mixer;
     }
@@ -146,6 +148,7 @@ public class AudioMixerOption extends AbstractOption<AudioMixerOption.MixerWrapp
 
     /** The available audio mixers. */
     private static final List<MixerWrapper> audioMixers = new ArrayList<>();
+    
     static {
         for (Mixer.Info mi : AudioSystem.getMixerInfo()) {
             audioMixers.add(new MixerWrapper(mi.getName(), mi));
@@ -262,7 +265,8 @@ public class AudioMixerOption extends AbstractOption<AudioMixerOption.MixerWrapp
      * {@inheritDoc}
      */
     @Override
-    public String getXMLTagName() { return getXMLElementTagName(); }
+    public String getXMLTagName() { return getXMLElementTagName(); 
+    }
 
     /**
      * Gets the tag name of the root element representing this object.

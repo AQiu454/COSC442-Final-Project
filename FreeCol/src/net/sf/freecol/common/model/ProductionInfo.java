@@ -237,7 +237,7 @@ public class ProductionInfo {
             if (goods.getType().getStoredAs() != goods.getType()) {
                 result.append(" [")
                     .append(goods.getType().getStoredAs().getId())
-                    .append("]");
+                    .append(']');
             }
             result.append(", ");
         }

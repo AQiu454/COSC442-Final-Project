@@ -32,6 +32,7 @@ import net.sf.freecol.common.i18n.Messages;
 import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.model.Specification;
+
 import static net.sf.freecol.common.util.CollectionUtils.*;
 
 /**
@@ -277,7 +278,10 @@ public class OptionGroup extends AbstractOption<OptionGroup> {
      */
     public Option remove(String id) {
         Option op = optionMap.remove(id);
-        if (op != null) options.remove(op);
+        if (op != null) 
+        	{
+        		options.remove(op);
+        	}
         return op;
     }
 
@@ -558,7 +562,10 @@ public class OptionGroup extends AbstractOption<OptionGroup> {
     protected void writeChildren(FreeColXMLWriter xw) throws XMLStreamException {
         super.writeChildren(xw);
 
-        for (Option o : options) o.toXML(xw);
+        for (Option o : options) 
+        	{
+        		o.toXML(xw);
+        	}
     }
 
     /**
@@ -619,7 +626,9 @@ public class OptionGroup extends AbstractOption<OptionGroup> {
      * {@inheritDoc}
      */
     @Override
-    public String getXMLTagName() { return getXMLElementTagName(); }
+    public String getXMLTagName() { 
+    	return getXMLElementTagName(); 
+    	}
 
     /**
      * Gets the tag name of the root element representing this object.

@@ -136,7 +136,8 @@ public class BooleanOption extends AbstractOption<Boolean> {
      * {@inheritDoc}
      */
     @Override
-    public String getXMLTagName() { return getXMLElementTagName(); }
+    public String getXMLTagName() { return getXMLElementTagName(); 
+    }
 
     /**
      * Gets the tag name of the root element representing this object.

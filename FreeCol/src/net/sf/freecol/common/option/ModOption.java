@@ -26,8 +26,8 @@ import java.util.logging.Logger;
 import javax.xml.stream.XMLStreamException;
 
 import net.sf.freecol.common.io.FreeColModFile;
-import net.sf.freecol.common.io.Mods;
 import net.sf.freecol.common.io.FreeColXMLWriter;
+import net.sf.freecol.common.io.Mods;
 import net.sf.freecol.common.model.Specification;
 import net.sf.freecol.common.util.Utils;
 
@@ -135,7 +135,10 @@ public class ModOption extends AbstractOption<FreeColModFile> {
      */
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
+        if (this == o) 
+        	{
+        		return true;
+        	}
         if (o instanceof ModOption) {
             ModOption mod = (ModOption)o;
             return this.value == mod.value
@@ -183,7 +186,9 @@ public class ModOption extends AbstractOption<FreeColModFile> {
      * {@inheritDoc}
      */
     @Override
-    public String getXMLTagName() { return getXMLElementTagName(); }
+    public String getXMLTagName() { 
+    	return getXMLElementTagName(); 
+    	}
 
     /**
      * Gets the tag name of the root element representing this object.

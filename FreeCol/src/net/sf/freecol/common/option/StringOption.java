@@ -27,8 +27,8 @@ import javax.xml.stream.XMLStreamException;
 
 import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
-import net.sf.freecol.common.util.Utils;
 import net.sf.freecol.common.model.Specification;
+import net.sf.freecol.common.util.Utils;
 
 /**
  * Represents an option that can be a string selected from a list of
@@ -203,7 +203,10 @@ public class StringOption extends AbstractOption<String> {
             .append(" value=").append(value)
             .append(" choices=[");
         if (choices != null) {
-            for (String choice : choices) sb.append(' ').append(choice);
+            for (String choice : choices) 
+            	{
+            		sb.append(' ').append(choice);
+            	}
         }
         sb.append("]]");
         return sb.toString();
@@ -213,7 +216,9 @@ public class StringOption extends AbstractOption<String> {
      * {@inheritDoc}
      */
     @Override
-    public String getXMLTagName() { return getXMLElementTagName(); }
+    public String getXMLTagName() { 
+    	return getXMLElementTagName(); 
+    	}
 
     /**
      * Gets the tag name of the root element representing this object.

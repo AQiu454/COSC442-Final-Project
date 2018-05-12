@@ -31,6 +31,7 @@ import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.io.Mods;
 import net.sf.freecol.common.model.Specification;
+
 import static net.sf.freecol.common.util.CollectionUtils.*;
 
 /**
@@ -105,7 +106,10 @@ public abstract class ListOption<T> extends AbstractOption<List<AbstractOption<T
     public List<T> getOptionValues() {
         List<T> result = new ArrayList<>();
         for (AbstractOption<T> option : value) {
-            if (option != null) result.add(option.getValue());
+            if (option != null) 
+            	{
+            		result.add(option.getValue());
+            	}
         }
         return result;
     }
@@ -116,7 +120,10 @@ public abstract class ListOption<T> extends AbstractOption<List<AbstractOption<T
      * @param ao The new <code>AbstractOption</code> member to add.
      */
     private void addMember(AbstractOption<T> ao) {
-        if (canAdd(ao)) this.value.add(ao);
+        if (canAdd(ao)) 
+        	{
+        		this.value.add(ao);
+        	}
     }
 
     /**
@@ -169,11 +176,17 @@ public abstract class ListOption<T> extends AbstractOption<List<AbstractOption<T
     @Override
     public void setValue(List<AbstractOption<T>> value) {
         // Fail fast: the list value may be empty, but it must not be null.
-        if (value==null) throw new IllegalArgumentException("Null ListOption");
+        if (value == null) 
+        	{
+        		throw new IllegalArgumentException("Null ListOption");
+        	}
 
         List<AbstractOption<T>> oldValue = new ArrayList<>(this.value);
         this.value.clear();
-        for (AbstractOption<T> op : value) addMember(op);
+        for (AbstractOption<T> op : value) 
+        	{
+        		addMember(op);
+        	}
 
         if (isDefined && !value.equals(oldValue)) {
             firePropertyChange(VALUE_TAG, oldValue, value);
@@ -257,7 +270,8 @@ public abstract class ListOption<T> extends AbstractOption<List<AbstractOption<T
     /**
      * {@inheritDoc}
      */
-    @Override @SuppressWarnings("unchecked")
+    @Override 
+    @SuppressWarnings("unchecked")
     public void readChild(FreeColXMLReader xr) throws XMLStreamException {
         final String tag = xr.getLocalName();
 
@@ -289,7 +303,11 @@ public abstract class ListOption<T> extends AbstractOption<List<AbstractOption<T
                 } catch (XMLStreamException xse) {
                     logger.log(Level.WARNING, "Invalid option at: " + tag, xse);
                     xr.closeTag(tag);
-            }   if (op != null) addMember(op);
+            }   
+                if (op != null) 
+                	{
+                		addMember(op);
+                	}
                 break;
         }
     }
