@@ -31,16 +31,17 @@ import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 import static net.sf.freecol.common.util.StringUtils.*;
 
-
 /**
  * Represents a building in a colony.
  */
 public class Building extends WorkLocation
     implements Named, Consumer {
 
+    /** The Constant logger. */
     @SuppressWarnings("unused")
     private static final Logger logger = Logger.getLogger(Building.class.getName());
 
+    /** The Constant UNIT_CHANGE. */
     public static final String UNIT_CHANGE = "UNIT_CHANGE";
 
     /** The type of building. */
@@ -88,13 +89,13 @@ public class Building extends WorkLocation
     /**
      * Changes the type of the Building.  The type of a building may
      * change when it is upgraded or damaged.
-     *
+     * 
      * -til: If this is a defensive building.
      *
-     * @see #upgrade
-     * @see #downgrade
      * @param newBuildingType The new <code>BuildingType</code>.
      * @return A list of units present that need to be removed.
+     * @see #upgrade
+     * @see #downgrade
      */
     private List<Unit> setType(final BuildingType newBuildingType) {
         // remove features from current type
@@ -141,7 +142,7 @@ public class Building extends WorkLocation
     }
 
     /**
-     * Does this building have a higher level?
+     * Does this building have a higher level?.
      *
      * @return True if this <code>Building</code> can have a higher level.
      */
@@ -150,7 +151,7 @@ public class Building extends WorkLocation
     }
 
     /**
-     * Can this building can be damaged?
+     * Can this building can be damaged?.
      *
      * @return True if this building can be damaged.
      */
@@ -190,7 +191,7 @@ public class Building extends WorkLocation
     }
 
     /**
-     * Can a particular type of unit be added to this building?
+     * Can a particular type of unit be added to this building?.
      *
      * @param unitType The <code>UnitType</code> to check.
      * @return True if unit type can be added to this building.
@@ -615,6 +616,7 @@ public class Building extends WorkLocation
 
     // Serialization
 
+    /** The Constant BUILDING_TYPE_TAG. */
     private static final String BUILDING_TYPE_TAG = "buildingType";
 
 

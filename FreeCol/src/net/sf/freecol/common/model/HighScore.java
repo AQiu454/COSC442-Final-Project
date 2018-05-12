@@ -43,12 +43,12 @@ import net.sf.freecol.common.io.FreeColXMLWriter;
 
 import org.w3c.dom.Element;
 
-
 /**
  * A FreeCol high score record.
  */
 public class HighScore extends FreeColObject {
 
+    /** The Constant logger. */
     private static final Logger logger = Logger.getLogger(HighScore.class.getName());
 
     /** The number of high scores to allow in the high scores list. */
@@ -59,34 +59,85 @@ public class HighScore extends FreeColObject {
      * player.  The nature of the object depends on the player's score.
      */
     public static enum ScoreLevel {
+        
+        /** The continent. */
         CONTINENT(40000),
+        
+        /** The country. */
         COUNTRY(35000),
+        
+        /** The state. */
         STATE(30000),
+        
+        /** The city. */
         CITY(25000),
+        
+        /** The mountain range. */
         MOUNTAIN_RANGE(20000),
+        
+        /** The river. */
         RIVER(15000),
+        
+        /** The institute. */
         INSTITUTE(12000),
+        
+        /** The university. */
         UNIVERSITY(10000),
+        
+        /** The street. */
         STREET(8000),
+        
+        /** The school. */
         SCHOOL(7000),
+        
+        /** The bird of prey. */
         BIRD_OF_PREY(6000),
+        
+        /** The tree. */
         TREE(5000),
+        
+        /** The flower. */
         FLOWER(4000),
+        
+        /** The rodent. */
         RODENT(3200),
+        
+        /** The foul smelling plant. */
         FOUL_SMELLING_PLANT(2400),
+        
+        /** The poisonous plant. */
         POISONOUS_PLANT(1600),
+        
+        /** The slime mold beetle. */
         SLIME_MOLD_BEETLE(800),
+        
+        /** The blood sucking insect. */
         BLOOD_SUCKING_INSECT(400),
+        
+        /** The infectious disease. */
         INFECTIOUS_DISEASE(200),
+        
+        /** The parasitic worm. */
         PARASITIC_WORM(0);
 
+        /** The minimum score. */
         private final int minimumScore;
 
 
+        /**
+         * Instantiates a new score level.
+         *
+         * @param minimumScore the minimum score
+         */
         ScoreLevel(int minimumScore) {
             this.minimumScore = minimumScore;
         }
 
+        /**
+         * Gets the minimum score.
+         *
+         * @return the minimum score
+         */
         public int getMinimumScore() {
             return minimumScore;
         }
@@ -318,6 +369,7 @@ public class HighScore extends FreeColObject {
     // Utilities for manipulating lists of high scores, and serialization
     // with the high scores file.
 
+    /** The Constant HIGH_SCORES_TAG. */
     private static final String HIGH_SCORES_TAG = "highScores";
 
     /**
@@ -467,21 +519,50 @@ public class HighScore extends FreeColObject {
     // they do not have ids.
 
 
+    /** The Constant COLONIES_TAG. */
     private static final String COLONIES_TAG = "colonies";
+    
+    /** The Constant DATE_TAG. */
     private static final String DATE_TAG = "date";
+    
+    /** The Constant DIFFICULTY_TAG. */
     private static final String DIFFICULTY_TAG = "difficulty";
+    
+    /** The Constant INDEPENDENCE_TURN_TAG. */
     private static final String INDEPENDENCE_TURN_TAG = "independenceTurn";
+    
+    /** The Constant LEVEL_TAG. */
     private static final String LEVEL_TAG = "level";
+    
+    /** The Constant NATION_ID_TAG. */
     private static final String NATION_ID_TAG = "nationId";
+    
+    /** The Constant NATION_NAME_TAG. */
     private static final String NATION_NAME_TAG = "nationName";
+    
+    /** The Constant NATION_TYPE_ID_TAG. */
     private static final String NATION_TYPE_ID_TAG = "nationTypeId";
+    
+    /** The Constant NEW_LAND_NAME_TAG. */
     private static final String NEW_LAND_NAME_TAG = "newLandName";
+    
+    /** The Constant PLAYER_NAME_TAG. */
     private static final String PLAYER_NAME_TAG = "playerName";
+    
+    /** The Constant RETIREMENT_TURN_TAG. */
     private static final String RETIREMENT_TURN_TAG = "retirementTurn";
+    
+    /** The Constant SCORE_TAG. */
     private static final String SCORE_TAG = "score";
+    
+    /** The Constant UNITS_TAG. */
     private static final String UNITS_TAG = "units";
+    
+    /** The Constant OLD_NATION_ID_TAG. */
     // @compat 0.10.7
     private static final String OLD_NATION_ID_TAG = "nationID";
+    
+    /** The Constant OLD_NATION_TYPE_ID_TAG. */
     private static final String OLD_NATION_TYPE_ID_TAG = "nationTypeID";
     // end @compat
 

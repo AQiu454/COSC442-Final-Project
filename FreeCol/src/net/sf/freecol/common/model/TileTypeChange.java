@@ -26,7 +26,6 @@ import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.util.Utils;
 
-
 /**
  * A change in a tile type, including some bonus production when this occurs.
  */
@@ -144,10 +143,19 @@ public class TileTypeChange implements Comparable<TileTypeChange> {
 
     // Serialization
 
+    /** The Constant FROM_TAG. */
     private static final String FROM_TAG = "from";
+    
+    /** The Constant GOODS_TYPE_TAG. */
     private static final String GOODS_TYPE_TAG = "goods-type";
+    
+    /** The Constant PRODUCTION_TAG. */
     private static final String PRODUCTION_TAG = "production";
+    
+    /** The Constant TO_TAG. */
     private static final String TO_TAG = "to";
+    
+    /** The Constant VALUE_TAG. */
     private static final String VALUE_TAG = "value";
 
 

@@ -28,8 +28,6 @@ import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.model.Specification;
 
-
-// TODO: Auto-generated Javadoc
 /**
  * Represents an option where the valid choice is an integer.
  */

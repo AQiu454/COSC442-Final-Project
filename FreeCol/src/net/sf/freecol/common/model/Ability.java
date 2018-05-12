@@ -26,7 +26,6 @@ import net.sf.freecol.common.io.FreeColXMLWriter;
 
 import org.w3c.dom.Element;
 
-
 /**
  * The <code>Ability</code> class encapsulates a bonus or penalty
  * that can be applied to any action within the game, most obviously

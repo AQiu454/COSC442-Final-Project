@@ -31,8 +31,6 @@ import net.sf.freecol.common.model.Ability;
 import net.sf.freecol.common.model.Specification;
 import net.sf.freecol.common.model.UnitType;
 
-
-// TODO: Auto-generated Javadoc
 /**
  * Option wrapping a UnitType.
  */

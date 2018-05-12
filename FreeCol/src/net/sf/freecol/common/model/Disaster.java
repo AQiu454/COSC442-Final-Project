@@ -29,7 +29,6 @@ import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.util.RandomChoice;
 
-
 /**
  * This class describes disasters that can happen to a Colony, such as
  * flooding, disease or Indian raids.
@@ -43,7 +42,13 @@ public class Disaster extends FreeColGameObjectType {
     public static final String BANKRUPTCY = "model.disaster.bankruptcy";
 
     /** Whether to apply one, many or all applicable disasters. */
-    public static enum Effects { ONE, SEVERAL, ALL };
+    public static enum Effects { 
+ /** The one. */
+ ONE, 
+ /** The several. */
+ SEVERAL, 
+ /** The all. */
+ ALL };
 
     /** Whether this disaster is natural.  Defaults to false. */
     private boolean natural = false;
@@ -67,7 +72,7 @@ public class Disaster extends FreeColGameObjectType {
 
 
     /**
-     * Is this a natural disaster?
+     * Is this a natural disaster?.
      *
      * @return True if this is a natural disaster.
      */
@@ -108,8 +113,13 @@ public class Disaster extends FreeColGameObjectType {
 
     // Serialization
 
+    /** The Constant EFFECT_TAG. */
     private static final String EFFECT_TAG = "effect";
+    
+    /** The Constant EFFECTS_TAG. */
     private static final String EFFECTS_TAG = "effects";
+    
+    /** The Constant NATURAL_TAG. */
     private static final String NATURAL_TAG = "natural";
 
 

@@ -23,8 +23,6 @@ import java.util.logging.Logger;
 
 import net.sf.freecol.common.model.Specification;
 
-
-// TODO: Auto-generated Javadoc
 /**
  * Represents an option where the result is a value between 0 and 100.
  */

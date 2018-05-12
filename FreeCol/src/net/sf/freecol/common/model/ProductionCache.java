@@ -28,7 +28,6 @@ import java.util.Set;
 
 import static net.sf.freecol.common.util.CollectionUtils.*;
 
-
 /**
  * The <code>ProductionCache</code> is contains all relevant
  * information about the production and consumption of the
@@ -212,7 +211,7 @@ public class ProductionCache {
     }
 
     /**
-     * Does this production cache contain production of a goods type?
+     * Does this production cache contain production of a goods type?.
      *
      * @param goodsType The <code>GoodsType</code> to check.
      * @return True if there is a production entry for the given type.
@@ -224,7 +223,7 @@ public class ProductionCache {
     }
 
     /**
-     * Does this production cache contain consumption of a goods type?
+     * Does this production cache contain consumption of a goods type?.
      *
      * @param goodsType The <code>GoodsType</code> to check.
      * @return True if there is a consumption entry for the given type.

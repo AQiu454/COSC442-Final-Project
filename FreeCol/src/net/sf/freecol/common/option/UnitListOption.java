@@ -22,8 +22,6 @@ package net.sf.freecol.common.option;
 import net.sf.freecol.common.model.AbstractUnit;
 import net.sf.freecol.common.model.Specification;
 
-
-// TODO: Auto-generated Javadoc
 /**
  * Represents an option where the valid choice is a list of
  * AbstractUnits, e.g. the units of the REF.

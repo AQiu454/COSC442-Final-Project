@@ -20,10 +20,11 @@
 
 package net.sf.freecol.common.model;
 
-
 /**
  * Interface for retriving information about
  * a the creation/deletion of {@link FreeColGameObject}s.
+ *
+ * @see FreeColGameObjectEvent
  */
 public interface FreeColGameObjectListener {
 

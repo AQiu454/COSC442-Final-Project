@@ -26,8 +26,6 @@ import net.sf.freecol.common.ObjectWithId;
 import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 
-
-// TODO: Auto-generated Javadoc
 /**
  * An option describes something which can be customized by the user.
  *

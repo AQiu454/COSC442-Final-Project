@@ -22,7 +22,6 @@ package net.sf.freecol.common.model;
 import net.sf.freecol.common.i18n.Messages;
 import net.sf.freecol.common.i18n.NameCache;
 
-
 /**
  * Represents a given turn in the game.
  */
@@ -126,6 +125,8 @@ public class Turn {
 
     /**
      * Increases the turn number by one.
+     *
+     * @return the turn
      */
     public Turn next() {
         return new Turn(turn + 1);
@@ -152,6 +153,7 @@ public class Turn {
     /**
      * Gets the year the given turn is in.
      *
+     * @param turn the turn
      * @return The calculated year based on the turn number.
      */
     public static int getYear(int turn) {
@@ -210,7 +212,7 @@ public class Turn {
     }
 
     /**
-     * Is this turn the first one?
+     * Is this turn the first one?.
      *
      * @return True if this turn is the first turn.
      */
@@ -219,7 +221,7 @@ public class Turn {
     }
 
     /**
-     * Is this turn the season year?
+     * Is this turn the season year?.
      *
      * @return True if this turn is the season year.
      */

@@ -33,7 +33,6 @@ import net.sf.freecol.common.util.Utils;
 
 import org.w3c.dom.Element;
 
-
 /**
  * The superclass of all game objects in FreeCol.
  *
@@ -42,6 +41,7 @@ import org.w3c.dom.Element;
  */
 public abstract class FreeColGameObject extends FreeColObject {
 
+    /** The Constant logger. */
     private static final Logger logger = Logger.getLogger(FreeColGameObject.class.getName());
 
     /** The game this object belongs to. */
@@ -120,7 +120,7 @@ public abstract class FreeColGameObject extends FreeColObject {
     }
 
     /**
-     * Has this object not yet been initialized?
+     * Has this object not yet been initialized?.
      *
      * @return True if this object is not initialized.
      */
@@ -129,7 +129,7 @@ public abstract class FreeColGameObject extends FreeColObject {
     }
 
     /**
-     * Has this object been disposed?
+     * Has this object been disposed?.
      *
      * @return True if this object has been disposed.
      * @see #dispose
@@ -193,6 +193,7 @@ public abstract class FreeColGameObject extends FreeColObject {
      * class, since the object we are about to "clone" is likely a
      * server object.
      *
+     * @param <T> the generic type
      * @param returnClass The class to clone.
      * @return The "clone" of the <code>FreeColGameObject</code>.
      */

@@ -35,7 +35,6 @@ import static net.sf.freecol.common.util.StringUtils.*;
 
 import org.w3c.dom.Element;
 
-
 /**
  * The <code>UnitLocation</code> is a place where a <code>Unit</code>
  * can be put.  The UnitLocation can not store any other Locatables,
@@ -45,8 +44,12 @@ import org.w3c.dom.Element;
  */
 public abstract class UnitLocation extends FreeColGameObject implements Location {
 
+    /** The Constant logger. */
     private static final Logger logger = Logger.getLogger(UnitLocation.class.getName());
 
+    /**
+     * The Enum NoAddReason.
+     */
     public static enum NoAddReason {
         /**
          * No reason why Locatable can not be added.
@@ -170,7 +173,7 @@ public abstract class UnitLocation extends FreeColGameObject implements Location
     // getUnitCapacity() and getSettlement() are provided.
 
     /**
-     * Is this unit location empty?
+     * Is this unit location empty?.
      *
      * @return a <code>boolean</code> value
      */
@@ -179,7 +182,7 @@ public abstract class UnitLocation extends FreeColGameObject implements Location
     }
 
     /**
-     * Is this unit location full?
+     * Is this unit location full?.
      *
      * @return True if this location is full.
      */
@@ -522,7 +525,7 @@ public abstract class UnitLocation extends FreeColGameObject implements Location
     }
 
     /**
-     * What would the price be for a collection of goods at this location?
+     * What would the price be for a collection of goods at this location?.
      *
      * @param goods The list of <code>AbstractGoods</code> to check for.
      * @return Negative if the goods are unavailable, otherwise the

@@ -23,7 +23,6 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 
-
 /**
  * Objects implementing the Consumer interface consume Goods. Examples
  * include units that eat food, buildings that convert Goods into

@@ -27,8 +27,6 @@ import javax.xml.stream.XMLStreamException;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.model.Specification;
 
-
-// TODO: Auto-generated Javadoc
 /**
  * Represents an option for specifying a <code>File</code>.
  */

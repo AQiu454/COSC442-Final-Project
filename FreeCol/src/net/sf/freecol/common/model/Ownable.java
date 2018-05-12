@@ -20,7 +20,6 @@
 
 package net.sf.freecol.common.model;
 
-
 /**
  * Interface for objects which can be owned by a <code>Player</code>.
  * @see Player

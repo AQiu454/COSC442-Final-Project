@@ -22,7 +22,6 @@ package net.sf.freecol.common.model;
 import java.util.HashMap;
 import java.util.Map;
 
-
 /**
  * Represents the style of a tile improvement, such as a river or
  * road. Since TileImprovementStyles are immutable and some styles are

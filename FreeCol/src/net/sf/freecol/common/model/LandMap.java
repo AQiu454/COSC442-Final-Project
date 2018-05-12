@@ -33,12 +33,12 @@ import net.sf.freecol.common.option.SelectOption;
 import static net.sf.freecol.common.util.CollectionUtils.*;
 import static net.sf.freecol.common.util.RandomUtils.*;
 
-
 /**
  * A class to encapsulate a binary land map.
  */
 public class LandMap {
 
+    /** The Constant logger. */
     private static final Logger logger = Logger.getLogger(LandMap.class.getName());
 
     /** The map width. */
@@ -139,7 +139,7 @@ public class LandMap {
     }
 
     /**
-     * Is an xy coordinate valid on this map?
+     * Is an xy coordinate valid on this map?.
      *
      * @param x The x coordinate.
      * @param y The y coordinate.
@@ -150,7 +150,7 @@ public class LandMap {
     }
 
     /**
-     * Is there land on this map at a given xy coordinate?
+     * Is there land on this map at a given xy coordinate?.
      *
      * @param x The x coordinate.
      * @param y The y coordinate.
@@ -167,8 +167,8 @@ public class LandMap {
      * Generate the land map using the given generator type.
      *
      * @param type The generator type.
-     * @param minimumNumberOfTiles The minimum land tiles to generate.
      * @param preferredDistanceToEdge The preferred distance to the map edge.
+     * @param minimumNumberOfTiles The minimum land tiles to generate.
      * @param random A pseudo random number source.
      */
     private void generate(int type, int preferredDistanceToEdge,
@@ -215,6 +215,10 @@ public class LandMap {
 
     /**
      * Create the standard FreeCol land map.
+     *
+     * @param preferredDistanceToEdge the preferred distance to edge
+     * @param minimumNumberOfTiles the minimum number of tiles
+     * @param random the random
      */
     private void createClassicLandMap(int preferredDistanceToEdge,
                                       int minimumNumberOfTiles, Random random) {
@@ -280,10 +284,11 @@ public class LandMap {
 
     /**
      * Do the given coordinates correspond to a location in the land map
-     * with no adjoining land?
+     * with no adjoining land?.
      *
      * @param x The x coordinate to check.
      * @param y The y coordinate to check.
+     * @return true, if is single tile
      */
     private boolean isSingleTile(int x, int y) {
         final Position p = new Position(x, y);

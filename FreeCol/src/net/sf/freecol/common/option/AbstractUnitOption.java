@@ -32,7 +32,6 @@ import net.sf.freecol.common.model.Specification;
 import net.sf.freecol.common.model.Role;
 import net.sf.freecol.common.option.UnitTypeOption.TypeSelector;
 
-// TODO: Auto-generated Javadoc
 /**
  * Represents an option where the valid choice is an AbstractUnit.
  */

@@ -38,8 +38,6 @@ import net.sf.freecol.common.model.Specification;
 import static net.sf.freecol.common.util.CollectionUtils.*;
 import net.sf.freecol.common.util.Utils;
 
-
-// TODO: Auto-generated Javadoc
 /**
  * Option for selecting a language.  The possible choices are determined
  * using the available language files in the i18n directory.

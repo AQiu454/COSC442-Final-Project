@@ -19,7 +19,6 @@
 
 package net.sf.freecol.common.model;
 
-
 /**
  * A wrapper interface for a location that can be on a trade route.
  *

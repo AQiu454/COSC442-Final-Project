@@ -27,7 +27,6 @@ import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.model.FreeColObject;
 import net.sf.freecol.common.model.Specification;
 
-// TODO: Auto-generated Javadoc
 /**
  * The super class of all options.  GUI components making use of this
  * class can refer to its name and shortDescription properties.  The

@@ -30,8 +30,6 @@ import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.model.Specification;
 
-
-// TODO: Auto-generated Javadoc
 /**
  * Represents an option where the valid choice is an integer and the
  * choices are represented by strings.  In general, these strings are

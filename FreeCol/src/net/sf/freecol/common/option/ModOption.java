@@ -31,8 +31,6 @@ import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.model.Specification;
 import net.sf.freecol.common.util.Utils;
 
-
-// TODO: Auto-generated Javadoc
 /**
  * Represents an option that can be an arbitrary string.
  */

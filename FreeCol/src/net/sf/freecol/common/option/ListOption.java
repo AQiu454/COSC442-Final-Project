@@ -33,8 +33,6 @@ import net.sf.freecol.common.io.Mods;
 import net.sf.freecol.common.model.Specification;
 import static net.sf.freecol.common.util.CollectionUtils.*;
 
-
-// TODO: Auto-generated Javadoc
 /**
  * Represents a list of Options.
  *

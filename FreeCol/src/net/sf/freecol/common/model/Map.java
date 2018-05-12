@@ -60,13 +60,24 @@ import net.sf.freecol.server.generator.TerrainGenerator;
  */
 public class Map extends FreeColGameObject implements Location {
 
+    /** The Constant logger. */
     private static final Logger logger = Logger.getLogger(Map.class.getName());
 
     /**
      * Possible actions by the unit travelling along a path in consideration
      * of the next tile.
      */
-    private static enum MoveStep { FAIL, BYLAND, BYWATER, EMBARK, DISEMBARK };
+    private static enum MoveStep { 
+ /** The fail. */
+ FAIL, 
+ /** The byland. */
+ BYLAND, 
+ /** The bywater. */
+ BYWATER, 
+ /** The embark. */
+ EMBARK, 
+ /** The disembark. */
+ DISEMBARK };
 
     /**
      * The number of tiles from the upper edge that are considered
@@ -80,7 +91,23 @@ public class Map extends FreeColGameObject implements Location {
      * layer includes Lost City Rumours as well as settlements.
      */
     public static enum Layer {
-        NONE, LAND, TERRAIN, REGIONS, RIVERS, RESOURCES, NATIVES, ALL;
+        
+        /** The none. */
+        NONE, 
+ /** The land. */
+ LAND, 
+ /** The terrain. */
+ TERRAIN, 
+ /** The regions. */
+ REGIONS, 
+ /** The rivers. */
+ RIVERS, 
+ /** The resources. */
+ RESOURCES, 
+ /** The natives. */
+ NATIVES, 
+ /** The all. */
+ ALL;
     };
 
     /** A position on the Map. */
@@ -374,9 +401,9 @@ public class Map extends FreeColGameObject implements Location {
     /**
      * Sets the tile at the given coordinates.
      *
+     * @param tile The <code>Tile</code> to set.
      * @param x The x-coordinate of the <code>Tile</code>.
      * @param y The y-coordinate of the <code>Tile</code>.
-     * @param tile The <code>Tile</code> to set.
      */
     public void setTile(Tile tile, int x, int y) {
         tiles[x][y] = tile;
@@ -400,10 +427,20 @@ public class Map extends FreeColGameObject implements Location {
         return tiles[0].length;
     }
 
+    /**
+     * Gets the layer.
+     *
+     * @return the layer
+     */
     public final Layer getLayer() {
         return layer;
     }
 
+    /**
+     * Sets the layer.
+     *
+     * @param newLayer the new layer
+     */
     public final void setLayer(final Layer newLayer) {
         this.layer = newLayer;
     }
@@ -417,6 +454,11 @@ public class Map extends FreeColGameObject implements Location {
         return minimumLatitude;
     }
 
+    /**
+     * Sets the minimum latitude.
+     *
+     * @param newMinimumLatitude the new minimum latitude
+     */
     public final void setMinimumLatitude(final int newMinimumLatitude) {
         this.minimumLatitude = newMinimumLatitude;
         calculateLatitudePerRow();
@@ -431,6 +473,11 @@ public class Map extends FreeColGameObject implements Location {
         return maximumLatitude;
     }
 
+    /**
+     * Sets the maximum latitude.
+     *
+     * @param newMaximumLatitude the new maximum latitude
+     */
     public final void setMaximumLatitude(final int newMaximumLatitude) {
         this.maximumLatitude = newMaximumLatitude;
         calculateLatitudePerRow();
@@ -445,6 +492,9 @@ public class Map extends FreeColGameObject implements Location {
         return latitudePerRow;
     }
 
+    /**
+     * Calculate latitude per row.
+     */
     private final void calculateLatitudePerRow() {
         this.latitudePerRow = 1f * (maximumLatitude - minimumLatitude) /
             (getHeight() - 1);
@@ -557,7 +607,7 @@ public class Map extends FreeColGameObject implements Location {
     }            
 
     /**
-     * Is a tile in the map in a polar region?
+     * Is a tile in the map in a polar region?.
      *
      * @param tile The <code>Tile</code> to examine.
      * @return True if the tile is in a polar region.
@@ -569,7 +619,7 @@ public class Map extends FreeColGameObject implements Location {
 
     /**
      * Gets the direction a unit needs to move in
-     * order to get from <code>t1</code> to <code>t2</code>
+     * order to get from <code>t1</code> to <code>t2</code>.
      *
      * @param t1 The tile to move from.
      * @param t2 The target tile if moving from <code>t1</code>
@@ -689,6 +739,13 @@ public class Map extends FreeColGameObject implements Location {
      * Simple interface to supply a heuristic to the A* routine.
      */
     private interface SearchHeuristic {
+        
+        /**
+         * Gets the value.
+         *
+         * @param tile the tile
+         * @return the value
+         */
         int getValue(Tile tile);
     }
 
@@ -1163,14 +1220,31 @@ public class Map extends FreeColGameObject implements Location {
      */
     private class MoveCandidate {
 
+        /** The unit. */
         private Unit unit;
+        
+        /** The current. */
         private final PathNode current;
+        
+        /** The dst. */
         private final Location dst;
+        
+        /** The moves left. */
         private int movesLeft;
+        
+        /** The turns. */
         private int turns;
+        
+        /** The on carrier. */
         private final boolean onCarrier;
+        
+        /** The decider. */
         private final CostDecider decider;
+        
+        /** The cost. */
         private int cost;
+        
+        /** The path. */
         private PathNode path;
 
 
@@ -1217,6 +1291,8 @@ public class Map extends FreeColGameObject implements Location {
 
         /**
          * Handles the change of unit as a result of an embark.
+         *
+         * @param unit the unit
          */
         public void embarkUnit(Unit unit) {
             this.unit = unit;
@@ -1272,6 +1348,7 @@ public class Map extends FreeColGameObject implements Location {
          * Does this move candidate improve on a specified move.
          *
          * @param best The <code>PathNode</code> to compare against.
+         * @return true, if successful
          */
         public boolean canImprove(PathNode best) {
             return cost != CostDecider.ILLEGAL_MOVE
@@ -1679,7 +1756,8 @@ public class Map extends FreeColGameObject implements Location {
         private final int radius;
         /** The current radius of the iteration. */
         private int currentRadius;
-        /** The current index in the circle with the current radius: */
+        
+        /**  The current index in the circle with the current radius:. */
         private int n;
         /** The current position in the circle. */
         private int x, y;
@@ -1975,7 +2053,7 @@ public class Map extends FreeColGameObject implements Location {
 
     /**
      * Flood fills from a given <code>Position</code> p, based on
-     * connectivity information encoded in boolmap
+     * connectivity information encoded in boolmap.
      *
      * @param boolmap The connectivity information for this floodfill.
      * @param x The starting x coordinate.
@@ -1989,7 +2067,7 @@ public class Map extends FreeColGameObject implements Location {
 
     /**
      * Flood fills from a given <code>Position</code> p, based on
-     * connectivity information encoded in boolmap
+     * connectivity information encoded in boolmap.
      *
      * @param boolmap The connectivity information for this floodfill.
      * @param x The starting x coordinate.
@@ -2457,14 +2535,26 @@ public class Map extends FreeColGameObject implements Location {
 
     // Serialization
 
+    /** The Constant HEIGHT_TAG. */
     private static final String HEIGHT_TAG = "height";
+    
+    /** The Constant LAYER_TAG. */
     private static final String LAYER_TAG = "layer";
+    
+    /** The Constant MAXIMUM_LATITUDE_TAG. */
     private static final String MAXIMUM_LATITUDE_TAG = "maximumLatitude";
+    
+    /** The Constant MINIMUM_LATITUDE_TAG. */
     private static final String MINIMUM_LATITUDE_TAG = "minimumLatitude";
+    
+    /** The Constant WIDTH_TAG. */
     private static final String WIDTH_TAG = "width";
+    
+    /** The missing regions. */
     // @compat 0.10.x, region remediation
     private final List<Tile> missingRegions = new ArrayList<>();
     // end @compat
+    /** The fixup high seas. */
     // @compat 0.10.5, nasty I/O hack
     private boolean fixupHighSeas = false;
     // end @compat

@@ -30,7 +30,6 @@ import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.model.Player.NoClaimReason;
 
-
 /**
  * Represents a work location on a tile. Each ColonyTile except the
  * colony center tile provides a work place for a single unit and
@@ -40,9 +39,11 @@ import net.sf.freecol.common.model.Player.NoClaimReason;
  */
 public class ColonyTile extends WorkLocation {
 
+    /** The Constant logger. */
     @SuppressWarnings("unused")
     private static final Logger logger = Logger.getLogger(ColonyTile.class.getName());
 
+    /** The Constant UNIT_CHANGE. */
     public static final String UNIT_CHANGE = "UNIT_CHANGE";
 
     /** The maximum number of units a ColonyTile can hold. */
@@ -87,7 +88,7 @@ public class ColonyTile extends WorkLocation {
 
 
     /**
-     * Is this the tile where the <code>Colony</code> is located?
+     * Is this the tile where the <code>Colony</code> is located?.
      *
      * @return True if this is the colony center tile.
      */
@@ -184,7 +185,7 @@ public class ColonyTile extends WorkLocation {
     }
 
     /**
-     * Would a given tile improvement be beneficial to this colony tile?
+     * Would a given tile improvement be beneficial to this colony tile?.
      *
      * @param ti The <code>TileImprovementType</code> to assess.
      * @return A measure of improvement (negative is a bad idea).
@@ -494,6 +495,7 @@ public class ColonyTile extends WorkLocation {
 
     // Serialization
 
+    /** The Constant WORK_TILE_TAG. */
     private static final String WORK_TILE_TAG = "workTile";
 
 

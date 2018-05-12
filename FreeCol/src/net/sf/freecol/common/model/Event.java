@@ -29,7 +29,6 @@ import javax.xml.stream.XMLStreamException;
 import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 
-
 /**
  * A special game event.
  */
@@ -138,7 +137,10 @@ public class Event extends FreeColGameObjectType {
 
     // Serialization
 
+    /** The Constant SCORE_VALUE_TAG. */
     private static final String SCORE_VALUE_TAG = "score-value";
+    
+    /** The Constant OLD_SCORE_VALUE_TAG. */
     // @compat 0.11.3
     private static final String OLD_SCORE_VALUE_TAG = "scoreValue";
     // end @compat 0.11.3

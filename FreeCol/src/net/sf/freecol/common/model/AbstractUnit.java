@@ -28,7 +28,6 @@ import net.sf.freecol.common.i18n.Messages;
 import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 
-
 /**
  * Contains the information necessary to create a new unit.
  */
@@ -219,7 +218,10 @@ public class AbstractUnit extends FreeColObject {
 
     // Serialization
 
+    /** The Constant ROLE_TAG. */
     private static final String ROLE_TAG = "role";
+    
+    /** The Constant NUMBER_TAG. */
     private static final String NUMBER_TAG = "number";
 
 

@@ -32,7 +32,6 @@ import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.util.RandomChoice;
 
-
 /**
  * Represents one of the native nations present in the game.
  */
@@ -57,7 +56,7 @@ public class IndianNationType extends NationType {
 
 
     /**
-     * Is this a European nation type?
+     * Is this a European nation type?.
      *
      * @return False.
      */
@@ -67,7 +66,7 @@ public class IndianNationType extends NationType {
     }
 
     /**
-     * Is this a native nation type?
+     * Is this a native nation type?.
      *
      * @return True.
      */
@@ -77,7 +76,7 @@ public class IndianNationType extends NationType {
     }
 
     /**
-     * Is this a REF nation type?
+     * Is this a REF nation type?.
      *
      * @return False.
      */
@@ -117,9 +116,8 @@ public class IndianNationType extends NationType {
     }
 
     /**
-     * Can this Nation can settle the given Tile?
+     * Can this Nation can settle the given Tile?.
      *
-     * @param tile a <code>Tile</code> value
      * @return a <code>boolean</code> value
      */
     /*
@@ -210,7 +208,10 @@ public class IndianNationType extends NationType {
 
     // Serialization
 
+    /** The Constant PROBABILITY_TAG. */
     private static final String PROBABILITY_TAG = "probability";
+    
+    /** The Constant SKILL_TAG. */
     private static final String SKILL_TAG = "skill";
 
 
