@@ -133,7 +133,9 @@ public class AudioMixerOption extends AbstractOption<AudioMixerOption.MixerWrapp
         Mixer mixer = null;
         try {
             mixer = AudioSystem.getMixer(null);
-        } catch (IllegalArgumentException e) {}
+        } catch (IllegalArgumentException e) {
+        	//needs catch
+        }
         AUTODETECTED_MIXER = mixer;
     }
 

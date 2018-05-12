@@ -219,7 +219,7 @@ public class LanguageOption extends AbstractOption<LanguageOption.Language> {
                 languageId = "en";
             } else if ("_qqq".equals(languageId)) { // qqq is explanations only
                 continue;
-            } else if (languageId.startsWith("_")) {
+            } else if (languageId.length() > 0 && languageId.charAt(0) == '_') {
                 languageId = languageId.substring(1);
             }
             try {

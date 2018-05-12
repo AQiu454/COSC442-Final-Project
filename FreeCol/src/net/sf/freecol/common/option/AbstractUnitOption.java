@@ -29,8 +29,9 @@ import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.model.AbstractUnit;
 import net.sf.freecol.common.model.Specification;
-import net.sf.freecol.common.model.Role;
 import net.sf.freecol.common.option.UnitTypeOption.TypeSelector;
+import net.sf.freecol.common.model.Role;
+
 
 /**
  * Represents an option where the valid choice is an AbstractUnit.
@@ -285,8 +286,8 @@ public class AbstractUnitOption extends AbstractOption<AbstractUnit> {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder(16);
-        sb.append("[").append(getId())
-            .append(" ").append(value).append("]");
+        sb.append('[').append(getId())
+            .append(' ').append(value).append(']');
         return sb.toString();
     }
 
