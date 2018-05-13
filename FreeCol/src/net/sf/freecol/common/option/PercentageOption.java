@@ -28,51 +28,49 @@ import net.sf.freecol.common.model.Specification;
  */
 public class PercentageOption extends IntegerOption {
 
-    /** The Constant logger. */
-    @SuppressWarnings("unused")
-    private static final Logger logger = Logger.getLogger(PercentageOption.class.getName());
+	/** The Constant logger. */
+	@SuppressWarnings("unused")
+	private static final Logger logger = Logger.getLogger(PercentageOption.class.getName());
 
+	/**
+	 * Creates a new <code>PercentageOption</code>.
+	 *
+	 * @param specification
+	 *            The <code>Specification</code> to refer to.
+	 */
+	public PercentageOption(Specification specification) {
+		super(specification);
 
-    /**
-     * Creates a new <code>PercentageOption</code>.
-     *
-     * @param specification The <code>Specification</code> to refer to.
-     */
-    public PercentageOption(Specification specification) {
-        super(specification);
+		setMinimumValue(0);
+		setMaximumValue(100);
+	}
 
-        setMinimumValue(0);
-        setMaximumValue(100);
-    }
+	// Serialization
 
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder(16);
+		sb.append('[').append(getId()).append(' ').append(getValue()).append("%]");
+		return sb.toString();
+	}
 
-    // Serialization
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public String getXMLTagName() {
+		return getXMLElementTagName();
+	}
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder(16);
-        sb.append('[').append(getId())
-            .append(' ').append(getValue()).append("%]");
-        return sb.toString();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public String getXMLTagName() { 
-    	return getXMLElementTagName(); 
-    	}
-
-    /**
-     * Gets the tag name of the root element representing this object.
-     *
-     * @return "percentageOption".
-     */
-    public static String getXMLElementTagName() {
-        return "percentageOption";
-    }
+	/**
+	 * Gets the tag name of the root element representing this object.
+	 *
+	 * @return "percentageOption".
+	 */
+	public static String getXMLElementTagName() {
+		return "percentageOption";
+	}
 }

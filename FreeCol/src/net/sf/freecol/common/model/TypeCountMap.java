@@ -29,138 +29,143 @@ import java.util.Set;
  * 
  * FIXME: implement entire Map interface
  *
- * @param <T> the generic type
+ * @param <T>
+ *            the generic type
  */
 public class TypeCountMap<T extends FreeColGameObjectType> {
 
-    /** The values. */
-    private final Map<T, Integer> values = new HashMap<>();
+	/** The values. */
+	private final Map<T, Integer> values = new HashMap<>();
 
-    /**
-     * Gets the values.
-     *
-     * @return the values
-     */
-    public Map<T, Integer> getValues() {
-        return values;
-    }
+	/**
+	 * Gets the values.
+	 *
+	 * @return the values
+	 */
+	public Map<T, Integer> getValues() {
+		return values;
+	}
 
-    /**
-     * Gets the count.
-     *
-     * @param key the key
-     * @return the count
-     */
-    public int getCount(T key) {
-        Integer value = values.get(key);
-        return value == null ? 0 : value;
-    }
+	/**
+	 * Gets the count.
+	 *
+	 * @param key
+	 *            the key
+	 * @return the count
+	 */
+	public int getCount(T key) {
+		Integer value = values.get(key);
+		return value == null ? 0 : value;
+	}
 
-    /**
-     * Increment count.
-     *
-     * @param key the key
-     * @param newCount the new count
-     * @return the integer
-     */
-    public Integer incrementCount(T key, int newCount) {
-        Integer oldValue = values.get(key);
-        if (oldValue == null) {
-            return values.put(key, newCount);
-        } else if (oldValue == -newCount) {
-            values.remove(key);
-            return null;
-        } else {
-            return values.put(key, oldValue + newCount);
-        }
-    }
+	/**
+	 * Increment count.
+	 *
+	 * @param key
+	 *            the key
+	 * @param newCount
+	 *            the new count
+	 * @return the integer
+	 */
+	public Integer incrementCount(T key, int newCount) {
+		Integer oldValue = values.get(key);
+		if (oldValue == null) {
+			return values.put(key, newCount);
+		} else if (oldValue == -newCount) {
+			values.remove(key);
+			return null;
+		} else {
+			return values.put(key, oldValue + newCount);
+		}
+	}
 
-    /**
-     * Adds the.
-     *
-     * @param other the other
-     */
-    public void add(TypeCountMap<T> other) {
-        for (Map.Entry<T, Integer> entry : other.values.entrySet()) {
-            incrementCount(entry.getKey(), entry.getValue());
-        }
-    }
+	/**
+	 * Adds the.
+	 *
+	 * @param other
+	 *            the other
+	 */
+	public void add(TypeCountMap<T> other) {
+		for (Map.Entry<T, Integer> entry : other.values.entrySet()) {
+			incrementCount(entry.getKey(), entry.getValue());
+		}
+	}
 
-    /**
-     * Clear.
-     */
-    public void clear() {
-        values.clear();
-    }
+	/**
+	 * Clear.
+	 */
+	public void clear() {
+		values.clear();
+	}
 
-    /**
-     * Key set.
-     *
-     * @return the sets the
-     */
-    public Set<T> keySet() {
-        return values.keySet();
-    }
+	/**
+	 * Key set.
+	 *
+	 * @return the sets the
+	 */
+	public Set<T> keySet() {
+		return values.keySet();
+	}
 
-    /**
-     * Values.
-     *
-     * @return the collection
-     */
-    public Collection<Integer> values() {
-        return values.values();
-    }
+	/**
+	 * Values.
+	 *
+	 * @return the collection
+	 */
+	public Collection<Integer> values() {
+		return values.values();
+	}
 
-    /**
-     * Contains key.
-     *
-     * @param key the key
-     * @return true, if successful
-     */
-    public boolean containsKey(T key) {
-        return values.containsKey(key);
-    }
+	/**
+	 * Contains key.
+	 *
+	 * @param key
+	 *            the key
+	 * @return true, if successful
+	 */
+	public boolean containsKey(T key) {
+		return values.containsKey(key);
+	}
 
-    /**
-     * Checks if is empty.
-     *
-     * @return true, if is empty
-     */
-    public boolean isEmpty() {
-        return values.isEmpty();
-    }
+	/**
+	 * Checks if is empty.
+	 *
+	 * @return true, if is empty
+	 */
+	public boolean isEmpty() {
+		return values.isEmpty();
+	}
 
-    /**
-     * Size.
-     *
-     * @return the int
-     */
-    public int size() {
-        return values.size();
-    }
+	/**
+	 * Size.
+	 *
+	 * @return the int
+	 */
+	public int size() {
+		return values.size();
+	}
 
-    /**
-     * Put all.
-     *
-     * @param other the other
-     */
-    public void putAll(TypeCountMap<T> other) {
-        values.putAll(other.values);
-    }
+	/**
+	 * Put all.
+	 *
+	 * @param other
+	 *            the other
+	 */
+	public void putAll(TypeCountMap<T> other) {
+		values.putAll(other.values);
+	}
 
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder(64);
-        sb.append('[').append(getClass().getName());
-        for (Map.Entry<T, Integer> entry : values.entrySet()) {
-            sb.append(" [").append(entry.getKey().getIndex())
-                .append(',').append(entry.getValue()).append(']');
-        }
-        sb.append(']');
-        return sb.toString();
-    }
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder(64);
+		sb.append('[').append(getClass().getName());
+		for (Map.Entry<T, Integer> entry : values.entrySet()) {
+			sb.append(" [").append(entry.getKey().getIndex()).append(',').append(entry.getValue()).append(']');
+		}
+		sb.append(']');
+		return sb.toString();
+	}
 }
