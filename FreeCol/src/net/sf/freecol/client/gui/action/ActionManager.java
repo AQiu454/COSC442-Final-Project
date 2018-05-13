@@ -24,8 +24,6 @@ import java.util.logging.Logger;
 import net.sf.freecol.client.FreeColClient;
 import net.sf.freecol.client.control.ConnectController;
 import net.sf.freecol.client.control.InGameController;
-import net.sf.freecol.client.gui.action.ColopediaAction.PanelType;
-import net.sf.freecol.client.gui.action.DisplayTileTextAction.DisplayText;
 import net.sf.freecol.common.model.Direction;
 import net.sf.freecol.common.model.Specification;
 import net.sf.freecol.common.model.TileImprovementType;
