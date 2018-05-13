@@ -1,0 +1,51 @@
+
+…squid:S1215ü"TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Ì°¬“H›RCRITICALZ
+CODE_SMELL
+xsquid:CommentedOutCodeLine{"<This block of commented-out lines of code should be removed.(®äö…HœRMAJORZ
+CODE_SMELL
+~squid:CommentedOutCodeLine¤"<This block of commented-out lines of code should be removed.(¾àüžúÿÿÿÿHRMAJORZ
+CODE_SMELL
+~squid:CommentedOutCodeLineÎ"<This block of commented-out lines of code should be removed.(æçÂÁüÿÿÿÿHžRMAJORZ
+CODE_SMELL
+~squid:CommentedOutCodeLineÚ"<This block of commented-out lines of code should be removed.(Ì©¨þÿÿÿÿHŸRMAJORZ
+CODE_SMELL
+~squid:CommentedOutCodeLineï"<This block of commented-out lines of code should be removed.(Äü³ÉûÿÿÿÿH RMAJORZ
+CODE_SMELL
+~squid:CommentedOutCodeLineù"<This block of commented-out lines of code should be removed.(ËÍ˜ÞþÿÿÿÿH¡RMAJORZ
+CODE_SMELL
+Zsquid:S1602´",Remove useless curly braces around statement(Š’–§H¢RMINORZ
+CODE_SMELL
+_squid:S1602¾",Remove useless curly braces around statement(À×¹—üÿÿÿÿH£RMINORZ
+CODE_SMELL
+_squid:S1602Ç",Remove useless curly braces around statement(È®ŽäúÿÿÿÿH¤RMINORZ
+CODE_SMELL
+Ysquid:S1602Ð",Remove useless curly braces around statement(·Û€kH¥RMINORZ
+CODE_SMELL
+Zsquid:S1602Ù",Remove useless curly braces around statement(°¡ï•H¦RMINORZ
+CODE_SMELL
+Zsquid:S1602â",Remove useless curly braces around statement(Í¬óÞH§RMINORZ
+CODE_SMELL
+Zsquid:S1602ë",Remove useless curly braces around statement(Å÷ù’H¨RMINORZ
+CODE_SMELL
+Zsquid:S1602õ",Remove useless curly braces around statement(´±Ö¯H©RMINORZ
+CODE_SMELL
+Zsquid:S1602þ",Remove useless curly braces around statement(ÙÈæHªRMINORZ
+CODE_SMELL
+Zsquid:S1602‰",Remove useless curly braces around statement(ÞÞäH«RMINORZ
+CODE_SMELL
+_squid:S1602’",Remove useless curly braces around statement(—°¥¤þÿÿÿÿH¬RMINORZ
+CODE_SMELL
+Zsquid:S1602",Remove useless curly braces around statement(Á’ÂšH­RMINORZ
+CODE_SMELL
+Zsquid:S1602º",Remove useless curly braces around statement(¶‘ô÷H®RMINORZ
+CODE_SMELL
+_squid:S1602Ó",Remove useless curly braces around statement(…Áµ„øÿÿÿÿH¯RMINORZ
+CODE_SMELL
+Zsquid:S1602ñ",Remove useless curly braces around statement(‰Ð‰³H°RMINORZ
+CODE_SMELL
+_squid:S1602û",Remove useless curly braces around statement(„Ýé½þÿÿÿÿH±RMINORZ
+CODE_SMELL
+^squid:S1948B"/Make "freeColClient" transient or serializable.(ëÁØwH²RCRITICALZ
+CODE_SMELL
+{squid:MaximumInheritanceDepth8"<This class has 7 parents which is greater than 5 authorized.(Î »°H³RMAJORZ
+CODE_SMELL

@@ -1,0 +1,30 @@
+
+asquid:EmptyStatementUsageCheckG"Remove this empty statement.(ôŸìúÿÿÿÿHúRMINORZ
+CODE_SMELL
+Tsquid:S1659‚"!Declare "can" on a separate line.(ºô…„ûÿÿÿÿHûRMINORZ
+CODE_SMELL
+Ssquid:S1659‚" Declare "ok" on a separate line.(ºô…„ûÿÿÿÿHüRMINORZ
+CODE_SMELL
+Rsquid:S1659‚"Declare "i" on a separate line.(ºô…„ûÿÿÿÿHıRMINORZ
+CODE_SMELL
+Vsquid:S2786D")Remove this redundant "static" qualifier.(¶±À…HşRMINORZ
+CODE_SMELL
+ysquid:S1301©"KReplace this "switch" statement by "if" statements to increase readability.(ÜŸ•HÿRMINORZ
+CODE_SMELL
+jsquid:S2886ì"CSynchronize this method to match the synchronization on "setValue".(ìÑ‘•H€RMAJORZBUG
+~squid:CommentedOutCodeLineî"<This block of commented-out lines of code should be removed.(‰•Ã§üÿÿÿÿHRMAJORZ
+CODE_SMELL
+~squid:CommentedOutCodeLineñ"<This block of commented-out lines of code should be removed.(ç¸ŠŒúÿÿÿÿH‚RMAJORZ
+CODE_SMELL
+wsquid:S3358‰"DExtract this nested ternary operation into an independent statement.(³ßÿÿÿÿÿHƒRMAJORZ
+CODE_SMELL
+wsquid:S3358‰"DExtract this nested ternary operation into an independent statement.(³ßÿÿÿÿÿH„RMAJORZ
+CODE_SMELL
+_squid:S2387M"+"modal" is the name of a field in "Dialog".(ÆşÖ¾úÿÿÿÿH…RBLOCKERZ
+CODE_SMELL
+dsquid:S1948J"/Make "freeColClient" transient or serializable.(ƒ²àìûÿÿÿÿH†RCRITICALZ
+CODE_SMELL
+Ysquid:S1948P")Make "options" transient or serializable.(±™œ£H‡RCRITICALZ
+CODE_SMELL
+€squid:MaximumInheritanceDepth@"<This class has 6 parents which is greater than 5 authorized.( ƒô§úÿÿÿÿHˆRMAJORZ
+CODE_SMELL

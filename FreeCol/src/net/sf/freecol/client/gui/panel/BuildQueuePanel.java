@@ -1096,7 +1096,7 @@ public class BuildQueuePanel extends FreeColPanel implements ItemListener {
      */
     @Override
     public void itemStateChanged(ItemEvent event) {
-        if (event.getSource() == this.compactBox) {
+        if (event.getSource() == compactBox) {
             updateDetailView();
             defaultCompact = this.compactBox.isSelected();
         } else if (event.getSource() == this.showAllBox) {
