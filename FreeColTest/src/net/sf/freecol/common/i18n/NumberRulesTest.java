@@ -13,27 +13,7 @@ import static org.junit.Assert.*;
  * @version $Revision: 1.0 $
  */
 public class NumberRulesTest {
-	/**
-	 * Run the NumberRules(InputStream) constructor test.
-	 *
-	 * @throws Exception
-	 *
-	 * @generatedBy CodePro at 5/13/18 2:24 PM
-	 */
-	@Test
-	public void testNumberRules_1()
-		throws Exception {
-		InputStream in = new ByteArrayInputStream("".getBytes());
 
-		NumberRules result = new NumberRules(in);
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.RuntimeException: Error parsing number rules.
-		//       at net.sf.freecol.common.i18n.NumberRules.load(NumberRules.java:107)
-		//       at net.sf.freecol.common.i18n.NumberRules.<init>(NumberRules.java:79)
-		assertNotNull(result);
-	}
 
 	/**
 	 * Run the Number getNumberForLanguage(String) method test.

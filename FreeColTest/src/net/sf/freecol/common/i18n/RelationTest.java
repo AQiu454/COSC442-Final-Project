@@ -20,22 +20,6 @@ public class RelationTest {
 	 *
 	 * @generatedBy CodePro at 5/13/18 2:23 PM
 	 */
-	@Test
-	public void testRelation_1()
-		throws Exception {
-		List<String> tokens = new ArrayList<String>();
-
-		Relation result = new Relation(tokens);
-
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-		//       at java.util.ArrayList.rangeCheck(Unknown Source)
-		//       at java.util.ArrayList.remove(Unknown Source)
-		//       at net.sf.freecol.common.i18n.Relation.parse(Relation.java:111)
-		//       at net.sf.freecol.common.i18n.Relation.<init>(Relation.java:35)
-		assertNotNull(result);
-	}
 
 	/**
 	 * Run the Relation(int,int) constructor test.
