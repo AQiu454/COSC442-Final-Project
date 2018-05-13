@@ -35,16 +35,16 @@ import org.w3c.dom.Element;
  */
 public abstract class AbstractMission extends FreeColGameObject implements Mission {
 
-    /**
+  /**
      * The Unit this mission was assigned to. Must not be null.
      */
-    private Unit unit;
+  private Unit unit;
 
     /**
      * The number of times this mission should be repeated. Defaults
      * to 1.
      */
-    private int repeatCount = 1;
+  private int repeatCount = 1;
 
     /**
      * The number of turns this mission will take to carry out. In
@@ -52,7 +52,7 @@ public abstract class AbstractMission extends FreeColGameObject implements Missi
      * a fixed number of turns to carry out. Building TileImprovements
      * and learning in school would be exceptions, however.
      */
-    private int turnCount;
+  private int turnCount;
 
 
     /**
@@ -60,10 +60,10 @@ public abstract class AbstractMission extends FreeColGameObject implements Missi
      *
      * @return an <code>Unit</code> value
      */
-    @Override
+  @Override
     public final Unit getUnit() {
-        return unit;
-    }
+      return unit;
+  }
 
     /**
      * Creates a new <code>AbstractMission</code> instance.

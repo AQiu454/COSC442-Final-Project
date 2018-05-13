@@ -37,7 +37,7 @@ public final class Ability extends Feature {
      * The ability to add the current tax as a bonus to the production
      * of bells.  Provided by the {@link FoundingFather} Thomas Paine.
      */
-    public static final String ADD_TAX_TO_BELLS
+  public static final String ADD_TAX_TO_BELLS
         = "model.ability.addTaxToBells";
 
     /** The ability to always receive a peace offer (Franklin). */
@@ -501,7 +501,9 @@ public final class Ability extends Feature {
      */
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
+        if (this == o) {
+			return true;
+		}
         if (o instanceof Ability) {
             return this.value == ((Ability)o).value
                 && super.equals(o);
