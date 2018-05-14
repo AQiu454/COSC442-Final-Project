@@ -30,6 +30,7 @@ import net.sf.freecol.common.io.FreeColModFile;
 import net.sf.freecol.common.io.FreeColXMLReader;
 import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.io.Mods;
+import net.sf.freecol.common.model.AbstractUnit;
 import net.sf.freecol.common.model.Specification;
 
 import static net.sf.freecol.common.util.CollectionUtils.*;
