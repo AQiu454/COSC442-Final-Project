@@ -1217,6 +1217,7 @@ public final class FreeColServer {
      * a previous game.
      */
     public static void removeAutosaves(final String prefix) {
+    	
         for (File autosaveFile : FreeColDirectories.getAutosaveDirectory().listFiles()) {
             if (autosaveFile.getName().startsWith(prefix)) {
                 autosaveFile.delete();

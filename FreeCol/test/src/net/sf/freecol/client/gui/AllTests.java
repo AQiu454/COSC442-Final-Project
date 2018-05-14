@@ -30,6 +30,7 @@ public class AllTests {
         //$JUnit-BEGIN$
         suite.addTestSuite(FontTest.class);
         //$JUnit-END$
+        
         return suite;
     }
 

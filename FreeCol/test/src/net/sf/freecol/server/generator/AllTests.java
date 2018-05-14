@@ -29,6 +29,8 @@ public class AllTests {
         TestSuite suite = new TestSuite("Test for net.sf.freecol.server.generator");
         //$JUnit-BEGIN$
         suite.addTestSuite(MapGeneratorTest.class);
+        suite.addTestSuite(SimpleMapGeneratorTest.class);
+        suite.addTestSuite(TerrainGeneratorTest.class);
         //$JUnit-END$
         return suite;
     }

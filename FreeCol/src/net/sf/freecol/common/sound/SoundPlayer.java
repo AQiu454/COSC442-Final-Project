@@ -173,7 +173,7 @@ public class SoundPlayer {
         }
 
         private synchronized void awaken() {
-            notify();
+           notify();
         }
 
         private synchronized void goToSleep() throws InterruptedException {

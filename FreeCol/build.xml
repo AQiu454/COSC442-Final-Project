@@ -3,7 +3,18 @@
 <!-- This file includes targets for building FreeCol,
      the metaserver, distribution packages, running tests
      and creating documentation. -->
-<project name="FreeCol" default="package">
+
+<!--Added
+<taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml"> 
+        <classpath path="/Users/dibasy/Documents/Software/jacoco-0.8.1/lib"/> 
+    </taskdef>  
+ -->
+<!--Added
+<project name="FreeCol" xmlns:jacoco="antlib:org.jacoco.ant" default="package">
+-->
+
+<project name="FreeCol" default="package"> 
+
     <description>
         This file includes targets for building FreeCol,
         the metaserver, distribution packages, running tests
@@ -111,6 +122,23 @@
         </javac>
     </target>
 
+
+<!--Added
+<jacoco:coverage destfile="${result.exec.file}">
+        <junit printsummary="on" errorProperty="error.junit"
+            failureProperty="error.junit" fork="yes" maxmemory="96M">
+            <classpath refid="test.run.classpath" />
+            <formatter type="xml" />
+
+            <test todir="${freecol.build.dir}/report/xml"
+                name="net.sf.freecol.AllTests" fork="yes" />
+-->
+            <!-- <batchtest fork="false" todir="${freecol.build.dir}/report/xml"> 
+                <fileset dir="test/src" includes="**/*Test.java" /> </batchtest> 
+            <sysproperty key="java.awt.headless" value="true" />
+       -->
+
+
     <!-- Compile the JUnit tests -->
     <target name="compile-test" depends="init">
         <mkdir dir="${freecol.build.dir}"/>
@@ -157,6 +185,10 @@
         </manifest>
     </target>
 
+<!--Added
+ </junit>
+</jacoco:coverage>
+-->
     <!-- Compiles the source files and creates a JAR-file. -->
     <target name="package" depends="init,build,manifest" description="Compiles the source files and creates a JAR-file.">
         <jar jarfile="${freecol.jar.file}"

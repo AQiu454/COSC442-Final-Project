@@ -925,16 +925,16 @@ public class SimpleMapGenerator implements MapGenerator {
                                   LogBuilder lb) {
         // In debug mode give each player a few more units and a colony.
         UnitType unitType = spec.getUnitType("model.unit.galleon");
-        Unit unit4 = new ServerUnit(game, startTile, player, unitType);
+      //  Unit unit4 = new ServerUnit(game, startTile, player, unitType);
         unitType = spec.getUnitType("model.unit.privateer");
         Unit privateer = new ServerUnit(game, startTile, player, unitType);
         ((ServerPlayer)player).exploreForUnit(privateer);
         unitType = spec.getUnitType("model.unit.freeColonist");
-        Unit unit5 = new ServerUnit(game, unit4, player, unitType);
+       // Unit unit5 = new ServerUnit(game, unit4, player, unitType);
         unitType = spec.getUnitType("model.unit.veteranSoldier");
-        Unit unit6 = new ServerUnit(game, unit4, player, unitType);
+        //Unit unit6 = new ServerUnit(game, unit4, player, unitType);
         unitType = spec.getUnitType("model.unit.jesuitMissionary");
-        Unit unit7 = new ServerUnit(game, unit4, player, unitType);
+       // Unit unit7 = new ServerUnit(game, unit4, player, unitType);
 
         Tile colonyTile = null;
         for (Tile tempTile : map.getCircleTiles(startTile, true, 
@@ -1008,19 +1008,19 @@ public class SimpleMapGenerator implements MapGenerator {
         }
 
         unitType = spec.getUnitType("model.unit.masterCarpenter");
-        Unit carpenter = new ServerUnit(game, colony, player, unitType);
+        //Unit carpenter = new ServerUnit(game, colony, player, unitType);
 
         unitType = spec.getUnitType("model.unit.seasonedScout");
         Unit scout = new ServerUnit(game, colonyTile, player, unitType);
         ((ServerPlayer)player).exploreForUnit(scout);
 
         unitType = spec.getUnitType("model.unit.veteranSoldier");
-        Unit unit8 = new ServerUnit(game, colonyTile, player, unitType);
-        Unit unit9 = new ServerUnit(game, colonyTile, player, unitType);
+       // Unit unit8 = new ServerUnit(game, colonyTile, player, unitType);
+       // Unit unit9 = new ServerUnit(game, colonyTile, player, unitType);
         unitType = spec.getUnitType("model.unit.artillery");
-        Unit unit10 = new ServerUnit(game, colonyTile, player, unitType);
-        Unit unit11 = new ServerUnit(game, colonyTile, player, unitType);
-        Unit unit12 = new ServerUnit(game, colonyTile, player, unitType);
+       // Unit unit10 = new ServerUnit(game, colonyTile, player, unitType);
+       // Unit unit11 = new ServerUnit(game, colonyTile, player, unitType);
+       // Unit unit12 = new ServerUnit(game, colonyTile, player, unitType);
         unitType = spec.getUnitType("model.unit.treasureTrain");
         Unit unit13 = new ServerUnit(game, colonyTile, player, unitType);
         unit13.setTreasureAmount(10000);
@@ -1030,8 +1030,8 @@ public class SimpleMapGenerator implements MapGenerator {
         Goods cigards = new Goods(game, unit14, cigarsType, 5);
         unit14.add(cigards);
         unitType = spec.getUnitType("model.unit.jesuitMissionary");
-        Unit unit15 = new ServerUnit(game, colonyTile, player, unitType);
-        Unit unit16 = new ServerUnit(game, colonyTile, player, unitType);
+      //  Unit unit15 = new ServerUnit(game, colonyTile, player, unitType);
+      //  Unit unit16 = new ServerUnit(game, colonyTile, player, unitType);
 
         ((ServerPlayer)player).exploreForSettlement(colony);
     }

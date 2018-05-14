@@ -862,7 +862,7 @@ public class ServerUnit extends Unit implements ServerModelObject {
         // Plan to update tiles that could not be seen before but will
         // now be within the line-of-sight.
         final Location oldLocation = getLocation();
-        List<Tile> oldTiles = (oldLocation.getTile() == null)
+        List<Tile> oldTiles = (oldLocation.getTile() != null)
             ? Collections.<Tile>emptyList()
             : oldLocation.getTile().getSurroundingTiles(1, getLineOfSight());
         List<Tile> newTiles = collectNewTiles(newTile);
