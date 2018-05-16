@@ -1,1 +1,9 @@
 /.metadata/
+FreeCol/build/net/sf/freecol/common/model/AbstractGoods.class
+FreeCol/build/net/sf/freecol/common/model/Ability.class
+FreeCol/build/net/sf/freecol/common/model/AbstractGoods$1.class
+FreeCol/build/net/sf/freecol/common/model/AbstractGoods.class
+FreeCol/build/net/sf/freecol/common/model/AbstractUnit.class
+FreeCol/build/net/sf/freecol/common/model/BuildableType.class
+*.class
+*.class
