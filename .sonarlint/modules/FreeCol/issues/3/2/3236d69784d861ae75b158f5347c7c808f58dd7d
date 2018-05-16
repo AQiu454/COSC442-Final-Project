@@ -1,0 +1,411 @@
+
+gsquid:S2184“"@Cast one of the operands of this integer division to a "double".(¿“÷ÚH£#RMINORZBUG
+Osquid:S1643¤"Use a StringBuilder instead.(æÆ‰“ùÿÿÿÿH¤#RMINORZ
+CODE_SMELL
+bsquid:EmptyStatementUsageCheckò"Remove this empty statement.(ÎçÄœøÿÿÿÿH¥#RMINORZ
+CODE_SMELL
+bsquid:EmptyStatementUsageCheckõ"Remove this empty statement.(ÎçÄœøÿÿÿÿH¦#RMINORZ
+CODE_SMELL
+jsquid:S2629®"7Use the built-in formatting to construct this argument.(ÌÃñıÿÿÿÿH§#RMAJORZ
+CODE_SMELL
+Wsquid:S2629¸"$Invoke method(s) only conditionally.(—Î ·úÿÿÿÿH¨#RMAJORZ
+CODE_SMELL
+Rsquid:S2629¹"$Invoke method(s) only conditionally.(ğ—êH©#RMAJORZ
+CODE_SMELL
+jsquid:S2629Ö"7Use the built-in formatting to construct this argument.(£ö—ÂùÿÿÿÿHª#RMAJORZ
+CODE_SMELL
+Zsquid:S1659ˆ",Declare "consoleLogging" on a separate line.(¸©İŒH«#RMINORZ
+CODE_SMELL
+Vsquid:S1659‰"(Declare "debugStart" on a separate line.(×‹˜H¬#RMINORZ
+CODE_SMELL
+Zsquid:S1659Š"'Declare "fastStart" on a separate line.(²™·¸ıÿÿÿÿH­#RMINORZ
+CODE_SMELL
+Ysquid:S1659‹"&Declare "headless" on a separate line.(ö®’–ùÿÿÿÿH®#RMINORZ
+CODE_SMELL
+Vsquid:S1659Œ"(Declare "introVideo" on a separate line.(íï°åH¯#RMINORZ
+CODE_SMELL
+Zsquid:S1659"'Declare "javaCheck" on a separate line.(Äˆ¦ùÿÿÿÿH°#RMINORZ
+CODE_SMELL
+\squid:S1659")Declare "memoryCheck" on a separate line.(É×ÆúÿÿÿÿH±#RMINORZ
+CODE_SMELL
+Xsquid:S1659"*Declare "publicServer" on a separate line.( ØŒ·H²#RMINORZ
+CODE_SMELL
+Vsquid:S1659"#Declare "sound" on a separate line.(Œ¸¤àøÿÿÿÿH³#RMINORZ
+CODE_SMELL
+\squid:S1659‘".Declare "standAloneServer" on a separate line.(Œ»‹ÖH´#RMINORZ
+CODE_SMELL
+}squid:S1192›"GDefine a constant instead of duplicating this literal "%name%" 3 times.(ÏÚåÀúÿÿÿÿHµ#RCRITICALZ
+CODE_SMELL
+squid:S1192Œ"IDefine a constant instead of duplicating this literal "log-file" 3 times.(ì…ı§øÿÿÿÿH¶#RCRITICALZ
+CODE_SMELL
+squid:S1192†"IDefine a constant instead of duplicating this literal "%string%" 8 times.(Ù³£ÑıÿÿÿÿH·#RCRITICALZ
+CODE_SMELL
+|squid:S1192µ"LDefine a constant instead of duplicating this literal "server-name" 3 times.(øÿ©H¸#RCRITICALZ
+CODE_SMELL
+wsquid:S1192Ö"FDefine a constant instead of duplicating this literal "debug" 3 times.(„‘Á—H¹#RCRITICALZ
+CODE_SMELL
+squid:S1192Å"KDefine a constant instead of duplicating this literal "advantages" 3 times.(Õ¤£÷üÿÿÿÿHº#RCRITICALZ
+CODE_SMELL
+„squid:S1192Ñ"NDefine a constant instead of duplicating this literal "clientOptions" 3 times.(å™ÚÚùÿÿÿÿH»#RCRITICALZ
+CODE_SMELL
+{squid:S1192İ"JDefine a constant instead of duplicating this literal "debug-run" 3 times.(Ò·í´H¼#RCRITICALZ
+CODE_SMELL
+squid:S1192ã"IDefine a constant instead of duplicating this literal "windowed" 3 times.(åšË¢øÿÿÿÿH½#RCRITICALZ
+CODE_SMELL
+{squid:S1192‘"JDefine a constant instead of duplicating this literal "log-level" 4 times.(øÖúˆH¾#RCRITICALZ
+CODE_SMELL
+~squid:S1192É"HDefine a constant instead of duplicating this literal "timeout" 3 times.(á¦½ÿÿÿÿÿH¿#RCRITICALZ
+CODE_SMELL
+|squid:S1192ş"FDefine a constant instead of duplicating this literal "%arg%" 3 times.(ŠèŸ¼ùÿÿÿÿHÀ#RCRITICALZ
+CODE_SMELL
+€squid:S1192ú"JDefine a constant instead of duplicating this literal "gui-scale" 3 times.(ÿ§ÍøÿÿÿÿHÁ#RCRITICALZ
+CODE_SMELL
+~squid:S1192Î"MDefine a constant instead of duplicating this literal "cli.arg.file" 3 times.(áÑ¯HÂ#RCRITICALZ
+CODE_SMELL
+squid:S1192å"KDefine a constant instead of duplicating this literal "difficulty" 3 times.(äöšóÿÿÿÿÿHÃ#RCRITICALZ
+CODE_SMELL
+ƒsquid:S1192"MDefine a constant instead of duplicating this literal "cli.arg.name" 4 times.(ˆéñÙÿÿÿÿÿHÄ#RCRITICALZ
+CODE_SMELL
+xsquid:S1192¿"GDefine a constant instead of duplicating this literal "splash" 3 times.(ï¨ÊöHÅ#RCRITICALZ
+CODE_SMELL
+€squid:S1192Ì"ODefine a constant instead of duplicating this literal "check-savegame" 3 times.(‚²ÿÅHÆ#RCRITICALZ
+CODE_SMELL
+†squid:S1192Î"UDefine a constant instead of duplicating this literal "user-cache-directory" 3 times.(—†üHÇ#RCRITICALZ
+CODE_SMELL
+Œsquid:S1192Ô"VDefine a constant instead of duplicating this literal "user-config-directory" 3 times.(Š»½ıÿÿÿÿÿHÈ#RCRITICALZ
+CODE_SMELL
+€squid:S1192ê"JDefine a constant instead of duplicating this literal "europeans" 3 times.(ıçğˆùÿÿÿÿHÉ#RCRITICALZ
+CODE_SMELL
+…squid:S1192Ú"TDefine a constant instead of duplicating this literal "user-data-directory" 3 times.(ÏÜó¢HÊ#RCRITICALZ
+CODE_SMELL
+}squid:S1192º"LDefine a constant instead of duplicating this literal "server-port" 3 times.(™†±£HË#RCRITICALZ
+CODE_SMELL
+squid:S1192„"NDefine a constant instead of duplicating this literal "load-savegame" 3 times.(¬äš¾HÌ#RCRITICALZ
+CODE_SMELL
+bsquid:S1066¹
+"/Merge this if statement with the enclosing one.(Í“­ÏüÿÿÿÿHÍ#RMAJORZ
+CODE_SMELL
+f
+squid:S106Ê"9Replace this use of System.out or System.err by a logger.(Åæ‚ºHÎ#RMAJORZ
+CODE_SMELL
+f
+squid:S106Ô"9Replace this use of System.out or System.err by a logger.(½¶¥HÏ#RMAJORZ
+CODE_SMELL
+k
+squid:S106Ú"9Replace this use of System.out or System.err by a logger.(¶·˜œûÿÿÿÿHĞ#RMAJORZ
+CODE_SMELL
+k
+squid:S106—"9Replace this use of System.out or System.err by a logger.(­·›İøÿÿÿÿHÑ#RMAJORZ
+CODE_SMELL
+f
+squid:S106ı"9Replace this use of System.out or System.err by a logger.(ÉÒ‘HÒ#RMAJORZ
+CODE_SMELL
+f
+squid:S106‡"9Replace this use of System.out or System.err by a logger.(âãáûHÓ#RMAJORZ
+CODE_SMELL
+e
+squid:S106"9Replace this use of System.out or System.err by a logger.(áÇîoHÔ#RMAJORZ
+CODE_SMELL
+k
+squid:S106È"9Replace this use of System.out or System.err by a logger.(—ò½–ÿÿÿÿÿHÕ#RMAJORZ
+CODE_SMELL
+e
+squid:S106Ò"9Replace this use of System.out or System.err by a logger.(„»“^HÖ#RMAJORZ
+CODE_SMELL
+f
+squid:S106ô"9Replace this use of System.out or System.err by a logger.(ÛßŠ·H×#RMAJORZ
+CODE_SMELL
+hsquid:S1141–"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿHØ#RMAJORZ
+CODE_SMELL
+jsquid:S2589í
+"7Remove this expression which always evaluates to "true"(¨Æ˜§úÿÿÿÿHÙ#RMAJORZ
+CODE_SMELL
+ƒsquid:S3776Ã"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(Çµí‘HÚ#RCRITICALZ
+CODE_SMELL
+ˆsquid:S3776ª"RRefactor this method to reduce its Cognitive Complexity from 75 to the 15 allowed.(ÄÜ´¿ıÿÿÿÿHÛ#RCRITICALZ
+CODE_SMELL
+ƒsquid:S3776Ì
+"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(òˆøûHÜ#RCRITICALZ
+CODE_SMELL
+hsquid:S2209±"5Change this instance-reference to a static reference.(ÔŠşÿÿÿÿHİ#RMAJORZ
+CODE_SMELL
+hsquid:S2209±"5Change this instance-reference to a static reference.(ÔŠşÿÿÿÿHŞ#RMAJORZ
+CODE_SMELL
+csquid:S2209´"5Change this instance-reference to a static reference.(èöÚ“Hß#RMAJORZ
+CODE_SMELL
+csquid:S2209´"5Change this instance-reference to a static reference.(èöÚ“Hà#RMAJORZ
+CODE_SMELL
+hsquid:S2209¹"5Change this instance-reference to a static reference.(‡°¤åıÿÿÿÿHá#RMAJORZ
+CODE_SMELL
+hsquid:S2209¹"5Change this instance-reference to a static reference.(‡°¤åıÿÿÿÿHâ#RMAJORZ
+CODE_SMELL
+hsquid:S2209¹"5Change this instance-reference to a static reference.(‡°¤åıÿÿÿÿHã#RMAJORZ
+CODE_SMELL
+hsquid:S2209¹"5Change this instance-reference to a static reference.(‡°¤åıÿÿÿÿHä#RMAJORZ
+CODE_SMELL
+hsquid:S2209¾"5Change this instance-reference to a static reference.(¼öê½øÿÿÿÿHå#RMAJORZ
+CODE_SMELL
+hsquid:S2209¾"5Change this instance-reference to a static reference.(¼öê½øÿÿÿÿHæ#RMAJORZ
+CODE_SMELL
+hsquid:S2209¾"5Change this instance-reference to a static reference.(¼öê½øÿÿÿÿHç#RMAJORZ
+CODE_SMELL
+hsquid:S2209¾"5Change this instance-reference to a static reference.(¼öê½øÿÿÿÿHè#RMAJORZ
+CODE_SMELL
+hsquid:S2209Å"5Change this instance-reference to a static reference.(Õ¤£÷üÿÿÿÿHé#RMAJORZ
+CODE_SMELL
+hsquid:S2209Å"5Change this instance-reference to a static reference.(Õ¤£÷üÿÿÿÿHê#RMAJORZ
+CODE_SMELL
+hsquid:S2209Å"5Change this instance-reference to a static reference.(Õ¤£÷üÿÿÿÿHë#RMAJORZ
+CODE_SMELL
+hsquid:S2209Å"5Change this instance-reference to a static reference.(Õ¤£÷üÿÿÿÿHì#RMAJORZ
+CODE_SMELL
+csquid:S2209Ì"5Change this instance-reference to a static reference.(‚²ÿÅHí#RMAJORZ
+CODE_SMELL
+csquid:S2209Ì"5Change this instance-reference to a static reference.(‚²ÿÅHî#RMAJORZ
+CODE_SMELL
+csquid:S2209Ì"5Change this instance-reference to a static reference.(‚²ÿÅHï#RMAJORZ
+CODE_SMELL
+csquid:S2209Ì"5Change this instance-reference to a static reference.(‚²ÿÅHğ#RMAJORZ
+CODE_SMELL
+hsquid:S2209Ñ"5Change this instance-reference to a static reference.(å™ÚÚùÿÿÿÿHñ#RMAJORZ
+CODE_SMELL
+hsquid:S2209Ñ"5Change this instance-reference to a static reference.(å™ÚÚùÿÿÿÿHò#RMAJORZ
+CODE_SMELL
+hsquid:S2209Ñ"5Change this instance-reference to a static reference.(å™ÚÚùÿÿÿÿHó#RMAJORZ
+CODE_SMELL
+hsquid:S2209Ñ"5Change this instance-reference to a static reference.(å™ÚÚùÿÿÿÿHô#RMAJORZ
+CODE_SMELL
+csquid:S2209Ö"5Change this instance-reference to a static reference.(„‘Á—Hõ#RMAJORZ
+CODE_SMELL
+csquid:S2209Ö"5Change this instance-reference to a static reference.(„‘Á—Hö#RMAJORZ
+CODE_SMELL
+csquid:S2209Ö"5Change this instance-reference to a static reference.(„‘Á—H÷#RMAJORZ
+CODE_SMELL
+csquid:S2209Ö"5Change this instance-reference to a static reference.(„‘Á—Hø#RMAJORZ
+CODE_SMELL
+csquid:S2209İ"5Change this instance-reference to a static reference.(Ò·í´Hù#RMAJORZ
+CODE_SMELL
+csquid:S2209İ"5Change this instance-reference to a static reference.(Ò·í´Hú#RMAJORZ
+CODE_SMELL
+csquid:S2209İ"5Change this instance-reference to a static reference.(Ò·í´Hû#RMAJORZ
+CODE_SMELL
+csquid:S2209İ"5Change this instance-reference to a static reference.(Ò·í´Hü#RMAJORZ
+CODE_SMELL
+hsquid:S2209â"5Change this instance-reference to a static reference.(êà“šÿÿÿÿÿHı#RMAJORZ
+CODE_SMELL
+hsquid:S2209â"5Change this instance-reference to a static reference.(êà“šÿÿÿÿÿHş#RMAJORZ
+CODE_SMELL
+hsquid:S2209å"5Change this instance-reference to a static reference.(äöšóÿÿÿÿÿHÿ#RMAJORZ
+CODE_SMELL
+hsquid:S2209å"5Change this instance-reference to a static reference.(äöšóÿÿÿÿÿH€$RMAJORZ
+CODE_SMELL
+hsquid:S2209å"5Change this instance-reference to a static reference.(äöšóÿÿÿÿÿH$RMAJORZ
+CODE_SMELL
+hsquid:S2209å"5Change this instance-reference to a static reference.(äöšóÿÿÿÿÿH‚$RMAJORZ
+CODE_SMELL
+hsquid:S2209ê"5Change this instance-reference to a static reference.(ıçğˆùÿÿÿÿHƒ$RMAJORZ
+CODE_SMELL
+hsquid:S2209ê"5Change this instance-reference to a static reference.(ıçğˆùÿÿÿÿH„$RMAJORZ
+CODE_SMELL
+hsquid:S2209ê"5Change this instance-reference to a static reference.(ıçğˆùÿÿÿÿH…$RMAJORZ
+CODE_SMELL
+hsquid:S2209ê"5Change this instance-reference to a static reference.(ıçğˆùÿÿÿÿH†$RMAJORZ
+CODE_SMELL
+csquid:S2209ï"5Change this instance-reference to a static reference.(€¹œãH‡$RMAJORZ
+CODE_SMELL
+csquid:S2209ï"5Change this instance-reference to a static reference.(€¹œãHˆ$RMAJORZ
+CODE_SMELL
+hsquid:S2209ò"5Change this instance-reference to a static reference.(Û›ş¥ùÿÿÿÿH‰$RMAJORZ
+CODE_SMELL
+hsquid:S2209ò"5Change this instance-reference to a static reference.(Û›ş¥ùÿÿÿÿHŠ$RMAJORZ
+CODE_SMELL
+hsquid:S2209ò"5Change this instance-reference to a static reference.(Û›ş¥ùÿÿÿÿH‹$RMAJORZ
+CODE_SMELL
+hsquid:S2209ò"5Change this instance-reference to a static reference.(Û›ş¥ùÿÿÿÿHŒ$RMAJORZ
+CODE_SMELL
+csquid:S2209÷"5Change this instance-reference to a static reference.(’šÃ H$RMAJORZ
+CODE_SMELL
+csquid:S2209÷"5Change this instance-reference to a static reference.(’šÃ H$RMAJORZ
+CODE_SMELL
+hsquid:S2209ú"5Change this instance-reference to a static reference.(ÿ§ÍøÿÿÿÿH$RMAJORZ
+CODE_SMELL
+hsquid:S2209ú"5Change this instance-reference to a static reference.(ÿ§ÍøÿÿÿÿH$RMAJORZ
+CODE_SMELL
+hsquid:S2209ú"5Change this instance-reference to a static reference.(ÿ§ÍøÿÿÿÿH‘$RMAJORZ
+CODE_SMELL
+hsquid:S2209ú"5Change this instance-reference to a static reference.(ÿ§ÍøÿÿÿÿH’$RMAJORZ
+CODE_SMELL
+csquid:S2209"5Change this instance-reference to a static reference.(Ğ¦ªÀH“$RMAJORZ
+CODE_SMELL
+csquid:S2209"5Change this instance-reference to a static reference.(Ğ¦ªÀH”$RMAJORZ
+CODE_SMELL
+csquid:S2209„"5Change this instance-reference to a static reference.(¬äš¾H•$RMAJORZ
+CODE_SMELL
+csquid:S2209„"5Change this instance-reference to a static reference.(¬äš¾H–$RMAJORZ
+CODE_SMELL
+csquid:S2209„"5Change this instance-reference to a static reference.(¬äš¾H—$RMAJORZ
+CODE_SMELL
+csquid:S2209„"5Change this instance-reference to a static reference.(¬äš¾H˜$RMAJORZ
+CODE_SMELL
+csquid:S2209‰"5Change this instance-reference to a static reference.(Œ•»ôH™$RMAJORZ
+CODE_SMELL
+csquid:S2209‰"5Change this instance-reference to a static reference.(Œ•»ôHš$RMAJORZ
+CODE_SMELL
+hsquid:S2209Œ"5Change this instance-reference to a static reference.(ì…ı§øÿÿÿÿH›$RMAJORZ
+CODE_SMELL
+hsquid:S2209Œ"5Change this instance-reference to a static reference.(ì…ı§øÿÿÿÿHœ$RMAJORZ
+CODE_SMELL
+hsquid:S2209Œ"5Change this instance-reference to a static reference.(ì…ı§øÿÿÿÿH$RMAJORZ
+CODE_SMELL
+hsquid:S2209Œ"5Change this instance-reference to a static reference.(ì…ı§øÿÿÿÿH$RMAJORZ
+CODE_SMELL
+csquid:S2209‘"5Change this instance-reference to a static reference.(øÖúˆHŸ$RMAJORZ
+CODE_SMELL
+csquid:S2209‘"5Change this instance-reference to a static reference.(øÖúˆH $RMAJORZ
+CODE_SMELL
+csquid:S2209‘"5Change this instance-reference to a static reference.(øÖúˆH¡$RMAJORZ
+CODE_SMELL
+csquid:S2209‘"5Change this instance-reference to a static reference.(øÖúˆH¢$RMAJORZ
+CODE_SMELL
+hsquid:S2209–"5Change this instance-reference to a static reference.(’½ßğûÿÿÿÿH£$RMAJORZ
+CODE_SMELL
+hsquid:S2209–"5Change this instance-reference to a static reference.(’½ßğûÿÿÿÿH¤$RMAJORZ
+CODE_SMELL
+hsquid:S2209–"5Change this instance-reference to a static reference.(’½ßğûÿÿÿÿH¥$RMAJORZ
+CODE_SMELL
+hsquid:S2209–"5Change this instance-reference to a static reference.(’½ßğûÿÿÿÿH¦$RMAJORZ
+CODE_SMELL
+bsquid:S2209›"5Change this instance-reference to a static reference.(¶ü,H§$RMAJORZ
+CODE_SMELL
+bsquid:S2209›"5Change this instance-reference to a static reference.(¶ü,H¨$RMAJORZ
+CODE_SMELL
+csquid:S2209"5Change this instance-reference to a static reference.(õÆî‡H©$RMAJORZ
+CODE_SMELL
+csquid:S2209"5Change this instance-reference to a static reference.(õÆî‡Hª$RMAJORZ
+CODE_SMELL
+hsquid:S2209¡"5Change this instance-reference to a static reference.(†¬ÕşÿÿÿÿH«$RMAJORZ
+CODE_SMELL
+hsquid:S2209¡"5Change this instance-reference to a static reference.(†¬ÕşÿÿÿÿH¬$RMAJORZ
+CODE_SMELL
+hsquid:S2209¤"5Change this instance-reference to a static reference.(™—úÿÿÿÿH­$RMAJORZ
+CODE_SMELL
+hsquid:S2209¤"5Change this instance-reference to a static reference.(™—úÿÿÿÿH®$RMAJORZ
+CODE_SMELL
+hsquid:S2209§"5Change this instance-reference to a static reference.(˜˜‹§ûÿÿÿÿH¯$RMAJORZ
+CODE_SMELL
+hsquid:S2209§"5Change this instance-reference to a static reference.(˜˜‹§ûÿÿÿÿH°$RMAJORZ
+CODE_SMELL
+hsquid:S2209ª"5Change this instance-reference to a static reference.(Ñ³öˆüÿÿÿÿH±$RMAJORZ
+CODE_SMELL
+hsquid:S2209ª"5Change this instance-reference to a static reference.(Ñ³öˆüÿÿÿÿH²$RMAJORZ
+CODE_SMELL
+hsquid:S2209­"5Change this instance-reference to a static reference.(«çúøÿÿÿÿH³$RMAJORZ
+CODE_SMELL
+hsquid:S2209­"5Change this instance-reference to a static reference.(«çúøÿÿÿÿH´$RMAJORZ
+CODE_SMELL
+hsquid:S2209­"5Change this instance-reference to a static reference.(«çúøÿÿÿÿHµ$RMAJORZ
+CODE_SMELL
+hsquid:S2209­"5Change this instance-reference to a static reference.(«çúøÿÿÿÿH¶$RMAJORZ
+CODE_SMELL
+hsquid:S2209²"5Change this instance-reference to a static reference.(¬“üÿÿÿÿH·$RMAJORZ
+CODE_SMELL
+hsquid:S2209²"5Change this instance-reference to a static reference.(¬“üÿÿÿÿH¸$RMAJORZ
+CODE_SMELL
+bsquid:S2209µ"5Change this instance-reference to a static reference.(øÿ©H¹$RMAJORZ
+CODE_SMELL
+bsquid:S2209µ"5Change this instance-reference to a static reference.(øÿ©Hº$RMAJORZ
+CODE_SMELL
+bsquid:S2209µ"5Change this instance-reference to a static reference.(øÿ©H»$RMAJORZ
+CODE_SMELL
+bsquid:S2209µ"5Change this instance-reference to a static reference.(øÿ©H¼$RMAJORZ
+CODE_SMELL
+csquid:S2209º"5Change this instance-reference to a static reference.(™†±£H½$RMAJORZ
+CODE_SMELL
+csquid:S2209º"5Change this instance-reference to a static reference.(™†±£H¾$RMAJORZ
+CODE_SMELL
+csquid:S2209º"5Change this instance-reference to a static reference.(™†±£H¿$RMAJORZ
+CODE_SMELL
+csquid:S2209º"5Change this instance-reference to a static reference.(™†±£HÀ$RMAJORZ
+CODE_SMELL
+csquid:S2209¿"5Change this instance-reference to a static reference.(ï¨ÊöHÁ$RMAJORZ
+CODE_SMELL
+csquid:S2209¿"5Change this instance-reference to a static reference.(ï¨ÊöHÂ$RMAJORZ
+CODE_SMELL
+csquid:S2209¿"5Change this instance-reference to a static reference.(ï¨ÊöHÃ$RMAJORZ
+CODE_SMELL
+csquid:S2209¿"5Change this instance-reference to a static reference.(ï¨ÊöHÄ$RMAJORZ
+CODE_SMELL
+hsquid:S2209Ä"5Change this instance-reference to a static reference.(«öÀìıÿÿÿÿHÅ$RMAJORZ
+CODE_SMELL
+hsquid:S2209Ä"5Change this instance-reference to a static reference.(«öÀìıÿÿÿÿHÆ$RMAJORZ
+CODE_SMELL
+hsquid:S2209Ä"5Change this instance-reference to a static reference.(«öÀìıÿÿÿÿHÇ$RMAJORZ
+CODE_SMELL
+hsquid:S2209Ä"5Change this instance-reference to a static reference.(«öÀìıÿÿÿÿHÈ$RMAJORZ
+CODE_SMELL
+hsquid:S2209É"5Change this instance-reference to a static reference.(á¦½ÿÿÿÿÿHÉ$RMAJORZ
+CODE_SMELL
+hsquid:S2209É"5Change this instance-reference to a static reference.(á¦½ÿÿÿÿÿHÊ$RMAJORZ
+CODE_SMELL
+hsquid:S2209É"5Change this instance-reference to a static reference.(á¦½ÿÿÿÿÿHË$RMAJORZ
+CODE_SMELL
+hsquid:S2209É"5Change this instance-reference to a static reference.(á¦½ÿÿÿÿÿHÌ$RMAJORZ
+CODE_SMELL
+csquid:S2209Î"5Change this instance-reference to a static reference.(—†üHÍ$RMAJORZ
+CODE_SMELL
+csquid:S2209Î"5Change this instance-reference to a static reference.(—†üHÎ$RMAJORZ
+CODE_SMELL
+csquid:S2209Î"5Change this instance-reference to a static reference.(—†üHÏ$RMAJORZ
+CODE_SMELL
+csquid:S2209Î"5Change this instance-reference to a static reference.(—†üHĞ$RMAJORZ
+CODE_SMELL
+csquid:S2209Î"5Change this instance-reference to a static reference.(—†üHÑ$RMAJORZ
+CODE_SMELL
+hsquid:S2209Ô"5Change this instance-reference to a static reference.(Š»½ıÿÿÿÿÿHÒ$RMAJORZ
+CODE_SMELL
+hsquid:S2209Ô"5Change this instance-reference to a static reference.(Š»½ıÿÿÿÿÿHÓ$RMAJORZ
+CODE_SMELL
+hsquid:S2209Ô"5Change this instance-reference to a static reference.(Š»½ıÿÿÿÿÿHÔ$RMAJORZ
+CODE_SMELL
+hsquid:S2209Ô"5Change this instance-reference to a static reference.(Š»½ıÿÿÿÿÿHÕ$RMAJORZ
+CODE_SMELL
+hsquid:S2209Ô"5Change this instance-reference to a static reference.(Š»½ıÿÿÿÿÿHÖ$RMAJORZ
+CODE_SMELL
+csquid:S2209Ú"5Change this instance-reference to a static reference.(ÏÜó¢H×$RMAJORZ
+CODE_SMELL
+csquid:S2209Ú"5Change this instance-reference to a static reference.(ÏÜó¢HØ$RMAJORZ
+CODE_SMELL
+csquid:S2209Ú"5Change this instance-reference to a static reference.(ÏÜó¢HÙ$RMAJORZ
+CODE_SMELL
+csquid:S2209Ú"5Change this instance-reference to a static reference.(ÏÜó¢HÚ$RMAJORZ
+CODE_SMELL
+csquid:S2209Ú"5Change this instance-reference to a static reference.(ÏÜó¢HÛ$RMAJORZ
+CODE_SMELL
+hsquid:S2209à"5Change this instance-reference to a static reference.(ƒôáêüÿÿÿÿHÜ$RMAJORZ
+CODE_SMELL
+hsquid:S2209à"5Change this instance-reference to a static reference.(ƒôáêüÿÿÿÿHİ$RMAJORZ
+CODE_SMELL
+hsquid:S2209ã"5Change this instance-reference to a static reference.(åšË¢øÿÿÿÿHŞ$RMAJORZ
+CODE_SMELL
+hsquid:S2209ã"5Change this instance-reference to a static reference.(åšË¢øÿÿÿÿHß$RMAJORZ
+CODE_SMELL
+hsquid:S2209ã"5Change this instance-reference to a static reference.(åšË¢øÿÿÿÿHà$RMAJORZ
+CODE_SMELL
+hsquid:S2209ã"5Change this instance-reference to a static reference.(åšË¢øÿÿÿÿHá$RMAJORZ
+CODE_SMELL
+]squid:S00108¶")Either remove or fill this block of code.(§ëÙ»ùÿÿÿÿHâ$RMAJORZ
+CODE_SMELL
+]squid:S00108©	")Either remove or fill this block of code.(“Ùô†ÿÿÿÿÿHã$RMAJORZ
+CODE_SMELL
+]squid:S00108É	")Either remove or fill this block of code.(§ëÙ»ùÿÿÿÿHä$RMAJORZ
+CODE_SMELL
+]squid:S00108ç	")Either remove or fill this block of code.(§ëÙ»ùÿÿÿÿHå$RMAJORZ
+CODE_SMELL
+Zsquid:S1602›",Remove useless curly braces around statement(ó†÷™Hæ$RMINORZ
+CODE_SMELL
+wsquid:S3358¸	"DExtract this nested ternary operation into an independent statement.(‹ÃÔªùÿÿÿÿHç$RMAJORZ
+CODE_SMELL
+_squid:S1612¶",Replace this lambda with a method reference.(Æøé“øÿÿÿÿHè$RMINORZ
+CODE_SMELL
+Lsquid:S2386S"Make this member "protected".(¤¸ú&Hé$RMINORZVULNERABILITY
+Ysquid:S1148™"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHê$RMINORZVULNERABILITY

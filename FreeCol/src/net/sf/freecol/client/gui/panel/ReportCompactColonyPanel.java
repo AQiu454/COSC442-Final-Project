@@ -82,7 +82,7 @@ public final class ReportCompactColonyPanel extends ReportPanel
     private static class ColonySummary {
 
         /** Types of production for a given goods type. */
-        public static enum ProductionStatus {
+        public  enum ProductionStatus {
             FAIL,        // Negative production and below low alarm level
             BAD,         // Negative production
             NONE,        // No production at all
@@ -220,9 +220,7 @@ public final class ReportCompactColonyPanel extends ReportPanel
             // taught), the types for sites that really need a new
             // unit, the teachers, and the units that are not working.
             //
-            // FIXME: this needs to be merged with the requirements
-            // checking code, but that in turn should be opened up
-            // so the AI can use it...
+
             for (WorkLocation wl : colony.getAvailableWorkLocations()) {
                 if (!wl.canBeWorked()) continue;
                 if (wl.canTeach()) {
@@ -301,7 +299,6 @@ public final class ReportCompactColonyPanel extends ReportPanel
             } else if (p == 0) {
                 status = ProductionStatus.ZERO;
                 extra = 0;
-                deficit = null;
                 for (WorkLocation wl : colony.getWorkLocationsForProducing(goodsType)) {
                     ProductionInfo pi = colony.getProductionInfo(wl);
                     if (pi == null) continue;
@@ -327,7 +324,6 @@ public final class ReportCompactColonyPanel extends ReportPanel
             } else {
                 status = ProductionStatus.GOOD;
                 extra = 0;
-                deficit = null;
                 for (WorkLocation wl : colony.getWorkLocationsForProducing(goodsType)) {
                     ProductionInfo pi = colony.getProductionInfo(wl);
                     if (pi == null) continue;
@@ -808,7 +804,6 @@ public final class ReportCompactColonyPanel extends ReportPanel
             addTogether(buttons);
         }
 
-        // TODO: notWorking?
     }
     
     private List<JButton> unitButtons(final Map<UnitType, Suggestion> suggestions,
@@ -872,7 +867,8 @@ public final class ReportCompactColonyPanel extends ReportPanel
         Map<Region, Integer> rRegionMap = new HashMap<>();
         List<TileImprovementSuggestion> rTileSuggestions = new ArrayList<>();
         int rFamine = 0, rBonus = 0, rSizeChange = 0,
-            teacherLen = 0, improveLen = 0;
+            teacherLen = 0, 
+            improveLen = 0;
         double rNewColonist = 0.0;
         Map<GoodsType, ColonySummary.GoodsProduction> rProduction
             = new HashMap<>();

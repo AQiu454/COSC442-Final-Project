@@ -1,0 +1,69 @@
+
+ˆsquid:S3776·"RRefactor this method to reduce its Cognitive Complexity from 56 to the 15 allowed.(¦¼‚šøÿÿÿÿHæRCRITICALZ
+CODE_SMELL
+_squid:S1068®"1Remove this unused "numberOfItems" private field.(óœãàHÙRMAJORZ
+CODE_SMELL
+…
+squid:S135È"YReduce the total number of break and continue statements in this loop to use at most one.(ŞÎÒHáRMINORZ
+CODE_SMELL
+hsquid:S1948ï"2Make "featureContainer" transient or serializable.(²ãôÿÿÿÿÿHóRCRITICALZ
+CODE_SMELL
+^squid:S1948Š"-Make "lockReasons" transient or serializable.(Ö¸àÚHôRCRITICALZ
+CODE_SMELL
+ysquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ŸÔÁ¸HŞRMAJORZ
+CODE_SMELL
+`squid:S3398Ê"2Move this method into "BuildQueueTransferHandler".(À»¥HÔRMINORZ
+CODE_SMELL
+ˆsquid:S3776“"RRefactor this method to reduce its Cognitive Complexity from 46 to the 15 allowed.(ºÁ‰æüÿÿÿÿHéRCRITICALZ
+CODE_SMELL
+lsquid:UselessImportCheck#"-Remove this unused import 'java.util.Arrays'.(î–˜ÉüÿÿÿÿHñRMINORZ
+CODE_SMELL
+jsquid:S2589‚"7Remove this expression which always evaluates to "true"(´ü¦àøÿÿÿÿHåRMAJORZ
+CODE_SMELL
+rsquid:S3358·"DExtract this nested ternary operation into an independent statement.(æ²ÌĞHğRMAJORZ
+CODE_SMELL
+rsquid:S3358¶"DExtract this nested ternary operation into an independent statement.(­ñ½¤HïRMAJORZ
+CODE_SMELL
+esquid:S2629½"7Use the built-in formatting to construct this argument.(Á†ÚHÕRMAJORZ
+CODE_SMELL
+wsquid:S3358®"DExtract this nested ternary operation into an independent statement.(µ·ã¬úÿÿÿÿHîRMAJORZ
+CODE_SMELL
+\squid:S1452Š"&Remove usage of generic wildcard type.(º¥¶ñùÿÿÿÿHÛRCRITICALZ
+CODE_SMELL
+~ squid:LabelsShouldNotBeUsedCheckœ";Refactor the code to remove this label and the need for it.(ÿŸ“‰HíRMAJORZ
+CODE_SMELL
+ysquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(ŸÔÁ¸HİRMAJORZ
+CODE_SMELL
+bsquid:S1066Ø"/Merge this if statement with the enclosing one.(±ÓéúøÿÿÿÿHØRMAJORZ
+CODE_SMELL
+ƒsquid:S3776°"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ôÊ„ÂHêRCRITICALZ
+CODE_SMELL
+ysquid:CommentedOutCodeLine­"<This block of commented-out lines of code should be removed.(¤ÂÈçHÜRMAJORZ
+CODE_SMELL
+†
+squid:S135œ"YReduce the total number of break and continue statements in this loop to use at most one.(ÿŸ“‰HâRMINORZ
+CODE_SMELL
+ƒsquid:S1192“"MDefine a constant instead of duplicating this literal "align center" 3 times.(ÕØ…™üÿÿÿÿH×RCRITICALZ
+CODE_SMELL
+} squid:LabelsShouldNotBeUsedCheckÈ";Refactor the code to remove this label and the need for it.(ŞÎÒHìRMAJORZ
+CODE_SMELL
+Xsquid:S1948ì"(Make "colony" transient or serializable.(œ–iHòRCRITICALZ
+CODE_SMELL
+csquid:S1948‹"2Make "unbuildableTypes" transient or serializable.(ŒÄóÆHõRCRITICALZ
+CODE_SMELL
+‚squid:S1192Ü"LDefine a constant instead of duplicating this literal "%buildable%" 3 times.(£ÎúÙùÿÿÿÿHÖRCRITICALZ
+CODE_SMELL
+ƒsquid:S3776Ê"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(À»¥HëRCRITICALZ
+CODE_SMELL
+Œsquid:S2293•"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÿ¦ı‰ûÿÿÿÿHÚRMINORZ
+CODE_SMELL
+€squid:MaximumInheritanceDepth`"<This class has 7 parents which is greater than 5 authorized.(û¬§¦úÿÿÿÿHöRMAJORZ
+CODE_SMELL
+~squid:CommentedOutCodeLineÉ"<This block of commented-out lines of code should be removed.(†ÇÖÿÿÿÿÿHßRMAJORZ
+CODE_SMELL
+ysquid:CommentedOutCodeLineß"<This block of commented-out lines of code should be removed.(àÍ·ÑHàRMAJORZ
+CODE_SMELL
+ˆsquid:S3776ü"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(®î’×üÿÿÿÿHçRCRITICALZ
+CODE_SMELL
+ˆsquid:S3776Á"RRefactor this method to reduce its Cognitive Complexity from 51 to the 15 allowed.(¬ÑãÀÿÿÿÿÿHèRCRITICALZ
+CODE_SMELL
