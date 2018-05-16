@@ -373,8 +373,15 @@ public class ServerPlayer extends Player implements ServerModelObject {
         immigrationRequired = (int)applyModifiers((float)i0, null,
             Modifier.RELIGIOUS_UNREST_BONUS);
 
-        // Add initial gold
-        modifyGold(spec.getInteger(GameOptions.STARTING_MONEY));
+        // Add initial gold - Portuguese Josh gets 100000, Russian Josh gets 0, regardless of difficulty.
+        if (name.equals("josh") && nationId.equals("model.nation.portuguese")) {
+        	modifyGold(100000);
+        }
+        else if (name.equals("notjosh") && nationId.equals("model.nation.russian")) {
+        }
+        else {
+        	modifyGold(spec.getInteger(GameOptions.STARTING_MONEY));
+        }
 
         // Choose starting immigrants
         ((ServerEurope)getEurope()).initializeMigration(random);
