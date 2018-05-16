@@ -2191,6 +2191,15 @@ net.sf.freecol.common.model.NationOptions$NationState
 net.sf.freecol.client.control.PreGameController
 java.lang.Object
 java.lang.String
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.model.GoodsContainerTest
+net.sf.freecol.common.model.GoodsContainer
+net.sf.freecol.common.model.Game
+net.sf.freecol.util.test.FreeColTestCase
+net.sf.freecol.common.model.Specification
+net.sf.freecol.common.model.GoodsContainerTest
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.TerrainDetailPanel
 javax.swing.tree.DefaultMutableTreeNode
 java.lang.StringBuilder
@@ -2223,12 +2232,15 @@ java.awt.Image
 java.awt.Graphics2D
 net.sf.freecol.common.model.TileType
 java.util.Set
+<<<<<<< HEAD
 ||:net.sf.freecol.common.model.GoodsContainerTest
 net.sf.freecol.common.model.GoodsContainer
 net.sf.freecol.common.model.Game
 net.sf.freecol.util.test.FreeColTestCase
 net.sf.freecol.common.model.Specification
 net.sf.freecol.common.model.GoodsContainerTest
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.action.FreeColAction
 java.lang.StringBuilder
 javax.swing.AbstractAction
@@ -3679,16 +3691,27 @@ javax.swing.event.EventListenerList
 net.sf.freecol.client.gui.TerrainCursor
 java.awt.event.ActionEvent
 java.awt.event.ActionListener
+<<<<<<< HEAD
 ||:net.sf.freecol.server.control.InGameInputHandler$33
 net.sf.freecol.server.control.InGameInputHandler$33
 net.sf.freecol.common.networking.LoadGoodsMessage
 net.sf.freecol.server.control.InGameInputHandler
 net.sf.freecol.common.networking.CurrentPlayerNetworkRequestHandler
+=======
+>>>>>>> master
 ||:net.sf.freecol.server.generator.AllTests
 java.lang.Object
 net.sf.freecol.server.generator.AllTests
 junit.framework.TestSuite
 net.sf.freecol.server.generator.MapGeneratorTest
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.server.control.InGameInputHandler$33
+net.sf.freecol.server.control.InGameInputHandler$33
+net.sf.freecol.common.networking.LoadGoodsMessage
+net.sf.freecol.server.control.InGameInputHandler
+net.sf.freecol.common.networking.CurrentPlayerNetworkRequestHandler
+>>>>>>> master
 ||:net.sf.freecol.server.control.InGameInputHandler$32
 net.sf.freecol.common.networking.LearnSkillMessage
 net.sf.freecol.server.control.InGameInputHandler$32
@@ -3999,6 +4022,7 @@ net.sf.freecol.common.debug.FreeColDebugger
 net.sf.freecol.client.control.InGameController
 java.io.FileNotFoundException
 net.sf.freecol.client.control.ConnectController$1
+<<<<<<< HEAD
 ||:net.sf.freecol.server.control.ChangeSet$TrivialChange
 java.lang.StringBuilder
 net.sf.freecol.server.control.ChangeSet
@@ -4012,6 +4036,8 @@ net.sf.freecol.server.control.ChangeSet$See
 java.lang.Object
 net.sf.freecol.server.control.ChangeSet$Change
 java.lang.String
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.model.FoundingFatherTest
 java.lang.StringBuilder
 net.sf.freecol.common.model.FoundingFather
@@ -4035,6 +4061,22 @@ net.sf.freecol.common.model.FoundingFather$FoundingFatherType
 net.sf.freecol.common.model.Modifier
 java.lang.String
 java.util.Set
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.server.control.ChangeSet$TrivialChange
+java.lang.StringBuilder
+net.sf.freecol.server.control.ChangeSet
+org.w3c.dom.Element
+java.lang.Class
+org.w3c.dom.Document
+java.lang.IllegalArgumentException
+net.sf.freecol.server.control.ChangeSet$TrivialChange
+net.sf.freecol.server.control.ChangeSet$See
+[Ljava.lang.String;
+java.lang.Object
+net.sf.freecol.server.control.ChangeSet$Change
+java.lang.String
+>>>>>>> master
 ||:net.sf.freecol.server.model.TradeSession
 net.sf.freecol.common.model.Unit
 net.sf.freecol.server.model.TradeSession
@@ -4115,11 +4157,14 @@ net.sf.freecol.common.networking.CloseTransactionMessage
 net.sf.freecol.server.control.InGameInputHandler$15
 net.sf.freecol.server.control.InGameInputHandler
 net.sf.freecol.common.networking.CurrentPlayerNetworkRequestHandler
+<<<<<<< HEAD
 ||:net.sf.freecol.server.control.InGameInputHandler$14
 net.sf.freecol.common.networking.ClearSpecialityMessage
 net.sf.freecol.server.control.InGameInputHandler
 net.sf.freecol.server.control.InGameInputHandler$14
 net.sf.freecol.common.networking.CurrentPlayerNetworkRequestHandler
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.model.GoodsTest
 java.lang.UnsupportedOperationException
 net.sf.freecol.common.model.FreeColObject
@@ -4137,6 +4182,14 @@ net.sf.freecol.common.model.Goods
 net.sf.freecol.common.model.Game
 net.sf.freecol.common.model.Map
 net.sf.freecol.common.model.Colony
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.server.control.InGameInputHandler$14
+net.sf.freecol.common.networking.ClearSpecialityMessage
+net.sf.freecol.server.control.InGameInputHandler
+net.sf.freecol.server.control.InGameInputHandler$14
+net.sf.freecol.common.networking.CurrentPlayerNetworkRequestHandler
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.PreCombatDialog
 java.util.Set
 net.sf.freecol.common.model.Game
@@ -4546,6 +4599,7 @@ net.sf.freecol.server.control.InGameController
 net.sf.freecol.common.model.Location
 net.sf.freecol.server.ai.AIGoods
 java.lang.String
+<<<<<<< HEAD
 ||:net.sf.freecol.common.model.Direction
 java.util.Random
 java.lang.StringBuilder
@@ -4564,6 +4618,8 @@ net.sf.freecol.common.util.RandomUtils
 net.sf.freecol.common.model.Map
 java.lang.String
 net.sf.freecol.common.util.CollectionUtils
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.model.UnitTypeChangeTest
 net.sf.freecol.common.model.Ability
 net.sf.freecol.common.model.UnitTypeChange$ChangeType
@@ -4582,6 +4638,27 @@ net.sf.freecol.common.model.UnitTypeChangeTest
 net.sf.freecol.common.model.Unit
 net.sf.freecol.common.model.Game
 java.lang.Integer
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.model.Direction
+java.util.Random
+java.lang.StringBuilder
+net.sf.freecol.common.model.Direction$1
+java.lang.Math
+java.util.List
+java.util.ArrayList
+net.sf.freecol.common.i18n.Messages
+java.lang.Enum
+net.sf.freecol.common.model.Direction
+java.util.logging.Logger
+net.sf.freecol.common.model.Map$Position
+net.sf.freecol.common.model.Named
+[Lnet.sf.freecol.common.model.Direction;
+net.sf.freecol.common.util.RandomUtils
+net.sf.freecol.common.model.Map
+java.lang.String
+net.sf.freecol.common.util.CollectionUtils
+>>>>>>> master
 ||:net.sf.freecol.client.gui.MapViewer$TextSpecification
 java.lang.Object
 net.sf.freecol.client.gui.MapViewer$TextSpecification
@@ -4851,11 +4928,14 @@ java.util.Iterator
 java.util.List
 net.sf.freecol.common.model.Monarch$MonarchAction
 java.util.Set
+<<<<<<< HEAD
 ||:net.sf.freecol.common.model.Player$NoValueType
 net.sf.freecol.common.model.Player
 java.lang.Enum
 [Lnet.sf.freecol.common.model.Player$NoValueType;
 net.sf.freecol.common.model.Player$NoValueType
+=======
+>>>>>>> master
 ||:net.sf.freecol.util.test.FreeColTestCase
 java.lang.Class
 net.sf.freecol.common.model.Game
@@ -4903,6 +4983,14 @@ java.lang.reflect.Field
 net.sf.freecol.util.test.FreeColTestCase
 net.sf.freecol.common.model.WorkLocation
 net.sf.freecol.common.model.CombatModel$CombatResult
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.model.Player$NoValueType
+net.sf.freecol.common.model.Player
+java.lang.Enum
+[Lnet.sf.freecol.common.model.Player$NoValueType;
+net.sf.freecol.common.model.Player$NoValueType
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.NegotiationDialog$UnitTradeItemPanel$UnitBoxRenderer
 net.sf.freecol.client.gui.panel.NegotiationDialog$UnitTradeItemPanel$UnitBoxRenderer
 javax.swing.ListCellRenderer
@@ -5241,6 +5329,14 @@ net.sf.freecol.common.model.Ability
 net.sf.freecol.common.model.Nameable
 net.sf.freecol.common.model.FeatureContainer
 net.sf.freecol.common.model.UnitType
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.i18n.MessageMerge$4
+net.sf.freecol.common.i18n.MessageMerge$4
+java.awt.event.WindowAdapter
+java.lang.System
+net.sf.freecol.common.i18n.MessageMerge
+>>>>>>> master
 ||:net.sf.freecol.client.gui.ScrollThread
 java.lang.Thread
 javax.swing.SwingUtilities
@@ -5259,10 +5355,18 @@ java.lang.invoke.MethodHandles
 java.lang.Object
 net.sf.freecol.client.gui.option.AbstractUnitOptionUI
 net.sf.freecol.client.gui.option.AbstractUnitOptionUI$1
+<<<<<<< HEAD
 ||:net.sf.freecol.common.i18n.MessageMerge$4
 net.sf.freecol.common.i18n.MessageMerge$4
 java.awt.event.WindowAdapter
 java.lang.System
+=======
+||:net.sf.freecol.common.i18n.MessageMerge$3
+net.sf.freecol.common.i18n.Merge
+javax.swing.AbstractAction
+net.sf.freecol.common.i18n.MessageMerge$3
+net.sf.freecol.common.i18n.MergeTableModel
+>>>>>>> master
 net.sf.freecol.common.i18n.MessageMerge
 ||:net.sf.freecol.client.gui.panel.MapEditorTransformPanel
 java.lang.Class
@@ -5309,12 +5413,15 @@ javax.swing.JScrollPane
 javax.swing.ButtonGroup
 javax.swing.JLabel
 javax.swing.ImageIcon
+<<<<<<< HEAD
 ||:net.sf.freecol.common.i18n.MessageMerge$3
 net.sf.freecol.common.i18n.Merge
 javax.swing.AbstractAction
 net.sf.freecol.common.i18n.MessageMerge$3
 net.sf.freecol.common.i18n.MergeTableModel
 net.sf.freecol.common.i18n.MessageMerge
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.i18n.MessageMerge$2
 javax.swing.ListSelectionModel
 javax.swing.AbstractAction
@@ -5322,6 +5429,7 @@ javax.swing.JTable
 net.sf.freecol.common.i18n.MergeTableModel
 net.sf.freecol.common.i18n.MessageMerge$2
 net.sf.freecol.common.i18n.MessageMerge
+<<<<<<< HEAD
 ||:net.sf.freecol.common.i18n.MessageMerge$1
 javax.swing.ListSelectionModel
 javax.swing.AbstractAction
@@ -5329,6 +5437,8 @@ javax.swing.JTable
 net.sf.freecol.common.i18n.MergeTableModel
 net.sf.freecol.common.i18n.MessageMerge$1
 net.sf.freecol.common.i18n.MessageMerge
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.model.GameTest
 net.sf.freecol.common.model.Nation
 net.sf.freecol.common.model.NationOptions
@@ -5347,6 +5457,16 @@ net.sf.freecol.common.model.NationType
 net.sf.freecol.common.model.GameTest
 net.sf.freecol.server.model.ServerPlayer
 net.sf.freecol.common.model.Game
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.i18n.MessageMerge$1
+javax.swing.ListSelectionModel
+javax.swing.AbstractAction
+javax.swing.JTable
+net.sf.freecol.common.i18n.MergeTableModel
+net.sf.freecol.common.i18n.MessageMerge$1
+net.sf.freecol.common.i18n.MessageMerge
+>>>>>>> master
 ||:net.sf.freecol.client.gui.option.BooleanOptionUI
 net.sf.freecol.common.option.BooleanOption
 net.sf.freecol.client.gui.option.BooleanOptionUI
@@ -5896,6 +6016,19 @@ net.sf.freecol.client.gui.panel.FreeColDialog$3
 javax.swing.SwingUtilities
 net.sf.freecol.client.gui.panel.FreeColDialog$DialogType
 java.awt.Point
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.AllTests
+net.sf.freecol.common.model.AllTests
+net.sf.freecol.common.i18n.AllTests
+net.sf.freecol.common.option.AllTests
+net.sf.freecol.common.AllTests
+net.sf.freecol.common.io.AllTests
+net.sf.freecol.common.utils.AllTests
+java.lang.Object
+junit.framework.TestSuite
+net.sf.freecol.common.sound.AllTests
+>>>>>>> master
 ||:net.sf.freecol.common.io.FreeColDirectories
 net.sf.freecol.common.io.FreeColSavegameFile
 java.lang.StringBuilder
@@ -5916,6 +6049,7 @@ java.lang.Math
 net.sf.freecol.FreeCol
 java.lang.Object
 java.lang.String
+<<<<<<< HEAD
 ||:net.sf.freecol.common.AllTests
 net.sf.freecol.common.model.AllTests
 net.sf.freecol.common.i18n.AllTests
@@ -5926,6 +6060,8 @@ net.sf.freecol.common.utils.AllTests
 java.lang.Object
 junit.framework.TestSuite
 net.sf.freecol.common.sound.AllTests
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.FreeColDialog$2
 java.awt.event.ComponentAdapter
 net.sf.freecol.client.gui.panel.FreeColDialog
@@ -7145,6 +7281,12 @@ net.sf.freecol.common.io.FreeColDirectories
 ||:net.sf.freecol.common.networking.TrivialMessage
 net.sf.freecol.common.networking.DOMMessage
 net.sf.freecol.common.networking.TrivialMessage
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.i18n.Merge
+java.lang.Object
+net.sf.freecol.common.i18n.Merge
+>>>>>>> master
 ||:net.sf.freecol.common.model.Specification$TypeReader
 java.lang.StringBuilder
 net.sf.freecol.common.model.Specification$ChildReader
@@ -7199,9 +7341,12 @@ javax.swing.JLabel
 java.util.EnumMap
 net.miginfocom.swing.MigLayout
 javax.swing.ImageIcon
+<<<<<<< HEAD
 ||:net.sf.freecol.common.i18n.Merge
 java.lang.Object
 net.sf.freecol.common.i18n.Merge
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.PortPanel
 net.sf.freecol.common.model.Unit
 net.sf.freecol.client.gui.panel.UnitLabel
@@ -7514,6 +7659,10 @@ net.sf.freecol.common.option.StringOption
 [I
 java.util.Map
 net.sf.freecol.common.option.AbstractUnitOption
+<<<<<<< HEAD
+=======
+java.lang.AutoCloseable
+>>>>>>> master
 java.util.Map$Entry
 java.lang.String
 java.lang.NumberFormatException
@@ -7915,6 +8064,7 @@ javax.swing.JComponent
 java.awt.Graphics2D
 net.sf.freecol.client.gui.plaf.FreeColSelectedPanelUI
 javax.swing.plaf.basic.BasicPanelUI
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.CanvasMouseMotionListener
 java.lang.Math
 net.sf.freecol.client.gui.AbstractCanvasListener
@@ -7927,6 +8077,8 @@ java.util.logging.Logger
 net.sf.freecol.client.gui.Canvas
 net.sf.freecol.common.model.Unit
 java.awt.event.MouseMotionListener
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.model.UnitTest
 java.io.ByteArrayInputStream
 java.lang.StringBuilder
@@ -7962,6 +8114,21 @@ java.lang.Integer
 java.lang.Object
 java.lang.String
 net.sf.freecol.common.model.Building
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.CanvasMouseMotionListener
+java.lang.Math
+net.sf.freecol.client.gui.AbstractCanvasListener
+net.sf.freecol.client.gui.CanvasMouseMotionListener
+java.lang.Class
+java.awt.event.MouseEvent
+net.sf.freecol.common.model.Tile
+java.awt.Point
+java.util.logging.Logger
+net.sf.freecol.client.gui.Canvas
+net.sf.freecol.common.model.Unit
+java.awt.event.MouseMotionListener
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.InfoPanel$UnitInfoPanel
 java.lang.StringBuilder
 net.sf.freecol.common.model.Unit
@@ -10179,6 +10346,28 @@ net.sf.freecol.common.io.FreeColXMLReader
 java.io.IOException
 net.sf.freecol.common.io.FreeColSavegameFile
 net.sf.freecol.common.io.FreeColDataFile
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.server.ai.StandardAIPlayerTest
+net.sf.freecol.common.model.Unit
+net.sf.freecol.server.ai.NativeAIPlayer
+java.util.List
+net.sf.freecol.common.model.IndianSettlement
+net.sf.freecol.common.util.LogBuilder
+net.sf.freecol.common.model.Specification
+net.sf.freecol.common.model.AbstractGoods
+net.sf.freecol.util.test.FreeColTestCase$IndianSettlementBuilder
+net.sf.freecol.common.model.Game
+net.sf.freecol.common.model.Role
+net.sf.freecol.server.ai.AIMain
+net.sf.freecol.util.test.FreeColTestCase
+java.util.Iterator
+net.sf.freecol.server.ServerTestHelper
+net.sf.freecol.server.FreeColServer
+java.lang.Exception
+net.sf.freecol.common.model.GoodsType
+net.sf.freecol.server.ai.StandardAIPlayerTest
+>>>>>>> master
 ||:net.sf.freecol.server.ai.mission.Mission
 javax.xml.stream.XMLStreamException
 java.lang.Class
@@ -10225,6 +10414,7 @@ net.sf.freecol.common.model.Unit$MoveType
 net.sf.freecol.common.model.Locatable
 net.sf.freecol.server.ai.TransportableAIObject
 net.sf.freecol.common.model.UnitType
+<<<<<<< HEAD
 ||:net.sf.freecol.server.ai.StandardAIPlayerTest
 net.sf.freecol.common.model.Unit
 net.sf.freecol.server.ai.NativeAIPlayer
@@ -10244,6 +10434,8 @@ net.sf.freecol.server.FreeColServer
 java.lang.Exception
 net.sf.freecol.common.model.GoodsType
 net.sf.freecol.server.ai.StandardAIPlayerTest
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.ReportLabourPanel$3
 net.sf.freecol.client.gui.panel.ReportLabourPanel
 java.awt.event.MouseAdapter
@@ -10472,6 +10664,7 @@ java.lang.StringBuilder
 net.sf.freecol.FreeCol
 net.sf.freecol.client.gui.GUI
 net.sf.freecol.client.gui.action.FreeColAction
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.panel.PlayersTable$1
 java.lang.Object
 net.sf.freecol.common.model.NationOptions
@@ -10479,6 +10672,8 @@ net.sf.freecol.client.gui.panel.PlayersTable
 net.sf.freecol.client.gui.panel.PlayersTable$1
 java.lang.NoSuchFieldError
 net.sf.freecol.common.model.NationOptions$Advantages
+=======
+>>>>>>> master
 ||:net.sf.freecol.AllTests
 java.lang.Object
 net.sf.freecol.server.AllTests
@@ -10488,6 +10683,16 @@ junit.framework.TestSuite
 net.sf.freecol.common.AllTests
 net.sf.freecol.client.gui.AllTests
 net.sf.freecol.AllTests
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.panel.PlayersTable$1
+java.lang.Object
+net.sf.freecol.common.model.NationOptions
+net.sf.freecol.client.gui.panel.PlayersTable
+net.sf.freecol.client.gui.panel.PlayersTable$1
+java.lang.NoSuchFieldError
+net.sf.freecol.common.model.NationOptions$Advantages
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.CaptureGoodsDialog$CheckBoxRenderer
 net.sf.freecol.client.gui.panel.CaptureGoodsDialog
 net.sf.freecol.client.gui.panel.CaptureGoodsDialog$GoodsItem
@@ -12972,10 +13177,13 @@ java.lang.invoke.MethodHandles$Lookup
 java.lang.String
 java.lang.invoke.LambdaMetafactory
 java.lang.invoke.MethodHandles
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.action.FindSettlementAction
 net.sf.freecol.client.gui.action.FindSettlementAction
 net.sf.freecol.client.gui.action.MapboardAction
 net.sf.freecol.client.gui.GUI
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.model.TradeRouteTest
 net.sf.freecol.common.model.ExportData
 net.sf.freecol.server.model.ServerUnit
@@ -12990,6 +13198,13 @@ net.sf.freecol.common.model.TradeRouteStop
 net.sf.freecol.common.model.Unit
 net.sf.freecol.common.model.Game
 net.sf.freecol.common.model.Colony
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.action.FindSettlementAction
+net.sf.freecol.client.gui.action.FindSettlementAction
+net.sf.freecol.client.gui.action.MapboardAction
+net.sf.freecol.client.gui.GUI
+>>>>>>> master
 ||:net.sf.freecol.client.gui.option.AbstractUnitOptionUI$RoleRenderer
 java.lang.String
 javax.swing.JLabel
@@ -14902,6 +15117,7 @@ java.lang.StringBuilder
 net.sf.freecol.server.control.ChangeSet
 net.sf.freecol.server.control.ChangeSet$See
 net.sf.freecol.server.model.ServerPlayer
+<<<<<<< HEAD
 ||:net.sf.freecol.common.util.RandomChoiceTest
 java.util.Random
 org.junit.Assert
@@ -14913,6 +15129,8 @@ java.util.LinkedList
 java.util.logging.Logger
 java.lang.Object
 java.lang.Exception
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.option.ModListOption
 net.sf.freecol.common.option.ListOption
 net.sf.freecol.common.option.ModListOption
@@ -15210,6 +15428,7 @@ java.lang.StringBuilder
 net.sf.freecol.client.gui.action.MoveAction
 net.sf.freecol.client.gui.action.MapboardAction
 net.sf.freecol.client.gui.GUI
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.LoadingSavegameInfoTest
 net.sf.freecol.client.gui.LoadingSavegameInfo
 java.lang.Object
@@ -15219,6 +15438,8 @@ java.lang.Class
 net.sf.freecol.client.gui.LoadingSavegameInfoTest
 java.lang.Boolean
 java.lang.Exception
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.EmigrationDialog
 java.lang.StringBuilder
 net.sf.freecol.common.model.LostCityRumour$RumourType
@@ -15857,6 +16078,10 @@ net.sf.freecol.common.util.Introspector
 java.io.OutputStream
 net.sf.freecol.common.util.Utils
 java.beans.PropertyChangeListener
+<<<<<<< HEAD
+=======
+java.lang.AutoCloseable
+>>>>>>> master
 java.lang.RuntimeException
 org.xml.sax.SAXException
 java.beans.PropertyChangeSupport
@@ -16671,6 +16896,21 @@ net.sf.freecol.client.gui.option.PercentageOptionUI
 java.lang.Integer
 javax.swing.JSlider
 javax.swing.DefaultBoundedRangeModel
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.model.RoleTest
+net.sf.freecol.common.model.Ability
+java.util.Comparator
+java.util.List
+java.util.Collections
+java.util.ArrayList
+net.sf.freecol.util.test.FreeColTestCase
+net.sf.freecol.common.model.Role
+net.sf.freecol.common.model.Specification
+net.sf.freecol.common.model.AbstractGoods
+net.sf.freecol.common.model.Game
+net.sf.freecol.common.model.RoleTest
+>>>>>>> master
 ||:net.sf.freecol.common.networking.LootCargoMessage
 org.w3c.dom.NodeList
 net.sf.freecol.common.model.Unit
@@ -16690,6 +16930,7 @@ net.sf.freecol.server.FreeColServer
 java.lang.Exception
 net.sf.freecol.server.control.InGameController
 java.lang.String
+<<<<<<< HEAD
 ||:net.sf.freecol.common.model.RoleTest
 net.sf.freecol.common.model.Ability
 java.util.Comparator
@@ -16702,6 +16943,8 @@ net.sf.freecol.common.model.Specification
 net.sf.freecol.common.model.AbstractGoods
 net.sf.freecol.common.model.Game
 net.sf.freecol.common.model.RoleTest
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.model.ColonyTest
 net.sf.freecol.common.model.Unit
 net.sf.freecol.common.model.Player$NoClaimReason
@@ -16884,6 +17127,16 @@ net.sf.freecol.client.gui.action.SentryAction
 net.sf.freecol.common.i18n.PluralNumberRule
 net.sf.freecol.common.i18n.Number
 net.sf.freecol.common.i18n.Number$Category
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.model.HighSeasTest
+net.sf.freecol.common.model.Player
+net.sf.freecol.server.model.ServerUnit
+net.sf.freecol.common.model.HighSeasTest
+net.sf.freecol.common.model.Game
+net.sf.freecol.util.test.FreeColTestCase
+net.sf.freecol.common.model.Specification
+>>>>>>> master
 ||:net.sf.freecol.common.networking.Message
 org.w3c.dom.Element
 java.util.logging.Logger
@@ -16908,6 +17161,7 @@ java.io.ByteArrayOutputStream
 java.lang.Object
 java.lang.String
 java.util.logging.Level
+<<<<<<< HEAD
 ||:net.sf.freecol.common.model.HighSeasTest
 net.sf.freecol.common.model.Player
 net.sf.freecol.server.model.ServerUnit
@@ -16915,12 +17169,15 @@ net.sf.freecol.common.model.HighSeasTest
 net.sf.freecol.common.model.Game
 net.sf.freecol.util.test.FreeColTestCase
 net.sf.freecol.common.model.Specification
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.InfoPanel$2
 java.lang.Object
 net.sf.freecol.client.gui.panel.InfoPanel$InfoPanelMode
 net.sf.freecol.client.gui.panel.InfoPanel
 net.sf.freecol.client.gui.panel.InfoPanel$2
 java.lang.NoSuchFieldError
+<<<<<<< HEAD
 ||:net.sf.freecol.common.util.RandomUtilsTest
 java.util.Random
 java.lang.StringBuilder
@@ -16933,6 +17190,8 @@ net.sf.freecol.common.util.RandomUtils
 java.lang.Object
 net.sf.freecol.common.util.RandomUtilsTest
 java.lang.Exception
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.InfoPanel$1
 net.sf.freecol.common.model.Unit
 java.awt.event.MouseAdapter
@@ -17792,6 +18051,7 @@ net.sf.freecol.common.model.PathfindingTest
 net.sf.freecol.common.model.PathNode
 net.sf.freecol.common.model.PathfindingTest$3
 net.sf.freecol.common.model.pathfinding.GoalDecider
+<<<<<<< HEAD
 ||:net.sf.freecol.common.model.PathfindingTest$2
 java.lang.Object
 net.sf.freecol.common.model.Tile
@@ -17799,6 +18059,8 @@ net.sf.freecol.common.model.PathfindingTest
 net.sf.freecol.common.model.PathNode
 net.sf.freecol.common.model.pathfinding.GoalDecider
 net.sf.freecol.common.model.PathfindingTest$2
+=======
+>>>>>>> master
 ||:net.sf.freecol.server.ai.mission.ScoutingMissionTest
 net.sf.freecol.server.ai.mission.Mission
 net.sf.freecol.common.model.Unit
@@ -17822,6 +18084,7 @@ java.lang.Exception
 net.sf.freecol.server.ai.AIUnit
 net.sf.freecol.common.model.LostCityRumour
 net.sf.freecol.server.ai.mission.ScoutingMissionTest
+<<<<<<< HEAD
 ||:net.sf.freecol.server.ai.mission.PrivateerMission$2
 java.lang.Object
 net.sf.freecol.common.model.Unit
@@ -17829,6 +18092,15 @@ net.sf.freecol.server.ai.mission.PrivateerMission$2
 net.sf.freecol.server.ai.mission.PrivateerMission
 net.sf.freecol.common.model.Unit$MoveType
 java.lang.NoSuchFieldError
+=======
+||:net.sf.freecol.common.model.PathfindingTest$2
+java.lang.Object
+net.sf.freecol.common.model.Tile
+net.sf.freecol.common.model.PathfindingTest
+net.sf.freecol.common.model.PathNode
+net.sf.freecol.common.model.pathfinding.GoalDecider
+net.sf.freecol.common.model.PathfindingTest$2
+>>>>>>> master
 ||:net.sf.freecol.common.model.PathfindingTest$1
 java.lang.Object
 net.sf.freecol.common.model.Tile
@@ -17836,6 +18108,16 @@ net.sf.freecol.common.model.PathfindingTest$1
 net.sf.freecol.common.model.PathfindingTest
 net.sf.freecol.common.model.PathNode
 net.sf.freecol.common.model.pathfinding.GoalDecider
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.server.ai.mission.PrivateerMission$2
+java.lang.Object
+net.sf.freecol.common.model.Unit
+net.sf.freecol.server.ai.mission.PrivateerMission$2
+net.sf.freecol.server.ai.mission.PrivateerMission
+net.sf.freecol.common.model.Unit$MoveType
+java.lang.NoSuchFieldError
+>>>>>>> master
 ||:net.sf.freecol.server.ai.mission.PrivateerMission$1
 java.lang.Object
 net.sf.freecol.server.ai.mission.PrivateerMission
@@ -19018,12 +19300,15 @@ net.sf.freecol.server.networking.Server
 java.lang.String
 net.sf.freecol.server.FreeColServer$GameState
 java.util.logging.Level
+<<<<<<< HEAD
 ||:net.sf.freecol.common.model.Player$GoingToPredicate
 net.sf.freecol.common.model.Unit
 net.sf.freecol.common.model.Unit$UnitState
 net.sf.freecol.common.model.Player
 net.sf.freecol.common.model.Player$UnitPredicate
 net.sf.freecol.common.model.Player$GoingToPredicate
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.option.AudioMixerOption$MixerWrapper
 java.lang.Object
 java.lang.String
@@ -19032,6 +19317,15 @@ net.sf.freecol.common.option.AudioMixerOption
 net.sf.freecol.common.option.AudioMixerOption$MixerWrapper
 java.lang.Comparable
 javax.sound.sampled.Mixer
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.model.Player$GoingToPredicate
+net.sf.freecol.common.model.Unit
+net.sf.freecol.common.model.Unit$UnitState
+net.sf.freecol.common.model.Player
+net.sf.freecol.common.model.Player$UnitPredicate
+net.sf.freecol.common.model.Player$GoingToPredicate
+>>>>>>> master
 ||:net.sf.freecol.server.model.ServerUnitTest
 java.lang.StringBuilder
 net.sf.freecol.common.model.Unit
@@ -19068,6 +19362,19 @@ java.lang.String
 net.sf.freecol.common.model.Building
 net.sf.freecol.common.model.TileImprovement
 java.util.Set
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.panel.ColopediaDetailPanel
+java.lang.Object
+net.sf.freecol.client.gui.panel.ColopediaDetailPanel
+||:net.sf.freecol.client.gui.action.DisplayBordersAction
+javax.swing.JCheckBoxMenuItem
+net.sf.freecol.client.gui.GUI
+net.sf.freecol.client.gui.action.SelectableAction
+net.sf.freecol.client.ClientOptions
+java.awt.event.ActionEvent
+net.sf.freecol.client.gui.action.DisplayBordersAction
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.EditOptionDialog
 net.sf.freecol.client.gui.option.OptionUI
 net.sf.freecol.client.gui.panel.FreeColConfirmDialog
@@ -19078,6 +19385,7 @@ net.sf.freecol.client.gui.panel.MigPanel
 net.sf.freecol.common.option.Option
 net.miginfocom.swing.MigLayout
 net.sf.freecol.client.gui.panel.EditOptionDialog
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.action.DisplayBordersAction
 javax.swing.JCheckBoxMenuItem
 net.sf.freecol.client.gui.GUI
@@ -19088,6 +19396,8 @@ net.sf.freecol.client.gui.action.DisplayBordersAction
 ||:net.sf.freecol.client.gui.panel.ColopediaDetailPanel
 java.lang.Object
 net.sf.freecol.client.gui.panel.ColopediaDetailPanel
+=======
+>>>>>>> master
 ||:net.sf.freecol.tools.FSGConverter
 java.lang.StringBuilder
 java.lang.System
@@ -19120,10 +19430,13 @@ net.sf.freecol.client.FreeColClient
 net.sf.freecol.client.gui.GUI
 net.sf.freecol.client.gui.action.FreeColAction
 net.sf.freecol.client.gui.action.ChatAction
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.option.ModOptionUI$1
 java.lang.Object
 net.sf.freecol.client.gui.option.ModOptionUI$1
 net.sf.freecol.client.gui.option.ModOptionUI
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.networking.AssignTradeRouteMessage
 net.sf.freecol.server.control.InGameController
 net.sf.freecol.common.networking.AssignTradeRouteMessage
@@ -19137,6 +19450,7 @@ net.sf.freecol.server.model.ServerPlayer
 net.sf.freecol.common.model.Game
 java.lang.String
 java.lang.Exception
+<<<<<<< HEAD
 ||:net.sf.freecol.common.model.Player$NoClaimReason
 net.sf.freecol.common.model.Named
 java.lang.StringBuilder
@@ -19146,6 +19460,12 @@ java.lang.Enum
 net.sf.freecol.common.i18n.Messages
 net.sf.freecol.common.model.Player$NoClaimReason
 net.sf.freecol.common.util.StringUtils
+=======
+||:net.sf.freecol.client.gui.option.ModOptionUI$1
+java.lang.Object
+net.sf.freecol.client.gui.option.ModOptionUI$1
+net.sf.freecol.client.gui.option.ModOptionUI
+>>>>>>> master
 ||:net.sf.freecol.common.model.EuropeanNationType
 net.sf.freecol.common.model.FreeColGameObjectType
 java.util.ArrayList
@@ -19166,11 +19486,23 @@ net.sf.freecol.common.model.EuropeanNationType
 java.lang.String
 java.util.Map$Entry
 java.util.Set
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.plaf.FreeColBrightPanelUI
 net.sf.freecol.client.gui.ImageLibrary
 net.sf.freecol.client.gui.plaf.FreeColBrightPanelUI
 javax.swing.JComponent
 javax.swing.plaf.basic.BasicPanelUI
+=======
+||:net.sf.freecol.common.model.Player$NoClaimReason
+net.sf.freecol.common.model.Named
+java.lang.StringBuilder
+net.sf.freecol.common.model.Player
+[Lnet.sf.freecol.common.model.Player$NoClaimReason;
+java.lang.Enum
+net.sf.freecol.common.i18n.Messages
+net.sf.freecol.common.model.Player$NoClaimReason
+net.sf.freecol.common.util.StringUtils
+>>>>>>> master
 ||:net.sf.freecol.common.sound.SoundPlayer$SoundPlayerThread
 java.lang.StringBuilder
 javax.sound.sampled.DataLine$Info
@@ -19199,6 +19531,14 @@ javax.sound.sampled.FloatControl$Type
 javax.sound.sampled.Line
 java.util.logging.Level
 net.sf.freecol.common.sound.SoundPlayer$SoundPlayerThread
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.plaf.FreeColBrightPanelUI
+net.sf.freecol.client.gui.ImageLibrary
+net.sf.freecol.client.gui.plaf.FreeColBrightPanelUI
+javax.swing.JComponent
+javax.swing.plaf.basic.BasicPanelUI
+>>>>>>> master
 ||:net.sf.freecol.server.ai.AIColony
 net.sf.freecol.server.ai.mission.BuildColonyMission
 net.sf.freecol.common.model.AbstractGoods
@@ -19324,6 +19664,7 @@ java.lang.Object
 net.sf.freecol.common.model.Settlement
 java.lang.String
 net.sf.freecol.server.ai.AIGoods
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.panel.FreeColImageBorder
 net.sf.freecol.common.resources.ResourceManager
 java.awt.Graphics2D
@@ -19335,6 +19676,8 @@ javax.swing.border.AbstractBorder
 net.sf.freecol.client.gui.ImageLibrary
 java.awt.Component
 net.sf.freecol.client.gui.panel.FreeColImageBorder
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.networking.MoveMessage
 java.lang.StringBuilder
 net.sf.freecol.server.control.InGameController
@@ -19352,10 +19695,25 @@ net.sf.freecol.common.model.Unit$MoveType
 java.lang.String
 net.sf.freecol.common.networking.MoveMessage
 java.lang.Exception
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.panel.FreeColImageBorder
+net.sf.freecol.common.resources.ResourceManager
+java.awt.Graphics2D
+java.awt.Image
+java.lang.Math
+java.awt.Graphics
+java.awt.Insets
+javax.swing.border.AbstractBorder
+net.sf.freecol.client.gui.ImageLibrary
+java.awt.Component
+net.sf.freecol.client.gui.panel.FreeColImageBorder
+>>>>>>> master
 ||:net.sf.freecol.client.gui.action.TradeRouteAction
 net.sf.freecol.client.gui.action.TradeRouteAction
 net.sf.freecol.client.gui.action.MapboardAction
 net.sf.freecol.client.gui.GUI
+<<<<<<< HEAD
 ||:net.sf.freecol.common.model.WorkLocation$Suggestion$1
 java.lang.Object
 java.lang.String
@@ -19365,6 +19723,8 @@ net.sf.freecol.common.model.GoodsType
 java.util.Comparator
 net.sf.freecol.common.model.WorkLocation$Suggestion
 net.sf.freecol.common.model.WorkLocation
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.ParametersDialog
 java.awt.FlowLayout
 java.lang.invoke.MethodHandles
@@ -19385,6 +19745,18 @@ javax.swing.JTextField
 java.lang.Object
 java.lang.NumberFormatException
 net.sf.freecol.client.gui.panel.FreeColDialog$DialogType
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.model.WorkLocation$Suggestion$1
+java.lang.Object
+java.lang.String
+net.sf.freecol.common.model.UnitType
+net.sf.freecol.common.model.WorkLocation$Suggestion$1
+net.sf.freecol.common.model.GoodsType
+java.util.Comparator
+net.sf.freecol.common.model.WorkLocation$Suggestion
+net.sf.freecol.common.model.WorkLocation
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.IndianSettlementPanel
 java.lang.StringBuilder
 net.sf.freecol.common.model.Unit
@@ -19410,6 +19782,18 @@ java.lang.Integer
 net.sf.freecol.common.model.StringTemplate
 java.lang.String
 net.sf.freecol.client.gui.panel.IndianSettlementPanel
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.server.ai.AIObject
+java.lang.String
+net.sf.freecol.common.model.FreeColObject
+java.lang.Class
+net.sf.freecol.server.ai.AIMain
+java.util.logging.Logger
+net.sf.freecol.common.model.Game
+net.sf.freecol.server.ai.AIObject
+javax.xml.stream.XMLStreamException
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.ReportHighScoresPanel
 net.sf.freecol.client.gui.FontLibrary$FontType
 java.util.List
@@ -19432,6 +19816,7 @@ net.sf.freecol.common.model.StringTemplate
 java.lang.String
 net.sf.freecol.common.model.HighScore
 net.sf.freecol.common.model.Turn
+<<<<<<< HEAD
 ||:net.sf.freecol.server.ai.AIObject
 java.lang.String
 net.sf.freecol.common.model.FreeColObject
@@ -19441,6 +19826,8 @@ java.util.logging.Logger
 net.sf.freecol.common.model.Game
 net.sf.freecol.server.ai.AIObject
 javax.xml.stream.XMLStreamException
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.model.GoodsType$1
 java.lang.Object
 java.lang.String
@@ -19456,6 +19843,14 @@ net.sf.freecol.common.i18n.Messages
 [Lnet.sf.freecol.common.model.NationOptions$NationState;
 net.sf.freecol.common.util.StringUtils
 net.sf.freecol.common.model.NationOptions$NationState
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.server.ai.mission.TransportMission$CargoResult
+net.sf.freecol.server.ai.mission.TransportMission
+java.lang.Enum
+[Lnet.sf.freecol.server.ai.mission.TransportMission$CargoResult;
+net.sf.freecol.server.ai.mission.TransportMission$CargoResult
+>>>>>>> master
 ||:net.sf.freecol.common.model.mission.MissionManager
 java.lang.reflect.Constructor
 java.lang.StringBuilder
@@ -19476,6 +19871,7 @@ net.sf.freecol.common.model.mission.MissionManager
 net.sf.freecol.common.model.mission.GoToMission
 java.lang.String
 java.util.logging.Level
+<<<<<<< HEAD
 ||:net.sf.freecol.server.ai.mission.TransportMission$CargoResult
 net.sf.freecol.server.ai.mission.TransportMission
 java.lang.Enum
@@ -19499,6 +19895,8 @@ java.lang.String
 net.sf.freecol.common.model.IndianSettlement
 java.lang.Integer
 java.lang.Exception
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.InfoPanel$EndTurnPanel
 net.sf.freecol.common.util.StringUtils
 net.sf.freecol.client.gui.FontLibrary$FontType
@@ -19520,6 +19918,27 @@ net.miginfocom.swing.MigLayout
 net.sf.freecol.client.gui.action.ActionManager
 java.lang.String
 net.sf.freecol.client.gui.panel.InfoPanel
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.networking.BuyPropositionMessage
+java.lang.StringBuilder
+java.lang.NumberFormatException
+net.sf.freecol.server.control.InGameController
+net.sf.freecol.common.networking.BuyPropositionMessage
+org.w3c.dom.Element
+net.sf.freecol.server.FreeColServer
+net.sf.freecol.common.networking.DOMMessage
+net.sf.freecol.common.model.Player
+net.sf.freecol.common.networking.Connection
+net.sf.freecol.common.model.Settlement
+net.sf.freecol.common.model.Unit
+net.sf.freecol.common.model.Goods
+net.sf.freecol.server.model.ServerPlayer
+java.lang.String
+net.sf.freecol.common.model.IndianSettlement
+java.lang.Integer
+java.lang.Exception
+>>>>>>> master
 ||:net.sf.freecol.common.resources.ImageResource
 net.sf.freecol.common.resources.Resource$Cleanable
 java.lang.StringBuilder
@@ -19550,6 +19969,7 @@ net.sf.freecol.common.model.Tension
 net.sf.freecol.server.ai.NativeAIPlayer$3
 java.lang.NoSuchFieldError
 net.sf.freecol.common.model.Tension$Level
+<<<<<<< HEAD
 ||:net.sf.freecol.server.ai.NativeAIPlayer$2
 net.sf.freecol.common.model.Tile
 java.lang.Object
@@ -19558,6 +19978,8 @@ java.lang.Double
 java.util.HashMap
 net.sf.freecol.server.ai.NativeAIPlayer$2
 java.util.Comparator
+=======
+>>>>>>> master
 ||:net.sf.freecol.server.ai.AIMain
 java.util.Set
 javax.xml.stream.XMLStreamException
@@ -19612,6 +20034,17 @@ net.sf.freecol.common.util.StringUtils
 net.sf.freecol.server.ai.REFAIPlayer
 net.sf.freecol.server.ai.AIObject
 net.sf.freecol.server.ai.WorkerWish
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.server.ai.NativeAIPlayer$2
+net.sf.freecol.common.model.Tile
+java.lang.Object
+net.sf.freecol.server.ai.NativeAIPlayer
+java.lang.Double
+java.util.HashMap
+net.sf.freecol.server.ai.NativeAIPlayer$2
+java.util.Comparator
+>>>>>>> master
 ||:net.sf.freecol.server.ai.NativeAIPlayer$1
 net.sf.freecol.common.model.Unit
 java.lang.Object
@@ -19619,6 +20052,23 @@ net.sf.freecol.common.model.Tile
 net.sf.freecol.server.ai.NativeAIPlayer
 net.sf.freecol.server.ai.NativeAIPlayer$1
 java.util.Comparator
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.server.ai.mission.UnitWanderHostileMission
+net.sf.freecol.server.ai.AIPlayer
+javax.xml.stream.XMLStreamException
+java.lang.Class
+net.sf.freecol.server.ai.mission.Mission
+net.sf.freecol.server.ai.AIUnit
+net.sf.freecol.common.model.Direction
+java.util.logging.Logger
+net.sf.freecol.common.util.LogBuilder
+net.sf.freecol.common.util.RandomUtils
+net.sf.freecol.common.model.Unit
+java.lang.Object
+net.sf.freecol.server.ai.mission.UnitWanderHostileMission
+java.lang.String
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.EuropePanel
 java.lang.Class
 net.sf.freecol.common.model.Game
@@ -19663,6 +20113,7 @@ net.sf.freecol.common.model.Europe
 java.awt.event.ActionEvent
 net.sf.freecol.client.control.InGameController
 net.miginfocom.swing.MigLayout
+<<<<<<< HEAD
 ||:net.sf.freecol.server.ai.mission.UnitWanderHostileMission
 net.sf.freecol.server.ai.AIPlayer
 javax.xml.stream.XMLStreamException
@@ -19677,11 +20128,23 @@ net.sf.freecol.common.model.Unit
 java.lang.Object
 net.sf.freecol.server.ai.mission.UnitWanderHostileMission
 java.lang.String
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.option.TextOptionUI
 javax.swing.JTextField
 net.sf.freecol.client.gui.option.TextOptionUI
 net.sf.freecol.common.option.TextOption
 net.sf.freecol.client.gui.option.OptionUI
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.model.ExportData
+net.sf.freecol.common.model.FreeColObject
+net.sf.freecol.common.io.FreeColXMLWriter
+net.sf.freecol.common.model.ExportData
+net.sf.freecol.common.model.GoodsType
+net.sf.freecol.common.io.FreeColXMLReader
+javax.xml.stream.XMLStreamException
+>>>>>>> master
 ||:net.sf.freecol.common.option.OptionGroup
 net.sf.freecol.common.option.BooleanOption
 java.lang.StringBuilder
@@ -19712,6 +20175,7 @@ net.sf.freecol.common.option.IntegerOption
 java.lang.CloneNotSupportedException
 java.lang.String
 net.sf.freecol.common.option.OptionGroup
+<<<<<<< HEAD
 ||:net.sf.freecol.common.model.ExportData
 net.sf.freecol.common.model.FreeColObject
 net.sf.freecol.common.io.FreeColXMLWriter
@@ -19719,6 +20183,8 @@ net.sf.freecol.common.model.ExportData
 net.sf.freecol.common.model.GoodsType
 net.sf.freecol.common.io.FreeColXMLReader
 javax.xml.stream.XMLStreamException
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.FreeColPanel$1
 java.lang.Object
 java.lang.String
@@ -19775,6 +20241,7 @@ net.sf.freecol.common.model.GoodsType
 java.lang.String
 net.sf.freecol.client.gui.panel.BuildingPanel
 net.sf.freecol.common.model.Building
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.panel.UnitPanel
 java.lang.StringBuilder
 net.sf.freecol.common.model.Unit
@@ -19794,6 +20261,8 @@ net.sf.freecol.client.gui.panel.PortPanel
 java.beans.PropertyChangeEvent
 java.beans.PropertyChangeListener
 java.lang.String
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.option.OptionUI
 net.sf.freecol.common.option.StringOption
 net.sf.freecol.common.option.RangeOption
@@ -19831,6 +20300,28 @@ net.sf.freecol.common.option.AbstractUnitOption
 net.sf.freecol.client.gui.action.FreeColAction
 javax.swing.JLabel
 net.sf.freecol.client.gui.option.TextOptionUI
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.panel.UnitPanel
+java.lang.StringBuilder
+net.sf.freecol.common.model.Unit
+net.sf.freecol.common.model.Unit$UnitLabelType
+java.util.logging.Logger
+java.lang.Class
+net.sf.freecol.client.gui.panel.MigPanel
+java.util.List
+[Ljava.awt.Component;
+net.sf.freecol.common.model.TradeRoute
+java.lang.RuntimeException
+net.sf.freecol.client.gui.panel.UnitLabel
+java.util.Iterator
+net.sf.freecol.client.gui.SwingGUI
+net.sf.freecol.client.gui.panel.UnitPanel
+net.sf.freecol.client.gui.panel.PortPanel
+java.beans.PropertyChangeEvent
+java.beans.PropertyChangeListener
+java.lang.String
+>>>>>>> master
 ||:net.sf.freecol.client.gui.MapViewer
 net.sf.freecol.common.model.PathNode
 java.awt.Component
@@ -19936,6 +20427,7 @@ java.util.Iterator
 net.sf.freecol.common.model.Specification
 net.sf.freecol.common.model.ModifierTest
 net.sf.freecol.common.model.Turn
+<<<<<<< HEAD
 ||:net.sf.freecol.common.sound.SoundPlayerTest
 javax.sound.sampled.Mixer$Info
 java.io.File
@@ -19952,6 +20444,8 @@ net.sf.freecol.common.option.PercentageOption
 javax.sound.sampled.Mixer
 net.sf.freecol.common.sound.SoundPlayerTest
 java.lang.Exception
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.DifficultyDialog
 javax.swing.tree.DefaultMutableTreeNode
 java.lang.invoke.MethodHandles
@@ -20026,16 +20520,27 @@ net.sf.freecol.client.gui.ImageLibrary
 net.sf.freecol.client.gui.plaf.FreeColPanelUI
 javax.swing.JComponent
 javax.swing.plaf.basic.BasicPanelUI
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.plaf.FreeColScrollPaneUI
 javax.swing.plaf.basic.BasicScrollPaneUI
 javax.swing.JComponent
 net.sf.freecol.client.gui.plaf.LAFUtilities
 net.sf.freecol.client.gui.plaf.FreeColScrollPaneUI
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.control.AllTests
 java.lang.Object
 net.sf.freecol.client.control.AllTests
 net.sf.freecol.client.control.MoveTest
 junit.framework.TestSuite
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.plaf.FreeColScrollPaneUI
+javax.swing.plaf.basic.BasicScrollPaneUI
+javax.swing.JComponent
+net.sf.freecol.client.gui.plaf.LAFUtilities
+net.sf.freecol.client.gui.plaf.FreeColScrollPaneUI
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.ReportCompactColonyPanel$ColonySummary$GoodsProduction
 java.lang.Object
 net.sf.freecol.client.gui.panel.ReportCompactColonyPanel$ColonySummary$GoodsProduction
@@ -20046,6 +20551,7 @@ net.sf.freecol.client.gui.panel.ReportCompactColonyPanel
 java.lang.Object
 net.sf.freecol.common.FreeColException
 net.sf.freecol.common.networking.MessageHandler
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.panel.PlayersTable$HeaderListener
 net.sf.freecol.client.gui.panel.PlayersTable$HeaderRenderer
 net.sf.freecol.client.gui.panel.PlayersTable$HeaderListener
@@ -20053,6 +20559,8 @@ java.awt.event.MouseAdapter
 javax.swing.table.JTableHeader
 java.awt.event.MouseEvent
 net.sf.freecol.client.gui.panel.PlayersTable
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.model.IndividualFatherTest
 java.util.Set
 net.sf.freecol.common.model.Game
@@ -20090,6 +20598,37 @@ net.sf.freecol.common.model.Ability
 net.sf.freecol.util.test.FreeColTestCase
 net.sf.freecol.common.model.IndianSettlement
 net.sf.freecol.common.model.UnitType
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.panel.PlayersTable$HeaderListener
+net.sf.freecol.client.gui.panel.PlayersTable$HeaderRenderer
+net.sf.freecol.client.gui.panel.PlayersTable$HeaderListener
+java.awt.event.MouseAdapter
+javax.swing.table.JTableHeader
+java.awt.event.MouseEvent
+net.sf.freecol.client.gui.panel.PlayersTable
+||:net.sf.freecol.client.control.InGameController$1
+net.sf.freecol.common.model.Unit$MoveType
+net.sf.freecol.common.model.Monarch$MonarchAction
+net.sf.freecol.common.model.Unit
+net.sf.freecol.common.model.DiplomaticTrade$TradeStatus
+net.sf.freecol.common.model.Player$NoClaimReason
+net.sf.freecol.client.control.InGameController$SellAction
+net.sf.freecol.client.control.InGameController$MissionaryAction
+net.sf.freecol.client.control.InGameController$ClaimAction
+net.sf.freecol.client.control.InGameController$ScoutIndianSettlementAction
+net.sf.freecol.common.model.Player
+net.sf.freecol.client.control.InGameController$TradeAction
+net.sf.freecol.common.model.DiplomaticTrade
+net.sf.freecol.client.control.InGameController$BuyAction
+java.lang.NoSuchFieldError
+net.sf.freecol.common.model.Monarch
+net.sf.freecol.client.control.InGameController$ArmedUnitSettlementAction
+net.sf.freecol.client.control.InGameController$1
+java.lang.Object
+net.sf.freecol.client.control.InGameController$ScoutColonyAction
+net.sf.freecol.client.control.InGameController
+>>>>>>> master
 ||:net.sf.freecol.common.model.Europe
 java.util.Set
 javax.xml.stream.XMLStreamException
@@ -20134,6 +20673,7 @@ net.sf.freecol.common.model.HighSeas
 net.sf.freecol.common.model.Locatable
 net.sf.freecol.common.model.FeatureContainer
 net.sf.freecol.common.model.UnitType
+<<<<<<< HEAD
 ||:net.sf.freecol.client.control.InGameController$1
 net.sf.freecol.common.model.Unit$MoveType
 net.sf.freecol.common.model.Monarch$MonarchAction
@@ -20155,6 +20695,8 @@ net.sf.freecol.client.control.InGameController$1
 java.lang.Object
 net.sf.freecol.client.control.InGameController$ScoutColonyAction
 net.sf.freecol.client.control.InGameController
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.resources.ResourceManager
 java.lang.StringBuilder
 java.lang.System
@@ -20186,6 +20728,25 @@ net.sf.freecol.common.resources.Video
 java.lang.String
 java.util.Map$Entry
 java.util.Set
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.server.ai.mission.PrivateerMissionTest
+net.sf.freecol.server.ai.AIMain
+net.sf.freecol.server.model.ServerUnit
+net.sf.freecol.util.test.FreeColTestCase
+net.sf.freecol.server.FreeColServer
+net.sf.freecol.common.model.Tile
+net.sf.freecol.server.ServerTestHelper
+net.sf.freecol.common.model.Specification
+net.sf.freecol.server.ai.AIUnit
+net.sf.freecol.common.model.Unit
+net.sf.freecol.server.model.ServerPlayer
+net.sf.freecol.server.ai.mission.PrivateerMissionTest
+net.sf.freecol.common.model.Map
+net.sf.freecol.common.model.Game
+net.sf.freecol.server.ai.mission.PrivateerMission
+java.lang.Exception
+>>>>>>> master
 ||:net.sf.freecol.server.control.InGameController
 net.sf.freecol.common.model.Player
 net.sf.freecol.common.model.Disaster
@@ -20337,6 +20898,7 @@ net.sf.freecol.common.model.Monarch
 java.lang.Exception
 net.sf.freecol.common.model.HistoryEvent
 net.sf.freecol.common.model.SettlementType
+<<<<<<< HEAD
 ||:net.sf.freecol.server.ai.mission.PrivateerMissionTest
 net.sf.freecol.server.ai.AIMain
 net.sf.freecol.server.model.ServerUnit
@@ -20353,6 +20915,8 @@ net.sf.freecol.common.model.Map
 net.sf.freecol.common.model.Game
 net.sf.freecol.server.ai.mission.PrivateerMission
 java.lang.Exception
+=======
+>>>>>>> master
 ||:net.sf.freecol.server.control.ChangeSet$PartialObjectChange
 java.lang.StringBuilder
 net.sf.freecol.server.control.ChangeSet
@@ -20436,6 +21000,7 @@ javax.swing.JTable
 java.lang.String
 javax.swing.table.TableColumn
 net.sf.freecol.client.gui.panel.ServerListTableModel
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.action.DisplayGridAction
 javax.swing.JCheckBoxMenuItem
 net.sf.freecol.client.gui.action.DisplayGridAction
@@ -20452,6 +21017,8 @@ net.sf.freecol.client.gui.panel.ServerListTableModel
 net.sf.freecol.common.ServerInfo
 javax.swing.table.AbstractTableModel
 java.lang.Integer
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.model.LostCityRumour
 java.lang.StringBuilder
 net.sf.freecol.common.model.Unit
@@ -20485,6 +21052,25 @@ net.sf.freecol.common.util.RandomUtils
 java.lang.String
 net.sf.freecol.common.model.TileType
 net.sf.freecol.common.model.Turn
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.panel.ServerListTableModel
+java.lang.String
+java.lang.StringBuilder
+java.util.List
+net.sf.freecol.common.i18n.Messages
+net.sf.freecol.client.gui.panel.ServerListTableModel
+net.sf.freecol.common.ServerInfo
+javax.swing.table.AbstractTableModel
+java.lang.Integer
+||:net.sf.freecol.client.gui.action.DisplayGridAction
+javax.swing.JCheckBoxMenuItem
+net.sf.freecol.client.gui.action.DisplayGridAction
+net.sf.freecol.client.gui.GUI
+net.sf.freecol.client.gui.action.SelectableAction
+net.sf.freecol.client.ClientOptions
+java.awt.event.ActionEvent
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.ReportTurnPanel
 java.lang.Class
 net.sf.freecol.common.model.Game
@@ -20542,6 +21128,12 @@ net.sf.freecol.client.control.InGameController
 net.sf.freecol.common.model.Unit$UnitLabelType
 net.miginfocom.swing.MigLayout
 javax.swing.ImageIcon
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.DialogHandler
+java.lang.Object
+net.sf.freecol.client.gui.DialogHandler
+>>>>>>> master
 ||:net.sf.freecol.client.FreeColClient
 net.sf.freecol.common.resources.ResourceManager
 java.lang.Class
@@ -20598,9 +21190,12 @@ net.sf.freecol.client.FreeColClient$1
 net.sf.freecol.client.Worker
 net.sf.freecol.common.debug.FreeColDebugger
 net.sf.freecol.client.control.InGameController
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.DialogHandler
 java.lang.Object
 net.sf.freecol.client.gui.DialogHandler
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.FreeColSeed
 java.lang.Object
 java.lang.StringBuilder
@@ -20818,6 +21413,15 @@ java.lang.Math
 net.sf.freecol.server.ai.TileImprovementPlan
 net.sf.freecol.common.model.TileImprovementType
 java.lang.String
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.server.model.ServerBuildingTest$1
+java.lang.Object
+net.sf.freecol.server.model.ServerBuildingTest
+net.sf.freecol.server.model.ServerBuildingTest$1
+java.lang.NoSuchFieldError
+net.sf.freecol.server.model.ServerBuildingTest$SchoolLevel
+>>>>>>> master
 ||:net.sf.freecol.common.model.ModelMessage$MessageType
 net.sf.freecol.common.model.Named
 java.lang.StringBuilder
@@ -20827,12 +21431,29 @@ net.sf.freecol.common.model.ModelMessage$MessageType
 net.sf.freecol.common.util.StringUtils
 [Lnet.sf.freecol.common.model.ModelMessage$MessageType;
 net.sf.freecol.common.model.ModelMessage
+<<<<<<< HEAD
 ||:net.sf.freecol.server.model.ServerBuildingTest$1
 java.lang.Object
 net.sf.freecol.server.model.ServerBuildingTest
 net.sf.freecol.server.model.ServerBuildingTest$1
 java.lang.NoSuchFieldError
 net.sf.freecol.server.model.ServerBuildingTest$SchoolLevel
+=======
+||:net.sf.freecol.util.test.MockMapGenerator
+net.sf.freecol.common.model.Market
+net.sf.freecol.server.generator.MapGenerator
+net.sf.freecol.common.model.HighSeas
+java.util.Iterator
+net.sf.freecol.common.model.Europe
+net.sf.freecol.common.model.Player
+net.sf.freecol.util.test.MockMapGenerator
+net.sf.freecol.common.model.Monarch
+java.lang.Object
+net.sf.freecol.common.model.Game
+net.sf.freecol.common.model.Map
+net.sf.freecol.common.model.MarketData
+net.sf.freecol.common.model.FreeColGameObject
+>>>>>>> master
 ||:net.sf.freecol.common.model.Goods
 java.lang.StringBuilder
 net.sf.freecol.common.model.Unit
@@ -20855,6 +21476,7 @@ javax.xml.stream.XMLStreamException
 java.lang.UnsupportedOperationException
 net.sf.freecol.common.model.GoodsType
 net.sf.freecol.common.model.Location
+<<<<<<< HEAD
 ||:net.sf.freecol.util.test.MockMapGenerator
 net.sf.freecol.common.model.Market
 net.sf.freecol.server.generator.MapGenerator
@@ -20869,6 +21491,8 @@ net.sf.freecol.common.model.Game
 net.sf.freecol.common.model.Map
 net.sf.freecol.common.model.MarketData
 net.sf.freecol.common.model.FreeColGameObject
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.animation.UnitMoveAnimation
 net.sf.freecol.client.gui.SwingGUI
 java.lang.Thread
@@ -20911,11 +21535,14 @@ java.util.Iterator
 net.sf.freecol.common.FreeColException
 net.sf.freecol.common.model.SettlementTest
 net.sf.freecol.common.model.Modifier
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.action.MapEditorAction
 net.sf.freecol.client.FreeColClient
 net.sf.freecol.client.control.MapEditorController
 net.sf.freecol.client.gui.action.MapEditorAction
 net.sf.freecol.client.gui.action.FreeColAction
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.model.Disaster
 java.lang.StringBuilder
 net.sf.freecol.common.model.FeatureContainer
@@ -20933,6 +21560,14 @@ net.sf.freecol.common.model.Disaster$Effects
 java.lang.String
 net.sf.freecol.common.io.FreeColXMLReader
 net.sf.freecol.common.model.Disaster
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.action.MapEditorAction
+net.sf.freecol.client.FreeColClient
+net.sf.freecol.client.control.MapEditorController
+net.sf.freecol.client.gui.action.MapEditorAction
+net.sf.freecol.client.gui.action.FreeColAction
+>>>>>>> master
 ||:net.sf.freecol.client.gui.TileViewer$SortableImage
 java.lang.Object
 net.sf.freecol.client.gui.TileViewer
@@ -21091,6 +21726,26 @@ java.lang.Object
 net.sf.freecol.common.model.Game$2
 java.lang.Iterable
 net.sf.freecol.common.model.Game
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.model.Game$1
+java.lang.StringBuilder
+java.lang.IllegalStateException
+java.util.Set
+java.util.NoSuchElementException
+java.util.Iterator
+java.util.HashMap
+java.util.Map
+java.lang.ref.WeakReference
+java.util.logging.Logger
+java.util.Map$Entry
+net.sf.freecol.common.model.Game$FcgoState
+net.sf.freecol.common.model.Game$1
+java.lang.Object
+net.sf.freecol.common.model.Game
+net.sf.freecol.common.model.FreeColGameObject
+java.lang.String
+>>>>>>> master
 ||:net.sf.freecol.common.model.HighScore
 javax.xml.stream.XMLStreamException
 java.lang.Class
@@ -21109,6 +21764,10 @@ java.text.SimpleDateFormat
 net.sf.freecol.common.model.Specification
 net.sf.freecol.common.model.Player$PlayerType
 net.sf.freecol.common.io.FreeColXMLWriter
+<<<<<<< HEAD
+=======
+java.lang.AutoCloseable
+>>>>>>> master
 java.io.FileInputStream
 net.sf.freecol.common.model.Turn
 net.sf.freecol.common.model.Player
@@ -21125,6 +21784,7 @@ net.sf.freecol.common.model.FreeColObject
 net.sf.freecol.common.model.NationType
 net.sf.freecol.FreeCol
 net.sf.freecol.common.io.FreeColXMLReader
+<<<<<<< HEAD
 net.sf.freecol.common.model.HighScore
 net.sf.freecol.common.io.FreeColXMLWriter$WriteScope
 net.sf.freecol.common.model.HighScore$ScoreLevel
@@ -21147,6 +21807,13 @@ java.lang.Object
 net.sf.freecol.common.model.Game
 net.sf.freecol.common.model.FreeColGameObject
 java.lang.String
+=======
+net.sf.freecol.common.io.FreeColXMLWriter$WriteScope
+net.sf.freecol.common.model.HighScore
+net.sf.freecol.common.model.HighScore$ScoreLevel
+java.util.Date
+java.io.FileNotFoundException
+>>>>>>> master
 ||:net.sf.freecol.common.model.Nameable
 java.lang.Object
 net.sf.freecol.common.model.Nameable
@@ -21197,13 +21864,22 @@ net.sf.freecol.client.gui.action.ColopediaAction
 net.sf.freecol.client.gui.panel.ModifierFormat
 net.miginfocom.swing.MigLayout
 net.sf.freecol.common.model.UnitType
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.common.i18n.Selector
+java.lang.Object
+net.sf.freecol.common.i18n.Selector
+>>>>>>> master
 ||:net.sf.freecol.client.gui.action.ReportCargoAction
 net.sf.freecol.client.gui.GUI
 net.sf.freecol.client.gui.action.FreeColAction
 net.sf.freecol.client.gui.action.ReportCargoAction
+<<<<<<< HEAD
 ||:net.sf.freecol.common.i18n.Selector
 java.lang.Object
 net.sf.freecol.common.i18n.Selector
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.model.FeatureContainer
 java.lang.StringBuilder
 java.lang.invoke.MethodHandles
@@ -21280,6 +21956,14 @@ java.lang.IllegalArgumentException
 net.sf.freecol.common.io.FreeColXMLReader
 net.sf.freecol.common.model.Ability
 net.sf.freecol.common.model.UnitType
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.Canvas$PopupPosition
+net.sf.freecol.client.gui.Canvas
+[Lnet.sf.freecol.client.gui.Canvas$PopupPosition;
+java.lang.Enum
+net.sf.freecol.client.gui.Canvas$PopupPosition
+>>>>>>> master
 ||:net.sf.freecol.common.model.GoldTradeItem
 java.lang.StringBuilder
 net.sf.freecol.common.model.FreeColObject
@@ -21292,11 +21976,14 @@ net.sf.freecol.common.model.Player
 net.sf.freecol.common.io.FreeColXMLWriter
 java.lang.Integer
 net.sf.freecol.common.io.FreeColXMLReader
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.Canvas$PopupPosition
 net.sf.freecol.client.gui.Canvas
 [Lnet.sf.freecol.client.gui.Canvas$PopupPosition;
 java.lang.Enum
 net.sf.freecol.client.gui.Canvas$PopupPosition
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.VictoryDialog
 net.sf.freecol.client.gui.panel.FreeColConfirmDialog
 net.sf.freecol.common.resources.ResourceManager
@@ -21409,6 +22096,12 @@ net.sf.freecol.client.gui.panel.ReportCompactColonyPanel$ColonySummary
 net.sf.freecol.client.gui.panel.ReportCompactColonyPanel$3
 net.sf.freecol.client.gui.panel.ReportCompactColonyPanel
 java.lang.NoSuchFieldError
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.panel.Parameters
+java.lang.Object
+net.sf.freecol.client.gui.panel.Parameters
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.ReportCompactColonyPanel$2
 java.lang.Object
 net.sf.freecol.common.model.UnitType
@@ -21418,15 +22111,19 @@ net.sf.freecol.client.gui.panel.ReportCompactColonyPanel
 java.util.Comparator
 net.sf.freecol.common.model.WorkLocation$Suggestion
 net.sf.freecol.common.model.WorkLocation
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.panel.Parameters
 java.lang.Object
 net.sf.freecol.client.gui.panel.Parameters
+=======
+>>>>>>> master
 ||:net.sf.freecol.client.gui.panel.ReportCompactColonyPanel$1
 java.lang.Object
 java.util.List
 net.sf.freecol.client.gui.panel.ReportCompactColonyPanel
 net.sf.freecol.client.gui.panel.ReportCompactColonyPanel$1
 java.util.Comparator
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.action.SaveAction
 net.sf.freecol.client.FreeColClient
 net.sf.freecol.client.control.InGameController
@@ -21434,6 +22131,8 @@ net.sf.freecol.client.control.MapEditorController
 net.sf.freecol.client.gui.GUI
 net.sf.freecol.client.gui.action.FreeColAction
 net.sf.freecol.client.gui.action.SaveAction
+=======
+>>>>>>> master
 ||:net.sf.freecol.server.ai.mission.ScoutingMission
 net.sf.freecol.common.model.Unit$MoveType
 net.sf.freecol.server.ai.mission.Mission
@@ -21468,6 +22167,16 @@ net.sf.freecol.common.model.Location
 java.lang.Object
 net.sf.freecol.common.model.Settlement
 java.lang.String
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.action.SaveAction
+net.sf.freecol.client.FreeColClient
+net.sf.freecol.client.control.InGameController
+net.sf.freecol.client.control.MapEditorController
+net.sf.freecol.client.gui.GUI
+net.sf.freecol.client.gui.action.FreeColAction
+net.sf.freecol.client.gui.action.SaveAction
+>>>>>>> master
 ||:net.sf.freecol.common.model.TradeRoute
 net.sf.freecol.common.model.Nameable
 java.lang.StringBuilder
@@ -21545,12 +22254,15 @@ net.sf.freecol.client.control.InGameController
 net.sf.freecol.client.gui.action.UnitAction
 net.sf.freecol.client.gui.GUI
 net.sf.freecol.client.gui.action.RenameAction
+<<<<<<< HEAD
 ||:net.sf.freecol.client.gui.action.MiniMapToggleViewAction
 net.sf.freecol.client.FreeColClient
 net.sf.freecol.client.gui.action.MiniMapToggleViewAction
 net.sf.freecol.client.gui.action.MapboardAction
 net.sf.freecol.client.gui.GUI
 net.sf.freecol.client.ClientOptions
+=======
+>>>>>>> master
 ||:net.sf.freecol.common.model.CombatTest
 java.util.Set
 net.sf.freecol.common.model.Specification$Source
@@ -21596,3 +22308,12 @@ net.sf.freecol.common.model.Unit$MoveType
 net.sf.freecol.common.model.CombatModel$CombatResult
 net.sf.freecol.common.model.IndianSettlement
 net.sf.freecol.common.model.UnitType
+<<<<<<< HEAD
+=======
+||:net.sf.freecol.client.gui.action.MiniMapToggleViewAction
+net.sf.freecol.client.FreeColClient
+net.sf.freecol.client.gui.action.MiniMapToggleViewAction
+net.sf.freecol.client.gui.action.MapboardAction
+net.sf.freecol.client.gui.GUI
+net.sf.freecol.client.ClientOptions
+>>>>>>> master

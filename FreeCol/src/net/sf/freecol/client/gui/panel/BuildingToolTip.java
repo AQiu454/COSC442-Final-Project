@@ -67,12 +67,10 @@ public class BuildingToolTip extends JToolTip {
         final Game game = building.getGame();
         final int workplaces = building.getUnitCapacity();
         List<AbstractGoods> outputs = building.getOutputs();
-        // FIXME: consider several outputs
         final GoodsType output = (outputs.isEmpty()) ? null
             : outputs.get(0).getType();
 
         if (arrow == null) {
-            arrow = new JLabel(ResourceManager.getString("arrow.E"));
             arrow.setFont(FontLibrary.createFont(FontLibrary.FontType.SIMPLE,
                 FontLibrary.FontSize.SMALL, Font.BOLD, lib.getScaleFactor()));
         }

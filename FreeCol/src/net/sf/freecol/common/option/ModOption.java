@@ -26,18 +26,22 @@ import java.util.logging.Logger;
 import javax.xml.stream.XMLStreamException;
 
 import net.sf.freecol.common.io.FreeColModFile;
-import net.sf.freecol.common.io.Mods;
 import net.sf.freecol.common.io.FreeColXMLWriter;
+import net.sf.freecol.common.io.Mods;
 import net.sf.freecol.common.model.Specification;
 import net.sf.freecol.common.util.Utils;
 
+<<<<<<< HEAD
 
 // TODO: Auto-generated Javadoc
+=======
+>>>>>>> master
 /**
  * Represents an option that can be an arbitrary string.
  */
 public class ModOption extends AbstractOption<FreeColModFile> {
 
+<<<<<<< HEAD
     /** The Constant logger. */
     @SuppressWarnings("unused")
     private static final Logger logger = Logger.getLogger(ModOption.class.getName());
@@ -195,4 +199,161 @@ public class ModOption extends AbstractOption<FreeColModFile> {
     public static String getXMLElementTagName() {
         return "modOption";
     }
+=======
+	/** The Constant logger. */
+	@SuppressWarnings("unused")
+	private static final Logger logger = Logger.getLogger(ModOption.class.getName());
+
+	/** The value of this option. */
+	private FreeColModFile value = null;
+
+	/**
+	 * Creates a new <code>ModOption</code>.
+	 *
+	 * @param specification
+	 *            The <code>Specification</code> to refer to.
+	 */
+	public ModOption(Specification specification) {
+		super(specification);
+	}
+
+	/**
+	 * Get the choices available for this option.
+	 *
+	 * @return A list of <code>FreeColModFile</code>s.
+	 */
+	public final List<FreeColModFile> getChoices() {
+		return new ArrayList<>(Mods.getAllMods());
+	}
+
+	// Interface Option
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public ModOption clone() {
+		ModOption result = new ModOption(getSpecification());
+		result.setId(this.getId());
+		result.value = this.value;
+		return result;
+	}
+
+	/**
+	 * Gets the current value of this <code>ModOption</code>.
+	 *
+	 * @return The value.
+	 */
+	@Override
+	public FreeColModFile getValue() {
+		return value;
+	}
+
+	/**
+	 * Sets the current value of this option.
+	 *
+	 * @param value
+	 *            The new value.
+	 */
+	@Override
+	public void setValue(FreeColModFile value) {
+		final FreeColModFile oldValue = this.value;
+		this.value = value;
+		setId(value.getId());
+		if (isDefined && value != oldValue) {
+			firePropertyChange(VALUE_TAG, oldValue, value);
+		}
+		isDefined = true;
+	}
+
+	// Override AbstractOption
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	protected void setValue(String valueString, String defaultValueString) throws XMLStreamException {
+		String id = (valueString != null) ? valueString : defaultValueString;
+		FreeColModFile fcmf = Mods.getModFile(id);
+		if (fcmf == null) {
+			throw new XMLStreamException("Could not find mod for: " + id);
+		}
+		setValue(fcmf);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public boolean isNullValueOK() {
+		return true;
+	}
+
+	// Override Object
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) {
+			return true;
+		}
+		if (o instanceof ModOption) {
+			ModOption mod = (ModOption) o;
+			return this.value == mod.value && super.equals(o);
+		}
+		return false;
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public int hashCode() {
+		int hash = super.hashCode();
+		return 31 * hash + Utils.hashCode(this.value);
+	}
+
+	// Serialization
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	protected void writeAttributes(FreeColXMLWriter xw) throws XMLStreamException {
+		super.writeAttributes(xw);
+
+		if (value != null) {
+			xw.writeAttribute(VALUE_TAG, value.getId());
+		}
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder(32);
+		sb.append('[').append(getId()).append(']');
+		return sb.toString();
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public String getXMLTagName() {
+		return getXMLElementTagName();
+	}
+
+	/**
+	 * Gets the tag name of the root element representing this object.
+	 *
+	 * @return "modOption".
+	 */
+	public static String getXMLElementTagName() {
+		return "modOption";
+	}
+>>>>>>> master
 }

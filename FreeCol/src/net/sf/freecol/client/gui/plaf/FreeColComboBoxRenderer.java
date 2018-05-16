@@ -161,8 +161,7 @@ public class FreeColComboBoxRenderer<T>
             c.setText(nd[0]);
             if (nd[1] != null) c.setToolTipText(nd[1]);
         } else {
-            logger.warning("What is this?: " + value
-                + " (" + value.getClass() + ")");
+            logger.warning("What is this?: " + value + " (" + value.getClass() + ")");
         }
     }
 

@@ -17,11 +17,13 @@
  *  along with FreeCol.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
 package net.sf.freecol.common.model;
 
+<<<<<<< HEAD
 
 // TODO: Auto-generated Javadoc
+=======
+>>>>>>> master
 /**
  * Interface for classes which listen to transactions in market.
  *
@@ -29,6 +31,7 @@ package net.sf.freecol.common.model;
  */
 public interface TransactionListener {
 
+<<<<<<< HEAD
     /**
      * Logs a purchase.
      *
@@ -47,4 +50,31 @@ public interface TransactionListener {
      * @param tax The tax which has been applied
      */
     public void logSale(GoodsType goodsType, int amount, int price, int tax);
+=======
+	/**
+	 * Logs a purchase.
+	 *
+	 * @param goodsType
+	 *            The type of goods which have been purchased
+	 * @param amount
+	 *            The amount of goods which have been purchased
+	 * @param price
+	 *            The unit price of the goods
+	 */
+	public void logPurchase(GoodsType goodsType, int amount, int price);
+
+	/**
+	 * Logs a sale.
+	 *
+	 * @param goodsType
+	 *            The type of goods which have been sold
+	 * @param amount
+	 *            The amount of goods which have been sold
+	 * @param price
+	 *            The unit price of the goods
+	 * @param tax
+	 *            The tax which has been applied
+	 */
+	public void logSale(GoodsType goodsType, int amount, int price, int tax);
+>>>>>>> master
 }

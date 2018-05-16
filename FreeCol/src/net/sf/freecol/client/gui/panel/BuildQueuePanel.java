@@ -269,14 +269,12 @@ public class BuildQueuePanel extends FreeColPanel implements ItemListener {
 
                 // Suppress dropping the selection onto itself.
                 if (preferredIndex != -1 && prevPos == preferredIndex) {
-                    //indices = null;
                     return false;
                 }
 
                 // Insist drop is within bounds.
                 int maximumIndex = getMaximumIndex(queue.get(0));
                 if (preferredIndex > maximumIndex) {
-                    //indices = null;
                     return false;
                 }
 
@@ -334,7 +332,6 @@ public class BuildQueuePanel extends FreeColPanel implements ItemListener {
         @Override
         protected void exportDone(JComponent source, Transferable data, 
                                   int action) {
-            //this.indices = null;
             this.numberOfItems = 0;
             updateAllLists();
         }
@@ -356,7 +353,7 @@ public class BuildQueuePanel extends FreeColPanel implements ItemListener {
             
             this.source = BuildQueuePanel.this.convertJComp(comp);
             if (this.source == null) return null;
-            //this.indices = this.source.getSelectedIndices();
+
             return new BuildablesTransferable(this.source.getSelectedValuesList());
         }
 
@@ -1102,7 +1099,7 @@ public class BuildQueuePanel extends FreeColPanel implements ItemListener {
                 }
                 // found a building it upgrades to, cannot go to or
                 // beyond this position
-                if (foundUpgradesFrom && upgradesTo != null
+                if (foundUpgradesFrom 
                     && upgradesTo.equals(toBuild)) return index;
 
                 // Don't go past a unit this building can build.
@@ -1121,7 +1118,7 @@ public class BuildQueuePanel extends FreeColPanel implements ItemListener {
     private void updateDetailView() {
         ListCellRenderer<BuildableType> cellRenderer
             = (this.compactBox.isSelected())
-            ? new FreeColComboBoxRenderer<BuildableType>()
+            ? new FreeColComboBoxRenderer<>()
             : new DefaultBuildQueueCellRenderer();
         this.buildQueueList.setCellRenderer(cellRenderer);
         this.buildingList.setCellRenderer(cellRenderer);
@@ -1175,7 +1172,7 @@ public class BuildQueuePanel extends FreeColPanel implements ItemListener {
      */
     @Override
     public void itemStateChanged(ItemEvent event) {
-        if (event.getSource() == this.compactBox) {
+        if (event.getSource() == compactBox) {
             updateDetailView();
             defaultCompact = this.compactBox.isSelected();
         } else if (event.getSource() == this.showAllBox) {

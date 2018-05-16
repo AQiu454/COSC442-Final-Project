@@ -22,13 +22,17 @@ package net.sf.freecol.common.model;
 import java.util.ArrayList;
 import java.util.List;
 
+<<<<<<< HEAD
 
 // TODO: Auto-generated Javadoc
+=======
+>>>>>>> master
 /**
  * Container for information about production in a colony.
  */
 public class ProductionInfo {
 
+<<<<<<< HEAD
     /** The maximum production possible given unlimited input. */
     private List<AbstractGoods> maximumProduction = new ArrayList<>();
 
@@ -259,4 +263,247 @@ public class ProductionInfo {
         append(result, "Maximum Consumption", maximumConsumption);
         return result.toString();
     }
+=======
+	/** The maximum production possible given unlimited input. */
+	private List<AbstractGoods> maximumProduction = new ArrayList<>();
+
+	/** The actual production. */
+	private List<AbstractGoods> production = new ArrayList<>();
+
+	/** The maximum consumption possible given unlimited input. */
+	private List<AbstractGoods> maximumConsumption = new ArrayList<>();
+
+	/** The actual consumption. */
+	private List<AbstractGoods> consumption = new ArrayList<>();
+
+	/**
+	 * Gets the consumption.
+	 *
+	 * @return the consumption
+	 */
+	public final List<AbstractGoods> getConsumption() {
+		return consumption;
+	}
+
+	/**
+	 * Sets the consumption.
+	 *
+	 * @param newConsumption
+	 *            the new consumption
+	 */
+	public final void setConsumption(final List<AbstractGoods> newConsumption) {
+		this.consumption = newConsumption;
+	}
+
+	/**
+	 * Adds the consumption.
+	 *
+	 * @param goods
+	 *            the goods
+	 */
+	public void addConsumption(AbstractGoods goods) {
+		consumption.add(goods);
+	}
+
+	/**
+	 * Gets the production.
+	 *
+	 * @return the production
+	 */
+	public final List<AbstractGoods> getProduction() {
+		return production;
+	}
+
+	/**
+	 * Sets the production.
+	 *
+	 * @param newProduction
+	 *            the new production
+	 */
+	public final void setProduction(final List<AbstractGoods> newProduction) {
+		this.production = newProduction;
+	}
+
+	/**
+	 * Adds the production.
+	 *
+	 * @param goods
+	 *            the goods
+	 */
+	public void addProduction(AbstractGoods goods) {
+		production.add(goods);
+	}
+
+	/**
+	 * Adds the production.
+	 *
+	 * @param goods
+	 *            the goods
+	 */
+	public void addProduction(List<AbstractGoods> goods) {
+		production.addAll(goods);
+	}
+
+	/**
+	 * Gets the maximum production.
+	 *
+	 * @return the maximum production
+	 */
+	public final List<AbstractGoods> getMaximumProduction() {
+		return maximumProduction;
+	}
+
+	/**
+	 * Sets the maximum production.
+	 *
+	 * @param newMaximumProduction
+	 *            the new maximum production
+	 */
+	public final void setMaximumProduction(final List<AbstractGoods> newMaximumProduction) {
+		this.maximumProduction = newMaximumProduction;
+	}
+
+	/**
+	 * Adds the maximum production.
+	 *
+	 * @param goods
+	 *            the goods
+	 */
+	public void addMaximumProduction(AbstractGoods goods) {
+		maximumProduction.add(goods);
+	}
+
+	/**
+	 * Get a list of the goods that are in production deficit, that is, those which
+	 * are produced at less than their maximum possible rate.
+	 *
+	 * @return A list of <code>AbstractGoods</code>.
+	 */
+	public List<AbstractGoods> getProductionDeficit() {
+		if (this.maximumProduction.isEmpty()) {
+			return WorkLocation.EMPTY_LIST;
+		}
+		List<AbstractGoods> result = new ArrayList<>();
+		for (AbstractGoods ag : this.production) {
+			AbstractGoods agMax = AbstractGoods.findByType(ag.getType(), this.maximumProduction);
+			if (agMax == null)
+				continue;
+			int amount = agMax.getAmount() - ag.getAmount();
+			if (amount != 0) {
+				result.add(new AbstractGoods(ag.getType(), amount));
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * Get a list of the goods that are in consumption deficit, that is, those which
+	 * are consumed at less than their maximum possible rate.
+	 *
+	 * @return A list of <code>AbstractGoods</code>.
+	 */
+	public List<AbstractGoods> getConsumptionDeficit() {
+		if (this.maximumConsumption.isEmpty()) {
+			return WorkLocation.EMPTY_LIST;
+		}
+		List<AbstractGoods> result = new ArrayList<>();
+		for (AbstractGoods ag : this.consumption) {
+			AbstractGoods agMax = AbstractGoods.findByType(ag.getType(), this.maximumConsumption);
+			if (agMax == null)
+				continue;
+			int amount = agMax.getAmount() - ag.getAmount();
+			if (amount != 0) {
+				result.add(new AbstractGoods(ag.getType(), amount));
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * Does production equal maximum production?.
+	 *
+	 * @return True if at maximum production.
+	 */
+	public boolean hasMaximumProduction() {
+		if (maximumProduction.isEmpty())
+			return true;
+
+		for (int index = 0; index < production.size(); index++) {
+			if (maximumProduction.size() < index)
+				return true;
+
+			if (maximumProduction.get(index).getAmount() > production.get(index).getAmount())
+				return false;
+		}
+		return true;
+	}
+
+	/**
+	 * Gets the maximum consumption.
+	 *
+	 * @return the maximum consumption
+	 */
+	public final List<AbstractGoods> getMaximumConsumption() {
+		return maximumConsumption;
+	}
+
+	/**
+	 * Sets the maximum consumption.
+	 *
+	 * @param newMaximumConsumption
+	 *            the new maximum consumption
+	 */
+	public final void setMaximumConsumption(final List<AbstractGoods> newMaximumConsumption) {
+		this.maximumConsumption = newMaximumConsumption;
+	}
+
+	/**
+	 * Adds the maximum consumption.
+	 *
+	 * @param goods
+	 *            the goods
+	 */
+	public void addMaximumConsumption(AbstractGoods goods) {
+		maximumConsumption.add(goods);
+	}
+
+	/**
+	 * Append.
+	 *
+	 * @param result
+	 *            the result
+	 * @param key
+	 *            the key
+	 * @param list
+	 *            the list
+	 */
+	private void append(StringBuilder result, String key, List<AbstractGoods> list) {
+		if (list.isEmpty())
+			return;
+
+		result.append(key).append(": ");
+		for (AbstractGoods goods : list) {
+			result.append(goods);
+			if (goods.getType().getStoredAs() != goods.getType()) {
+				result.append(" [").append(goods.getType().getStoredAs().getId()).append(']');
+			}
+			result.append(", ");
+		}
+		int length = result.length();
+		result.replace(length - 2, length, "\n");
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public String toString() {
+		StringBuilder result = new StringBuilder();
+		append(result, "Production", production);
+		append(result, "Consumption", consumption);
+		append(result, "Maximum Production", maximumProduction);
+		append(result, "Maximum Consumption", maximumConsumption);
+		return result.toString();
+	}
+>>>>>>> master
 }

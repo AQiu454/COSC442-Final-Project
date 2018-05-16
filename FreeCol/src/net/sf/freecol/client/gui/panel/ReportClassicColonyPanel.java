@@ -78,7 +78,7 @@ public final class ReportClassicColonyPanel extends ReportPanel
     public ReportClassicColonyPanel(FreeColClient freeColClient) {
         super(freeColClient, "reportColonyAction");
         
-        this.colonies.addAll(freeColClient.getMySortedColonies());
+        ReportClassicColonyPanel.colonies.addAll(freeColClient.getMySortedColonies());
         update();
     }
 
@@ -93,7 +93,7 @@ public final class ReportClassicColonyPanel extends ReportPanel
         
         reportPanel.setLayout(new MigLayout("fill")); // Set the layout
         
-        for (Colony colony : this.colonies) {
+        for (Colony colony : ReportClassicColonyPanel.colonies) {
             // Name
             JButton button = Utility.getLinkButton(colony.getName(), null,
                 colony.getId());

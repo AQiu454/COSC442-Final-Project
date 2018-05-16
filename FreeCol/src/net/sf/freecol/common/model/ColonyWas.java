@@ -25,14 +25,18 @@ import java.util.logging.Logger;
 
 import net.sf.freecol.common.model.Colony.ColonyChangeEvent;
 
+<<<<<<< HEAD
 
 // TODO: Auto-generated Javadoc
+=======
+>>>>>>> master
 /**
- * Helper container to remember a colony state prior to some
- * change, and fire off any consequent property changes.
+ * Helper container to remember a colony state prior to some change, and fire
+ * off any consequent property changes.
  */
 public class ColonyWas {
 
+<<<<<<< HEAD
     /** The Constant logger. */
     private static final Logger logger = Logger.getLogger(ColonyWas.class.getName());
 
@@ -47,54 +51,68 @@ public class ColonyWas {
     
     /** The build queue. */
     private final List<BuildableType> buildQueue;
+=======
+	/** The Constant logger. */
+	private static final Logger logger = Logger.getLogger(ColonyWas.class.getName());
 
+	/** The colony. */
+	private final Colony colony;
 
-    /**
-     * Record the state of a colony.
-     *
-     * @param colony The <code>Colony</code> to remember.
-     */
-    public ColonyWas(Colony colony) {
-        this.colony = colony;
-        this.population = colony.getUnitCount();
-        this.productionBonus = colony.getProductionBonus();
-        this.buildQueue = new ArrayList<>(colony.getBuildQueue());
-        if (colony.getGoodsContainer() != null) {
-            colony.getGoodsContainer().saveState();
-        }
-    }
+	/** The population. */
+	private final int population;
 
-    /**
-     * Fire any property changes resulting from actions within a
-     * colony.
-     *
-     * @return True if something changed.
-     */
-    public boolean fireChanges() {
-        boolean ret = false;
-        int newPopulation = colony.getUnitCount();
-        if (newPopulation != population) {
-            String pc = ColonyChangeEvent.POPULATION_CHANGE.toString();
-            colony.firePropertyChange(pc, population, newPopulation);
-            ret = true;
-        }
-        int newProductionBonus = colony.getProductionBonus();
-        if (newProductionBonus != productionBonus) {
-            String pc = ColonyChangeEvent.BONUS_CHANGE.toString();
-            colony.firePropertyChange(pc, productionBonus,
-                newProductionBonus);
-            ret = true;
-        }
-        List<BuildableType> newBuildQueue = colony.getBuildQueue();
-        if (!newBuildQueue.equals(buildQueue)) {
-            String pc = ColonyChangeEvent.BUILD_QUEUE_CHANGE.toString();
-            colony.firePropertyChange(pc, buildQueue, newBuildQueue);
-            ret = true;
-        }
-        if (colony.getGoodsContainer() != null) {
-            colony.getGoodsContainer().fireChanges();
-            ret = true;
-        }
-        return true;
-    }
+	/** The production bonus. */
+	private final int productionBonus;
+>>>>>>> master
+
+	/** The build queue. */
+	private final List<BuildableType> buildQueue;
+
+	/**
+	 * Record the state of a colony.
+	 *
+	 * @param colony
+	 *            The <code>Colony</code> to remember.
+	 */
+	public ColonyWas(Colony colony) {
+		this.colony = colony;
+		this.population = colony.getUnitCount();
+		this.productionBonus = colony.getProductionBonus();
+		this.buildQueue = new ArrayList<>(colony.getBuildQueue());
+		if (colony.getGoodsContainer() != null) {
+			colony.getGoodsContainer().saveState();
+		}
+	}
+
+	/**
+	 * Fire any property changes resulting from actions within a colony.
+	 *
+	 * @return True if something changed.
+	 */
+	public boolean fireChanges() {
+		boolean ret = false;
+		int newPopulation = colony.getUnitCount();
+		if (newPopulation != population) {
+			String pc = ColonyChangeEvent.POPULATION_CHANGE.toString();
+			colony.firePropertyChange(pc, population, newPopulation);
+			ret = true;
+		}
+		int newProductionBonus = colony.getProductionBonus();
+		if (newProductionBonus != productionBonus) {
+			String pc = ColonyChangeEvent.BONUS_CHANGE.toString();
+			colony.firePropertyChange(pc, productionBonus, newProductionBonus);
+			ret = true;
+		}
+		List<BuildableType> newBuildQueue = colony.getBuildQueue();
+		if (!newBuildQueue.equals(buildQueue)) {
+			String pc = ColonyChangeEvent.BUILD_QUEUE_CHANGE.toString();
+			colony.firePropertyChange(pc, buildQueue, newBuildQueue);
+			ret = true;
+		}
+		if (colony.getGoodsContainer() != null) {
+			colony.getGoodsContainer().fireChanges();
+			ret = true;
+		}
+		return true;
+	}
 }

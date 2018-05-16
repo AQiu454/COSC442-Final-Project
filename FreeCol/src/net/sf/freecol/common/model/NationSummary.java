@@ -27,13 +27,17 @@ import net.sf.freecol.common.model.Stance;
 
 import org.w3c.dom.Element;
 
+<<<<<<< HEAD
 
 // TODO: Auto-generated Javadoc
+=======
+>>>>>>> master
 /**
  * A summary of an enemy nation.
  */
 public class NationSummary extends FreeColObject {
 
+<<<<<<< HEAD
     /** The stance of the player toward the requesting player. */
     private Stance stance;
 
@@ -249,45 +253,262 @@ public class NationSummary extends FreeColObject {
             xw.writeAttribute(TAX_TAG, tax);
         }
     }
+=======
+	/** The stance of the player toward the requesting player. */
+	private Stance stance;
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    protected void readAttributes(FreeColXMLReader xr) throws XMLStreamException {
-        super.readAttributes(xr);
+	/** The number of settlements this player has. */
+	private int numberOfSettlements;
 
-        stance = xr.getAttribute(STANCE_TAG, Stance.class, Stance.PEACE);
+	/** The number of units this (European) player has. */
+	private int numberOfUnits;
 
-        numberOfSettlements = xr.getAttribute(NUMBER_OF_SETTLEMENTS_TAG, -1);
+	/** The military strength of this (European) player. */
+	private int militaryStrength;
 
-        numberOfUnits = xr.getAttribute(NUMBER_OF_UNITS_TAG, -1);
+	/** The naval strength of this (European) player. */
+	private int navalStrength;
 
-        militaryStrength = xr.getAttribute(MILITARY_STRENGTH_TAG, -1);
+	/** The gold this (European) player has. */
+	private int gold;
 
-        navalStrength = xr.getAttribute(NAVAL_STRENGTH_TAG, -1);
+	/** The (European) player SoL. */
+	private int soL;
 
-        gold = xr.getAttribute(GOLD_TAG, -1);
+	/** The number of founding fathers this (European) player has. */
+	private int foundingFathers;
 
-        soL = xr.getAttribute(SOL_TAG, -1);
+	/** The tax rate of this (European) player. */
+	private int tax;
 
-        foundingFathers = xr.getAttribute(FOUNDING_FATHERS_TAG, -1);
+	/**
+	 * Creates a nation summary for the specified player.
+	 *
+	 * @param player
+	 *            The <code>Player</code> to create the summary for.
+	 * @param requester
+	 *            The <code>Player</code> making the request.
+	 */
+	public NationSummary(Player player, Player requester) {
+		setId("");
 
-        tax = xr.getAttribute(TAX_TAG, -1);
-    }
+		stance = player.getStance(requester);
+		if (stance == Stance.UNCONTACTED)
+			stance = Stance.PEACE;
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public String getXMLTagName() { return getXMLElementTagName(); }
+		numberOfSettlements = player.getSettlements().size();
 
-    /**
-     * Gets the tag name of the root element representing this object.
-     *
-     * @return "nationSummary"
-     */
-    public static String getXMLElementTagName() {
-        return "nationSummary";
-    }
+		if (player.isEuropean()) {
+			numberOfUnits = player.getUnits().size();
+			militaryStrength = player.calculateStrength(false);
+			navalStrength = player.calculateStrength(true);
+			gold = player.getGold();
+			if (player == requester || requester.hasAbility(Ability.BETTER_FOREIGN_AFFAIRS_REPORT)) {
+				soL = player.getSoL();
+				foundingFathers = player.getFatherCount();
+				tax = player.getTax();
+			} else {
+				soL = foundingFathers = tax = -1;
+			}
+		} else {
+			numberOfUnits = militaryStrength = navalStrength = gold = soL = foundingFathers = tax = -1;
+		}
+	}
+
+	/**
+	 * Creates a new <code>NationSummary</code> instance.
+	 *
+	 * @param element
+	 *            An <code>Element</code> value.
+	 */
+	public NationSummary(Element element) {
+		readFromXMLElement(element);
+	}
+
+	/**
+	 * Gets the stance.
+	 *
+	 * @return the stance
+	 */
+	// Trivial accessors
+	public Stance getStance() {
+		return stance;
+	}
+
+	/**
+	 * Gets the number of settlements.
+	 *
+	 * @return the number of settlements
+	 */
+	public int getNumberOfSettlements() {
+		return numberOfSettlements;
+	}
+
+	/**
+	 * Gets the number of units.
+	 *
+	 * @return the number of units
+	 */
+	public int getNumberOfUnits() {
+		return numberOfUnits;
+	}
+
+	/**
+	 * Gets the military strength.
+	 *
+	 * @return the military strength
+	 */
+	public int getMilitaryStrength() {
+		return militaryStrength;
+	}
+
+	/**
+	 * Gets the naval strength.
+	 *
+	 * @return the naval strength
+	 */
+	public int getNavalStrength() {
+		return navalStrength;
+	}
+
+	/**
+	 * Gets the gold.
+	 *
+	 * @return the gold
+	 */
+	public int getGold() {
+		return gold;
+	}
+
+	/**
+	 * Gets the founding fathers.
+	 *
+	 * @return the founding fathers
+	 */
+	public int getFoundingFathers() {
+		return foundingFathers;
+	}
+
+	/**
+	 * Gets the so L.
+	 *
+	 * @return the so L
+	 */
+	public int getSoL() {
+		return soL;
+	}
+
+	/**
+	 * Gets the tax.
+	 *
+	 * @return the tax
+	 */
+	public int getTax() {
+		return tax;
+	}
+
+	// Serialization
+
+	/** The Constant FOUNDING_FATHERS_TAG. */
+	private static final String FOUNDING_FATHERS_TAG = "foundingFathers";
+
+	/** The Constant GOLD_TAG. */
+	private static final String GOLD_TAG = "gold";
+
+	/** The Constant MILITARY_STRENGTH_TAG. */
+	private static final String MILITARY_STRENGTH_TAG = "militaryStrength";
+
+	/** The Constant NAVAL_STRENGTH_TAG. */
+	private static final String NAVAL_STRENGTH_TAG = "navalStrength";
+
+	/** The Constant NUMBER_OF_SETTLEMENTS_TAG. */
+	private static final String NUMBER_OF_SETTLEMENTS_TAG = "numberOfSettlements";
+
+	/** The Constant NUMBER_OF_UNITS_TAG. */
+	private static final String NUMBER_OF_UNITS_TAG = "numberOfUnits";
+
+	/** The Constant SOL_TAG. */
+	private static final String SOL_TAG = "SoL";
+
+	/** The Constant STANCE_TAG. */
+	private static final String STANCE_TAG = "stance";
+
+	/** The Constant TAX_TAG. */
+	private static final String TAX_TAG = "tax";
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	protected void writeAttributes(FreeColXMLWriter xw) throws XMLStreamException {
+		super.writeAttributes(xw);
+
+		xw.writeAttribute(NUMBER_OF_SETTLEMENTS_TAG, numberOfSettlements);
+
+		xw.writeAttribute(NUMBER_OF_UNITS_TAG, numberOfUnits);
+
+		xw.writeAttribute(MILITARY_STRENGTH_TAG, militaryStrength);
+
+		xw.writeAttribute(NAVAL_STRENGTH_TAG, navalStrength);
+
+		xw.writeAttribute(STANCE_TAG, stance);
+
+		xw.writeAttribute(GOLD_TAG, gold);
+
+		if (soL >= 0) {
+			xw.writeAttribute(SOL_TAG, soL);
+		}
+
+		if (foundingFathers >= 0) {
+			xw.writeAttribute(FOUNDING_FATHERS_TAG, foundingFathers);
+		}
+
+		if (tax >= 0) {
+			xw.writeAttribute(TAX_TAG, tax);
+		}
+	}
+>>>>>>> master
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	protected void readAttributes(FreeColXMLReader xr) throws XMLStreamException {
+		super.readAttributes(xr);
+
+		stance = xr.getAttribute(STANCE_TAG, Stance.class, Stance.PEACE);
+
+		numberOfSettlements = xr.getAttribute(NUMBER_OF_SETTLEMENTS_TAG, -1);
+
+		numberOfUnits = xr.getAttribute(NUMBER_OF_UNITS_TAG, -1);
+
+		militaryStrength = xr.getAttribute(MILITARY_STRENGTH_TAG, -1);
+
+		navalStrength = xr.getAttribute(NAVAL_STRENGTH_TAG, -1);
+
+		gold = xr.getAttribute(GOLD_TAG, -1);
+
+		soL = xr.getAttribute(SOL_TAG, -1);
+
+		foundingFathers = xr.getAttribute(FOUNDING_FATHERS_TAG, -1);
+
+		tax = xr.getAttribute(TAX_TAG, -1);
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public String getXMLTagName() {
+		return getXMLElementTagName();
+	}
+
+	/**
+	 * Gets the tag name of the root element representing this object.
+	 *
+	 * @return "nationSummary"
+	 */
+	public static String getXMLElementTagName() {
+		return "nationSummary";
+	}
 }
