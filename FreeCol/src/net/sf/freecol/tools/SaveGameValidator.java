@@ -36,18 +36,25 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * Validate a saved game.
  */
 public class SaveGameValidator {
 
+    /**
+     * The main method.
+     *
+     * @param args the arguments
+     * @throws Exception the exception
+     */
     public static void main(String[] args) throws Exception {
 
         SchemaFactory factory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
         File schemaLocation = new File("schema/data/data-savedGame.xsd");
         Schema schema = factory.newSchema(schemaLocation);
         Validator saveGameValidator = schema.newValidator();
-
+ 
         List<File> allFiles = new ArrayList<>();
         FileFilter ff = FreeColSavegameFile.getFileFilter();
         for (String name : args) {

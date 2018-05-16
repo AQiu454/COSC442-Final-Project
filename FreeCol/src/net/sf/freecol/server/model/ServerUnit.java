@@ -78,16 +78,21 @@ import net.sf.freecol.server.control.ChangeSet.ChangePriority;
 import net.sf.freecol.server.control.ChangeSet.See;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * Server version of a unit.
  */
 public class ServerUnit extends Unit implements ServerModelObject {
 
+    /** The Constant logger. */
     private static final Logger logger = Logger.getLogger(ServerUnit.class.getName());
 
 
     /**
      * Trivial constructor required for all ServerModelObjects.
+     *
+     * @param game the game
+     * @param id the id
      */
     public ServerUnit(Game game, String id) {
         super(game, id);
@@ -857,7 +862,7 @@ public class ServerUnit extends Unit implements ServerModelObject {
      * @param cs A <code>ChangeSet</code> to update.
      */
     public void csMove(Tile newTile, Random random, ChangeSet cs) {
-        final ServerPlayer serverPlayer = (ServerPlayer)getOwner();
+        final ServerPlayer serverPlayer = (ServerPlayer) getOwner();
 
         // Plan to update tiles that could not be seen before but will
         // now be within the line-of-sight.

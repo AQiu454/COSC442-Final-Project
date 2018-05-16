@@ -27,11 +27,13 @@ import net.sf.freecol.common.i18n.Messages;
 import net.sf.freecol.common.io.FreeColDirectories;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * Action to load and start the most recent save game of the client.
  */
 public class ContinueAction extends FreeColAction {
 
+    /** The Constant id. */
     public static final String id = "continueAction";
 
 

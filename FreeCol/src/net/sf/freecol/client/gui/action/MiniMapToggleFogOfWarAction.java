@@ -25,11 +25,13 @@ import net.sf.freecol.client.ClientOptions;
 import net.sf.freecol.client.FreeColClient;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * An action for enable/disable fog of war in on the minimap.
  */
 public class MiniMapToggleFogOfWarAction extends MapboardAction {
 
+    /** The Constant id. */
     public static final String id = "miniMapToggleFogOfWarAction";
 
 

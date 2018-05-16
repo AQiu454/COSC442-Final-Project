@@ -58,22 +58,33 @@ import net.sf.freecol.common.model.Specification;
 import net.sf.freecol.common.model.StringTemplate;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * Superclass for all dialogs in FreeCol.
+ *
+ * @param <T> the generic type
  */
 public class FreeColDialog<T> extends JDialog implements PropertyChangeListener {
 
+    /** The Constant logger. */
     private static final Logger logger = Logger.getLogger(FreeColDialog.class.getName());
 
+    /**
+     * The Enum DialogType.
+     */
     public static enum DialogType {
+        
+        /** The plain. */
         PLAIN,
+        
+        /** The question. */
         QUESTION,
     };
 
     /** The enclosing client. */
     protected final FreeColClient freeColClient;
 
-    /** Is this dialog modal? */
+    /**  Is this dialog modal?. */
     protected boolean modal;
 
     /** The options to choose from. */
@@ -262,12 +273,22 @@ public class FreeColDialog<T> extends JDialog implements PropertyChangeListener 
             });
     }
 
+    /**
+     * Sets the subcomponents not opaque.
+     *
+     * @param j the new subcomponents not opaque
+     */
     public static void setSubcomponentsNotOpaque(JComponent j) {
         synchronized(j.getTreeLock()) {
             iterateOverOpaqueLayersComponents(j);
         }
     }
 
+    /**
+     * Iterate over opaque layers components.
+     *
+     * @param j the j
+     */
     private static void iterateOverOpaqueLayersComponents(JComponent j){   
         if (j instanceof JPanel || j instanceof JOptionPane) {            
            Component[] componentes = j.getComponents();            
@@ -277,6 +298,11 @@ public class FreeColDialog<T> extends JDialog implements PropertyChangeListener 
         }    
     }
 
+    /**
+     * Sets the opaque layer recursive.
+     *
+     * @param opaqueComponent the new opaque layer recursive
+     */
     private static void setOpaqueLayerRecursive(Component opaqueComponent) {
         if (opaqueComponent instanceof JTextArea ||
             opaqueComponent instanceof JLabel) {
@@ -402,7 +428,7 @@ public class FreeColDialog<T> extends JDialog implements PropertyChangeListener 
     }
 
     /**
-     * Is this a modal dialog?
+     * Is this a modal dialog?.
      *
      * @return True if this is a modal dialog.
      */
@@ -414,6 +440,7 @@ public class FreeColDialog<T> extends JDialog implements PropertyChangeListener 
     /**
      * Create a list of choices.
      *
+     * @param <T> the generic type
      * @return An empty list of choices.
      */
     public static <T> List<ChoiceItem<T>> choices() {

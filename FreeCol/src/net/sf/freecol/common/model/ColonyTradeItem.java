@@ -27,6 +27,7 @@ import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.util.Utils;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * A trade item consisting of a colony.
  */
@@ -71,6 +72,7 @@ public class ColonyTradeItem extends TradeItem {
      *
      * @param game The enclosing <code>Game</code>.
      * @param xr The <code>FreeColXMLReader</code> to read from.
+     * @throws XMLStreamException the XML stream exception
      */
     public ColonyTradeItem(Game game, FreeColXMLReader xr) throws XMLStreamException {
         super(game, xr);
@@ -152,7 +154,10 @@ public class ColonyTradeItem extends TradeItem {
 
     // Serialization
 
+    /** The Constant COLONY_TAG. */
     private static final String COLONY_TAG = "colony";
+    
+    /** The Constant COLONY_NAME_TAG. */
     private static final String COLONY_NAME_TAG = "colonyName";
 
 

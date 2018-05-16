@@ -26,13 +26,16 @@ import net.sf.freecol.common.model.Player;
 import net.sf.freecol.common.model.Unit;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * An action for unloading a unit.
  */
 public class UnloadAction extends MapboardAction {
 
+    /** The Constant id. */
     public static final String id = "unloadAction";
 
+    /** The unit. */
     private Unit unit = null;
 
 
@@ -61,6 +64,11 @@ public class UnloadAction extends MapboardAction {
     }
 
 
+    /**
+     * Gets the unit.
+     *
+     * @return the unit
+     */
     private Unit getUnit() {
         return (unit != null) ? unit : getGUI().getActiveUnit();
     }

@@ -26,17 +26,20 @@ import java.util.logging.Logger;
 import javax.swing.JLabel;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * Represents an image selection that can be selected and
  * dragged/dropped to/from Swing components.
  */
 public final class ImageSelection implements Transferable {
     
+    /** The Constant logger. */
     @SuppressWarnings("unused")
     private static final Logger logger = Logger.getLogger(ImageSelection.class.getName());
 
     //private static final DataFlavor[] flavors = {DataFlavor.imageFlavor};
 
+    /** The label. */
     private final JLabel label;
 
     /**

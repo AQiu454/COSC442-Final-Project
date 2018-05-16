@@ -28,6 +28,7 @@ import net.sf.freecol.common.model.Player;
 import net.sf.freecol.common.util.Utils;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * A trade item consisting of a player to incite war against.
  */
@@ -147,6 +148,7 @@ public class InciteTradeItem extends TradeItem {
 
     // Serialization
 
+    /** The Constant VICTIM_TAG. */
     private static final String VICTIM_TAG = "victim";
 
 

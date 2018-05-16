@@ -54,6 +54,7 @@ import net.sf.freecol.common.model.StringTemplate;
 import net.sf.freecol.common.model.UnitType;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * This panel displays details of buildings in the Colopedia.
  */

@@ -25,11 +25,13 @@ import net.sf.freecol.client.ClientOptions;
 import net.sf.freecol.client.FreeColClient;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * Change view in on the minimap.
  */
 public class MiniMapToggleViewAction extends MapboardAction {
     
+    /** The Constant id. */
     public static final String id = "miniMapToggleBordersAction";
     
     

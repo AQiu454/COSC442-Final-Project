@@ -31,6 +31,7 @@ public class AllTests {
         suite.addTestSuite(MapGeneratorTest.class);
         suite.addTestSuite(SimpleMapGeneratorTest.class);
         suite.addTestSuite(TerrainGeneratorTest.class);
+        suite.addTestSuite(MapLayerGeneratorTest.class);
         //$JUnit-END$
         return suite;
     }

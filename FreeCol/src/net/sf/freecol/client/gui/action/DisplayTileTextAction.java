@@ -31,22 +31,41 @@ import net.sf.freecol.client.FreeColClient;
 import static net.sf.freecol.common.util.StringUtils.*;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * Display text over tiles.
  */
 public class DisplayTileTextAction extends SelectableAction {
 
+    /** The Constant id. */
     public static final String id = "displayTileTextAction.";
 
+    /**
+     * The Enum DisplayText.
+     */
     // FIXME: make ClientOptions use enum
     public static enum DisplayText {
-        EMPTY, NAMES, OWNERS, REGIONS;
+        
+        /** The empty. */
+        EMPTY, 
+ /** The names. */
+ NAMES, 
+ /** The owners. */
+ OWNERS, 
+ /** The regions. */
+ REGIONS;
 
+        /**
+         * Gets the key.
+         *
+         * @return the key
+         */
         public String getKey() {
             return getEnumKey(this);
         }
     };
 
+    /** The Constant accelerators. */
     private static final int[] accelerators = {
         KeyEvent.VK_E,
         KeyEvent.VK_N,
@@ -54,11 +73,12 @@ public class DisplayTileTextAction extends SelectableAction {
         KeyEvent.VK_R
     };
 
+    /** The display. */
     private DisplayText display = null;
 
 
     /**
-     * Creates this action
+     * Creates this action.
      *
      * @param freeColClient The <code>FreeColClient</code> for the game.
      * @param type a <code>DisplayText</code> value

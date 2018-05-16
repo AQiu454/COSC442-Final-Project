@@ -30,13 +30,14 @@ import net.sf.freecol.client.gui.panel.Utility;
 import net.sf.freecol.common.option.RangeOption;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * This class provides visualization for a
  * {@link net.sf.freecol.common.option.RangeOption} in order to enable
  * values to be both seen and changed.
  */
 public final class RangeOptionUI extends SliderOptionUI<RangeOption>  {
-
+ 
     /**
      * Creates a new <code>RangeOptionUI</code> for the given
      * <code>RangeOption</code>.

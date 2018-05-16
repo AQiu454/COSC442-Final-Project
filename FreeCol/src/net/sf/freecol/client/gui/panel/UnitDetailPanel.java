@@ -54,6 +54,7 @@ import static net.sf.freecol.common.util.CollectionUtils.*;
 import net.sf.freecol.common.util.RandomChoice;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * This panel displays details of units in the Colopedia.
  */

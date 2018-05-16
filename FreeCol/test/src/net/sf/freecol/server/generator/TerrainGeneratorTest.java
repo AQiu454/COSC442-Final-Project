@@ -21,7 +21,7 @@ import net.sf.freecol.server.model.ServerRegion;
  * @author dibasy
  * @version $Revision: 1.0 $
  */
-public class TerrainGeneratorTest {
+public class TerrainGeneratorTest extends FreeColTestCase{
 	/**
 	 * Run the TerrainGenerator(Game,Game,Random) constructor test.
 	 *

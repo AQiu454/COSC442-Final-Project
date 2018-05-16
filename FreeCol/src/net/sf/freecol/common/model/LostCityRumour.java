@@ -36,16 +36,20 @@ import static net.sf.freecol.common.util.StringUtils.*;
 import static net.sf.freecol.common.util.RandomUtils.*;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * Represents a lost city rumour.
  */
 public class LostCityRumour extends TileItem {
 
+    /** The Constant logger. */
     private static final Logger logger = Logger.getLogger(LostCityRumour.class.getName());
 
+    /** The Constant MAYAN_PROPHESY_YEAR. */
     // The bogus end of the world year.
     private static final int MAYAN_PROPHESY_YEAR = 2012;
 
+    /** The rumour nothing. */
     // How many `nothing' rumours are there.
     private static int rumourNothing = -1;
 
@@ -64,16 +68,38 @@ public class LostCityRumour extends TileItem {
 
     /** Constants describing types of Lost City Rumours. */
     public static enum RumourType {
+        
+        /** The no such rumour. */
         NO_SUCH_RUMOUR,
+        
+        /** The burial ground. */
         BURIAL_GROUND,
+        
+        /** The expedition vanishes. */
         EXPEDITION_VANISHES,
+        
+        /** The nothing. */
         NOTHING,
+        
+        /** The learn. */
         LEARN,
+        
+        /** The tribal chief. */
         TRIBAL_CHIEF,
+        
+        /** The colonist. */
         COLONIST,
+        
+        /** The mounds. */
         MOUNDS,
+        
+        /** The ruins. */
         RUINS,
+        
+        /** The cibola. */
         CIBOLA,
+        
+        /** The fountain of youth. */
         FOUNTAIN_OF_YOUTH;
 
         /**
@@ -85,10 +111,21 @@ public class LostCityRumour extends TileItem {
             return "lostCityRumour." + getEnumKey(this);
         }
 
+        /**
+         * Gets the description key.
+         *
+         * @return the description key
+         */
         public String getDescriptionKey() {
             return Messages.descriptionKey("model." + getKey());
         }
 
+        /**
+         * Gets the alternate description key.
+         *
+         * @param variant the variant
+         * @return the alternate description key
+         */
         public String getAlternateDescriptionKey(String variant) {
             return Messages.descriptionKey("model." + getKey() + "." + variant);
         }
@@ -159,6 +196,11 @@ public class LostCityRumour extends TileItem {
     }
 
     // @compat 0.10.4
+    /**
+     * Sets the tile.
+     *
+     * @param tile the new tile
+     */
     // See readAttributes and TileItemContainer.readChild
     public void setTile(Tile tile) {
         this.tile = tile;
@@ -383,8 +425,13 @@ public class LostCityRumour extends TileItem {
 
     // Serialization
 
+    /** The Constant NAME_TAG. */
     private static final String NAME_TAG = "name";
+    
+    /** The Constant TILE_TAG. */
     private static final String TILE_TAG = "tile";
+    
+    /** The Constant TYPE_TAG. */
     private static final String TYPE_TAG = "type";
 
 

@@ -27,6 +27,7 @@ import net.sf.freecol.common.io.FreeColXMLWriter;
 import net.sf.freecol.common.util.Utils;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * A trade item consisting of some goods.
  */
@@ -57,6 +58,7 @@ public class GoodsTradeItem extends TradeItem {
      *
      * @param game The enclosing <code>Game</code>.
      * @param xr The <code>FreeColXMLReader</code> to read from.
+     * @throws XMLStreamException the XML stream exception
      */
     public GoodsTradeItem(Game game, FreeColXMLReader xr) throws XMLStreamException {
         super(game, xr);

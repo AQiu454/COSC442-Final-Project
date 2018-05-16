@@ -24,11 +24,13 @@ import java.awt.event.ActionEvent;
 import net.sf.freecol.client.FreeColClient;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * Show turn messages in report panel.
  */
 public class ReportTurnAction extends FreeColAction {
 
+    /** The Constant id. */
     public static final String id = "reportTurnAction";
 
 

@@ -15210,6 +15210,15 @@ java.lang.StringBuilder
 net.sf.freecol.client.gui.action.MoveAction
 net.sf.freecol.client.gui.action.MapboardAction
 net.sf.freecol.client.gui.GUI
+||:net.sf.freecol.client.gui.LoadingSavegameInfoTest
+net.sf.freecol.client.gui.LoadingSavegameInfo
+java.lang.Object
+org.junit.Assert
+org.junit.runner.JUnitCore
+java.lang.Class
+net.sf.freecol.client.gui.LoadingSavegameInfoTest
+java.lang.Boolean
+java.lang.Exception
 ||:net.sf.freecol.client.gui.panel.EmigrationDialog
 java.lang.StringBuilder
 net.sf.freecol.common.model.LostCityRumour$RumourType

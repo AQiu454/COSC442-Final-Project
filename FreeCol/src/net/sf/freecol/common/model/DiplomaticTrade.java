@@ -35,6 +35,7 @@ import static net.sf.freecol.common.util.StringUtils.*;
 import org.w3c.dom.Element;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * The class <code>DiplomaticTrade</code> represents an offer one player can
  * make another.
@@ -43,10 +44,20 @@ public class DiplomaticTrade extends FreeColObject {
 
     /** A context for the trade. */
     public static enum TradeContext {
-        CONTACT,    /** First contact between Europeans */
-        DIPLOMATIC, /** Scout negotiating */
-        TRADE,      /** Carrier trading */
-        TRIBUTE;    /** Offensive unit demanding */
+        
+        /** The contact. */
+        CONTACT,    
+    /**  First contact between Europeans. */
+        DIPLOMATIC, 
+ /**  Scout negotiating. */
+        TRADE,      
+      /**  Carrier trading. */
+        TRIBUTE;    
+    /**
+     *  Offensive unit demanding.
+     *
+     * @return the key
+     */
 
         /**
          * Get a message key for this trade context.
@@ -60,8 +71,14 @@ public class DiplomaticTrade extends FreeColObject {
 
     /** A type for the trade status. */
     public static enum TradeStatus {
+        
+        /** The propose trade. */
         PROPOSE_TRADE,
+        
+        /** The accept trade. */
         ACCEPT_TRADE,
+        
+        /** The reject trade. */
         REJECT_TRADE
     }
 
@@ -96,6 +113,7 @@ public class DiplomaticTrade extends FreeColObject {
      * @param sender The sending <code>Player</code>.
      * @param recipient The recipient <code>Player</code>.
      * @param items A list of items to trade.
+     * @param version the version
      */
     public DiplomaticTrade(Game game, TradeContext context,
                            Player sender, Player recipient,
@@ -289,7 +307,7 @@ public class DiplomaticTrade extends FreeColObject {
     }
 
     /**
-     * Are there no trade items present?
+     * Are there no trade items present?.
      *
      * @return True if there are no trade items present.
      */
@@ -331,6 +349,7 @@ public class DiplomaticTrade extends FreeColObject {
     /**
      * Get a list of colonies offered in this trade.
      *
+     * @param player the player
      * @return A list of <code>Colony</code>s offered in this trade.
      */
     public List<Colony> getColoniesGivenBy(Player player) {
@@ -358,6 +377,7 @@ public class DiplomaticTrade extends FreeColObject {
     /**
      * Get the goods being offered.
      *
+     * @param player the player
      * @return A list of <code>Goods</code> offered in this trade.
      */
     public List<Goods> getGoodsGivenBy(Player player) {
@@ -383,6 +403,7 @@ public class DiplomaticTrade extends FreeColObject {
     /**
      * Get a list of units offered in this trade.
      *
+     * @param player the player
      * @return A list of <code>Unit</code>s offered in this trade.
      */
     public List<Unit> getUnitsGivenBy(Player player) {
@@ -414,10 +435,19 @@ public class DiplomaticTrade extends FreeColObject {
 
     // Serialization
 
+    /** The Constant CONTEXT_TAG. */
     private static final String CONTEXT_TAG = "context";
+    
+    /** The Constant RECIPIENT_TAG. */
     private static final String RECIPIENT_TAG = "recipient";
+    
+    /** The Constant SENDER_TAG. */
     private static final String SENDER_TAG = "sender";
+    
+    /** The Constant STATUS_TAG. */
     private static final String STATUS_TAG = "status";
+    
+    /** The Constant VERSION_TAG. */
     private static final String VERSION_TAG = "version";
 
 

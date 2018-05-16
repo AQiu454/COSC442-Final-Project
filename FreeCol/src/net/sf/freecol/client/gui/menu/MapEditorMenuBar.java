@@ -40,6 +40,7 @@ import net.sf.freecol.common.option.MapGeneratorOptions;
 import net.sf.freecol.common.option.OptionGroup;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * The menu bar used when running in editor mode.
  *
@@ -52,6 +53,7 @@ import net.sf.freecol.common.option.OptionGroup;
  */
 public class MapEditorMenuBar extends FreeColMenuBar {
 
+    /** The Constant logger. */
     @SuppressWarnings("unused")
     private static final Logger logger = Logger.getLogger(MapEditorMenuBar.class.getName());
 
@@ -87,6 +89,9 @@ public class MapEditorMenuBar extends FreeColMenuBar {
         update();
     }
 
+    /**
+     * Builds the game menu.
+     */
     private void buildGameMenu() {
         // --> Game
         JMenu menu = Utility.localizedMenu("menuBar.game");
@@ -129,6 +134,9 @@ public class MapEditorMenuBar extends FreeColMenuBar {
         add(menu);
     }
 
+    /**
+     * Builds the view menu.
+     */
     private void buildViewMenu() {
         // --> View
         JMenu menu = Utility.localizedMenu("menuBar.view");
@@ -153,6 +161,9 @@ public class MapEditorMenuBar extends FreeColMenuBar {
         add(menu);
     }
 
+    /**
+     * Builds the tools menu.
+     */
     private void buildToolsMenu() {
         // --> Tools
         JMenu menu = Utility.localizedMenu("menuBar.tools");

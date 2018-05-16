@@ -44,11 +44,13 @@ import net.sf.freecol.common.model.StringTemplate;
 import net.sf.freecol.common.model.Turn;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * This panel displays the ContinentalCongress Report.
  */
 public final class ReportContinentalCongressPanel extends ReportPanel {
 
+    /** The Constant none. */
     private static final String none
         = Messages.message("report.continentalCongress.none");
 

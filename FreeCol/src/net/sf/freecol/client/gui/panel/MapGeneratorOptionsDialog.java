@@ -48,6 +48,7 @@ import net.sf.freecol.common.option.MapGeneratorOptions;
 import net.sf.freecol.common.option.OptionGroup;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * Dialog for changing the map generator options.
  *
@@ -56,6 +57,7 @@ import net.sf.freecol.common.option.OptionGroup;
  */
 public final class MapGeneratorOptionsDialog extends OptionsDialog {
 
+    /** The Constant logger. */
     private static final Logger logger = Logger.getLogger(MapGeneratorOptionsDialog.class.getName());
 
 

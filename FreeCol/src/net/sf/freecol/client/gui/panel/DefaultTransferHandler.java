@@ -62,6 +62,7 @@ import net.sf.freecol.common.model.Unit;
 import static net.sf.freecol.common.util.CollectionUtils.*;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * The TransferHandler that is capable of creating ImageSelection objects.
  * Those ImageSelection objects are Transferable.  The DefaultTransferHandler
@@ -69,6 +70,7 @@ import static net.sf.freecol.common.util.CollectionUtils.*;
  */
 public final class DefaultTransferHandler extends TransferHandler {
 
+    /** The Constant logger. */
     private static final Logger logger = Logger.getLogger(DefaultTransferHandler.class.getName());
 
     /**
@@ -78,6 +80,7 @@ public final class DefaultTransferHandler extends TransferHandler {
     private static class FreeColDragHandler
         implements DragGestureListener, DragSourceListener {
 
+        /** The scrolls. */
         private boolean scrolls;
 
 
@@ -85,6 +88,8 @@ public final class DefaultTransferHandler extends TransferHandler {
 
         /**
          * A Drag gesture has been recognized.
+         *
+         * @param dge the dge
          */
         @Override
         public void dragGestureRecognized(DragGestureEvent dge) {
@@ -150,24 +155,32 @@ public final class DefaultTransferHandler extends TransferHandler {
 
         /**
          * As the hotspot enters a platform dependent drop site.
+         *
+         * @param dsde the dsde
          */
         @Override
         public void dragEnter(DragSourceDragEvent dsde) {}
 
         /**
          * As the hotspot moves over a platform dependent drop site.
+         *
+         * @param dsde the dsde
          */
         @Override
         public void dragOver(DragSourceDragEvent dsde) {}
 
         /**
          * As the hotspot exits a platform dependent drop site.
+         *
+         * @param dsde the dsde
          */
         @Override
         public void dragExit(DragSourceEvent dsde) {}
 
         /**
          * As the operation completes.
+         *
+         * @param dsde the dsde
          */
         @Override
         public void dragDropEnd(DragSourceDropEvent dsde) {
@@ -184,6 +197,9 @@ public final class DefaultTransferHandler extends TransferHandler {
             c.setAutoscrolls(scrolls);
         }
 
+        /* (non-Javadoc)
+         * @see java.awt.dnd.DragSourceListener#dropActionChanged(java.awt.dnd.DragSourceDragEvent)
+         */
         @Override
         public void dropActionChanged(DragSourceDragEvent dsde) {
             DragSourceContext dsc = dsde.getDragSourceContext();
@@ -191,6 +207,12 @@ public final class DefaultTransferHandler extends TransferHandler {
             updatePartialChosen(comp, dsde.getUserAction() == MOVE);
         }
 
+        /**
+         * Update partial chosen.
+         *
+         * @param comp the comp
+         * @param partial the partial
+         */
         private void updatePartialChosen(JComponent comp, boolean partial) {
             if (comp instanceof AbstractGoodsLabel) {
                 ((AbstractGoodsLabel)comp).setPartialChosen(partial);
@@ -198,12 +220,28 @@ public final class DefaultTransferHandler extends TransferHandler {
         }
     }
 
+    /**
+     * The Class FreeColDragGestureRecognizer.
+     */
     private static class FreeColDragGestureRecognizer extends DragGestureRecognizer {
 
+        /**
+         * Instantiates a new free col drag gesture recognizer.
+         *
+         * @param dgl the dgl
+         */
         FreeColDragGestureRecognizer(DragGestureListener dgl) {
             super(DragSource.getDefaultDragSource(), null, NONE, dgl);
         }
 
+        /**
+         * Gestured.
+         *
+         * @param c the c
+         * @param e the e
+         * @param srcActions the src actions
+         * @param action the action
+         */
         void gestured(JComponent c, MouseEvent e, int srcActions, int action) {
             setComponent(c);
             setSourceActions(srcActions);
@@ -230,15 +268,20 @@ public final class DefaultTransferHandler extends TransferHandler {
     }
 
 
+    /** The Constant flavor. */
     public static final DataFlavor flavor
         = new DataFlavor(ImageSelection.class, "ImageSelection");
 
+    /** The recognizer. */
     private static FreeColDragGestureRecognizer recognizer = null;
 
+    /** The free col client. */
     private final FreeColClient freeColClient;
 
+    /** The gui. */
     private final SwingGUI gui;
 
+    /** The parent panel. */
     private final FreeColPanel parentPanel;
 
 
@@ -260,6 +303,7 @@ public final class DefaultTransferHandler extends TransferHandler {
      * Get the action that can be done to an ImageSelection on the
      * given component.
      *
+     * @param comp the comp
      * @return The action that can be done to an ImageSelection on the
      *     given component.
      */
@@ -464,6 +508,12 @@ public final class DefaultTransferHandler extends TransferHandler {
         return false;
     }
 
+    /**
+     * Gets the drop target.
+     *
+     * @param component the component
+     * @return the drop target
+     */
     public JComponent getDropTarget(JComponent component) {
         return (component instanceof DropTarget)
             ? component
@@ -472,6 +522,11 @@ public final class DefaultTransferHandler extends TransferHandler {
             : null;
     }
 
+    /**
+     * Restore selection.
+     *
+     * @param oldSelectedUnit the old selected unit
+     */
     private void restoreSelection(UnitLabel oldSelectedUnit) {
         if (oldSelectedUnit != null
             && oldSelectedUnit.getParent() instanceof InPortPanel) {
@@ -479,6 +534,13 @@ public final class DefaultTransferHandler extends TransferHandler {
         }
     }
 
+    /**
+     * Equip unit if possible.
+     *
+     * @param unitLabel the unit label
+     * @param goods the goods
+     * @return true, if successful
+     */
     private boolean equipUnitIfPossible(UnitLabel unitLabel,
                                         AbstractGoods goods) {
         final Unit unit = unitLabel.getUnit();
@@ -511,6 +573,12 @@ public final class DefaultTransferHandler extends TransferHandler {
     /**
      * Displays an input dialog box where the user should specify a
      * goods transfer amount.
+     *
+     * @param goodsType the goods type
+     * @param available the available
+     * @param defaultAmount the default amount
+     * @param needToPay the need to pay
+     * @return the amount
      */
     private int getAmount(GoodsType goodsType, int available,
                           int defaultAmount, boolean needToPay) {
@@ -518,6 +586,9 @@ public final class DefaultTransferHandler extends TransferHandler {
                                           needToPay);
     }
 
+    /* (non-Javadoc)
+     * @see javax.swing.TransferHandler#exportAsDrag(javax.swing.JComponent, java.awt.event.InputEvent, int)
+     */
     @Override
     public void exportAsDrag(JComponent comp, InputEvent e, int action) {
         int srcActions = getSourceActions(comp);

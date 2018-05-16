@@ -33,16 +33,19 @@ import net.sf.freecol.client.gui.panel.FreeColImageBorder;
 import net.sf.freecol.common.resources.Video;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * A component for playing video.
  */
 public class VideoComponent extends JPanel {
 
+    /** The Constant logger. */
     private static final Logger logger = Logger.getLogger(VideoComponent.class.getName());
 
     //private List<VideoListener> videoListeners
     //    = new LinkedList<VideoListener>();
 
+    /** The applet. */
     private final Cortado applet;
 
 
@@ -95,6 +98,11 @@ public class VideoComponent extends JPanel {
     }
 
 
+    /**
+     * Creates the border.
+     *
+     * @return the border
+     */
     private Border createBorder() {
         return FreeColImageBorder.imageBorder;
     }
@@ -118,6 +126,9 @@ public class VideoComponent extends JPanel {
     //    videoListeners.remove(videoListener);
     //}
 
+    /* (non-Javadoc)
+     * @see java.awt.Component#addMouseListener(java.awt.event.MouseListener)
+     */
     @Override
     public void addMouseListener(MouseListener l) {
         super.addMouseListener(l);
@@ -125,6 +136,9 @@ public class VideoComponent extends JPanel {
         applet.addMouseListener(l);
     }
 
+    /* (non-Javadoc)
+     * @see java.awt.Component#removeMouseListener(java.awt.event.MouseListener)
+     */
     @Override
     public void removeMouseListener(MouseListener l) {
         super.removeMouseListener(l);

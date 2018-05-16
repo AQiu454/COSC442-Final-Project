@@ -42,6 +42,7 @@ import net.sf.freecol.common.model.Specification;
 import static net.sf.freecol.common.util.StringUtils.*;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * This panel displays details of resources in the Colopedia.
  */

@@ -28,11 +28,13 @@ import net.sf.freecol.client.FreeColClient;
 import net.sf.freecol.common.debug.FreeColDebugger;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * Switch debug mode on.
  */
 public class DebugAction extends FreeColAction {
 
+    /** The Constant id. */
     public static final String id = "debugAction";
 
 

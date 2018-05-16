@@ -47,27 +47,36 @@ import net.sf.freecol.common.option.MapGeneratorOptions;
 import net.sf.freecol.common.option.OptionGroup;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * The panel where you choose your nation and color and connected players are
  * shown.
  */
 public final class StartGamePanel extends FreeColPanel {
 
+    /** The Constant logger. */
     private static final Logger logger = Logger.getLogger(StartGamePanel.class.getName());
 
+    /** The Constant MAP_GENERATOR_OPTIONS. */
     private static final int START = 0, CANCEL = 1,
         READY = 3, CHAT = 4, GAME_OPTIONS = 5, MAP_GENERATOR_OPTIONS = 6;
 
+    /** The single player game. */
     private boolean singlePlayerGame;
 
+    /** The ready box. */
     private JCheckBox readyBox;
 
+    /** The chat. */
     private JTextField chat;
 
+    /** The chat area. */
     private JTextArea chatArea;
 
+    /** The map generator options. */
     private JButton start, cancel, gameOptions, mapGeneratorOptions;
 
+    /** The table. */
     private PlayersTable table;
 
 
@@ -81,6 +90,11 @@ public final class StartGamePanel extends FreeColPanel {
     }
 
 
+    /**
+     * Initialize.
+     *
+     * @param singlePlayer the single player
+     */
     public void initialize(boolean singlePlayer) {
         removeAll();
         this.singlePlayerGame = singlePlayer;
@@ -183,6 +197,9 @@ public final class StartGamePanel extends FreeColPanel {
         setEnabled(true);
     }
 
+    /* (non-Javadoc)
+     * @see net.sf.freecol.client.gui.panel.FreeColPanel#requestFocus()
+     */
     @Override
     public void requestFocus() {
         start.requestFocus();

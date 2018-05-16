@@ -26,7 +26,7 @@ import net.sf.freecol.server.model.ServerPlayer;
  * @author dibasy
  * @version $Revision: 1.0 $
  */
-public class SimpleMapGeneratorTest {
+public class SimpleMapGeneratorTest extends FreeColTestCase{
 	/**
 	 * Run the SimpleMapGenerator(Game,Random) constructor test.
 	 *

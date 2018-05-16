@@ -39,22 +39,33 @@ import static net.sf.freecol.common.util.CollectionUtils.*;
 import static net.sf.freecol.common.util.RandomUtils.*;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * Represents an Indian settlement.
  */
 public class IndianSettlement extends Settlement implements TradeLocation {
 
+    /** The Constant logger. */
     private static final Logger logger = Logger.getLogger(IndianSettlement.class.getName());
 
     /** The level of contact between a player and this settlement. */
     public static enum ContactLevel {
-        UNCONTACTED,     // Nothing known other than location?
-        CONTACTED,       // Name, wanted-goods now visible
-        VISITED,         // Skill now known
+        
+        /** The uncontacted. */
+        UNCONTACTED,     
+     /** The contacted. */
+     // Nothing known other than location?
+        CONTACTED,       
+       /** The visited. */
+       // Name, wanted-goods now visible
+        VISITED,         
+         /** The scouted. */
+         // Skill now known
         SCOUTED          // Scouting bonus consumed
     };
 
     // When choosing what goods to sell, sort goods with new world
+    /** The export goods comparator. */
     // goods first, then by price, then amount.
     private final Comparator<Goods> exportGoodsComparator
         = new Comparator<Goods>() {
@@ -94,6 +105,7 @@ public class IndianSettlement extends Settlement implements TradeLocation {
     /** Do not buy goods when the price is this low. */
     public static final int TRADE_MINIMUM_PRICE = 3;
 
+    /** The Constant GOODS_BASE_PRICE. */
     public static final int GOODS_BASE_PRICE = 12;
 
     /** The amount of goods a brave can produce a single turn. */
@@ -302,7 +314,7 @@ public class IndianSettlement extends Settlement implements TradeLocation {
     }
 
     /**
-     * Does this settlement have a missionary?
+     * Does this settlement have a missionary?.
      *
      * @return True if there is a missionary at this settlement.
      */
@@ -311,7 +323,7 @@ public class IndianSettlement extends Settlement implements TradeLocation {
     }
 
     /**
-     * Does this settlement have a missionary from the given player?
+     * Does this settlement have a missionary from the given player?.
      *
      * @param player The <code>Player</code> to test.
      * @return True if there is a suitable missionary present.
@@ -495,7 +507,7 @@ public class IndianSettlement extends Settlement implements TradeLocation {
     }
 
     /**
-     * Has a player visited this settlement?
+     * Has a player visited this settlement?.
      *
      * @param player The <code>Player</code> to check.
      * @return True if the player has contacted this settlement.
@@ -1339,21 +1351,47 @@ public class IndianSettlement extends Settlement implements TradeLocation {
 
     // Serialization
 
+    /** The Constant ALARM_TAG. */
     private static final String ALARM_TAG = "alarm";
+    
+    /** The Constant CONTACT_LEVEL_TAG. */
     private static final String CONTACT_LEVEL_TAG = "contactLevel";
+    
+    /** The Constant CONVERT_PROGRESS_TAG. */
     private static final String CONVERT_PROGRESS_TAG = "convertProgress";
+    
+    /** The Constant IS_VISITED_TAG. */
     private static final String IS_VISITED_TAG = "isVisited";
+    
+    /** The Constant LAST_TRIBUTE_TAG. */
     private static final String LAST_TRIBUTE_TAG = "lastTribute";
+    
+    /** The Constant LEVEL_TAG. */
     private static final String LEVEL_TAG = "level";
+    
+    /** The Constant MISSIONARY_TAG. */
     private static final String MISSIONARY_TAG = "missionary";
+    
+    /** The Constant MOST_HATED_TAG. */
     private static final String MOST_HATED_TAG = "mostHated";
+    
+    /** The Constant NAME_TAG. */
     private static final String NAME_TAG = "name";
+    
+    /** The Constant OWNED_UNITS_TAG. */
     private static final String OWNED_UNITS_TAG = "ownedUnits";
+    
+    /** The Constant PLAYER_TAG. */
     private static final String PLAYER_TAG = "player";
     // Public for now while 0.10.7 backward compatibility code in Tile
+    /** The Constant LEARNABLE_SKILL_TAG. */
     // for PlayerExploredTile needs to check these.
     public static final String LEARNABLE_SKILL_TAG = "learnableSkill";
+    
+    /** The Constant WANTED_GOODS_TAG. */
     public static final String WANTED_GOODS_TAG = "wantedGoods";
+    
+    /** The Constant OLD_UNITS_TAG. */
     // @compat 0.10.1
     public static final String OLD_UNITS_TAG = "units";
     // end @compat

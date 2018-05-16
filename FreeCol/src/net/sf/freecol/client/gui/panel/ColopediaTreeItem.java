@@ -22,15 +22,23 @@ package net.sf.freecol.client.gui.panel;
 import javax.swing.ImageIcon;
 
 
+// TODO: Auto-generated Javadoc
 /**
  * TreeCellItems are used to represent the name and icon of a node in
  * the Colopedia's tree.
  */
 class ColopediaTreeItem {
 
+    /** The detail panel. */
     private final ColopediaDetailPanel detailPanel;
+    
+    /** The id. */
     private final String id;
+    
+    /** The text. */
     private final String text;
+    
+    /** The icon. */
     private final ImageIcon icon;
 
 
@@ -60,10 +68,20 @@ class ColopediaTreeItem {
         return detailPanel;
     }
 
+    /**
+     * Gets the id.
+     *
+     * @return the id
+     */
     public String getId() {
         return id;
     }
 
+    /**
+     * Gets the text.
+     *
+     * @return the text
+     */
     public String getText() {
         return text;
     }
