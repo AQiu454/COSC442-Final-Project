@@ -1,578 +1,1308 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Dumpling" name="net.sf.freecol.AllTests" skipped="0" tests="430" time="22.322" timestamp="2018-05-14T16:21:55">
-  <properties>
-    <property name="java.vendor" value="Oracle Corporation" />
-    <property name="env.USERDOMAIN_ROAMINGPROFILE" value="Dumpling" />
-    <property name="sun.java.launcher" value="SUN_STANDARD" />
-    <property name="miglayout-core.jar" value="jars/miglayout-core-4.2.jar" />
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
-    <property name="env.PROMPT" value="$P$G" />
-    <property name="freecol.javadoc.dir" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/doc/javadoc" />
-    <property name="os.name" value="Windows 10" />
-    <property name="env.FP_NO_HOST_CHECK" value="NO" />
-    <property name="env.COMPUTERNAME" value="DUMPLING" />
-    <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
-    <property name="TODAY" value="May 14 2018" />
-    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
-    <property name="sun.desktop" value="windows" />
-    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
-    <property name="ant.home" value="E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840" />
-    <property name="freecol.metaserver.jar.file" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/FreeCol-metaserver.jar" />
-    <property name="java.runtime.version" value="9.0.1+11" />
-    <property name="env.HOMEPATH" value="\Users\Kolbe" />
-    <property name="user.name" value="Kolbe" />
-    <property name="freecol.overview.file" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/src/overview.html" />
-    <property name="ant.file.type.FreeCol" value="file" />
-    <property name="freecol.release.dir" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/dist" />
-    <property name="user.language" value="en" />
-    <property name="env.windows_tracing_flags" value="3" />
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-9.0.1\bin" />
-    <property name="env.NVM_HOME" value="C:\Users\Kolbe\AppData\Roaming\nvm" />
-    <property name="ant.project.default-target" value="package" />
-    <property name="ant.project.name" value="FreeCol" />
-    <property name="DSTAMP" value="20180514" />
-    <property name="cortado.jar" value="jars/cortado-0.6.0.jar" />
-    <property name="java.vm.compressedOopsMode" value="32-bit" />
-    <property name="java.version" value="9.0.1" />
-    <property name="env.PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 58 Stepping 9, GenuineIntel" />
-    <property name="user.timezone" value="" />
-    <property name="env.TEMP" value="C:\Users\Kolbe\AppData\Local\Temp" />
-    <property name="env.asl.log" value="Destination=file" />
-    <property name="freecol.name" value="freecol" />
-    <property name="sun.arch.data.model" value="64" />
-    <property name="file.encoding.pkg" value="sun.io" />
-    <property name="sun.cpu.isalist" value="amd64" />
-    <property name="env.HOMEDRIVE" value="C:" />
-    <property name="sun.jnu.encoding" value="Cp1252" />
-    <property name="file.separator" value="\" />
-    <property name="isOsWindows" value="true" />
-    <property name="java.specification.name" value="Java Platform API Specification" />
-    <property name="java.class.version" value="53.0" />
-    <property name="user.country" value="US" />
-    <property name="build.classes.dir" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\src\net\sf\freecol" />
-    <property name="java.home" value="C:\Program Files\Java\jdk-9.0.1" />
-    <property name="env.PSModulePath" value="C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\" />
-    <property name="env.APPDATA" value="C:\Users\Kolbe\AppData\Roaming" />
-    <property name="java.vm.info" value="mixed mode" />
-    <property name="env.windows_tracing_logfile" value="C:\BVTBin\Tests\installpackage\csilogfile.log" />
-    <property name="env.PUBLIC" value="C:\Users\Public" />
-    <property name="env.ComSpec" value="C:\WINDOWS\system32\cmd.exe" />
-    <property name="env.OS" value="Windows_NT" />
-    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
-    <property name="os.version" value="10.0" />
-    <property name="ant.file" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\build.xml" />
-    <property name="env.MINITAB_LICENSE_FILE" value="C:\Program Files (x86)\Minitab\Minitab 17" />
-    <property name="env.ProgramW6432" value="C:\Program Files" />
-    <property name="miglayout-swing.jar" value="jars/miglayout-swing-4.2.jar" />
-    <property name="env.INTEL_DEV_REDIST" value="C:\Program Files (x86)\Common Files\Intel\Shared Libraries\" />
-    <property name="env.javac" value="C:\Program Files\Java\jdk1.8.0_20\bin\javac.exe" />
-    <property name="freecol.build.dir" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/build" />
-    <property name="env.AMDAPPSDKROOT" value="C:\Program Files (x86)\AMD APP\" />
-    <property name="path.separator" value=";" />
-    <property name="java.vm.version" value="9.0.1+11" />
-    <property name="java.target.version" value="1.8" />
-    <property name="user.variant" value="" />
-    <property name="env.USERPROFILE" value="C:\Users\Kolbe" />
-    <property name="ant.library.dir" value="E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib" />
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
-    <property name="freecol.packaging.dir" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/packaging" />
-    <property name="env.TMP" value="C:\Users\Kolbe\AppData\Local\Temp" />
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
-    <property name="_jacoco.agentFile" value="C:\Users\Kolbe\AppData\Local\Temp\jacocoagent3158558267805640937.jar" />
-    <property name="user.script" value="" />
-    <property name="ant.file.FreeCol" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\build.xml" />
-    <property name="user.home" value="C:\Users\Kolbe" />
-    <property name="freecol.rules.dir" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/data/rules" />
-    <property name="env.ProgramData" value="C:\ProgramData" />
-    <property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)" />
-    <property name="env.SESSIONNAME" value="Console" />
-    <property name="test" value="AllTests" />
-    <property name="java.specification.vendor" value="Oracle Corporation" />
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-9.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_20\bin;Path=C:\Program Files (x86)\Windows Resource Kits\Tools\;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Quarantine\;C:\Program Files\Perforce;C:\Program Files\Microsoft Network Monitor 3\;E:\My Documents\CSI 161;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\WinSCP\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;%NVM_HOME%;%NVM_SYMLINK%;C:\Users\Kolbe\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\Kolbe\AppData\Local\Programs\Python\Python36-32\;C:\Users\Kolbe\AppData\Local\.meteor\;C:\Users\Kolbe\AppData\Local\Microsoft\WindowsApps;C:\Users\Kolbe\AppData\Local\atom\bin;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Kolbe\AppData\Roaming\npm;E:\Program Files (x86)\Microsoft VS Code\Microsoft VS Code\bin;C:\Users\Kolbe\AppData\Local\Microsoft\WindowsApps;E:\Program Files\Microsoft VS Code\bin;C:\Users\Kolbe\AppData\Roaming\nvm;C:\Program Files\nodejs;." />
-    <property name="env.NUMBER_OF_PROCESSORS" value="8" />
-    <property name="java.vendor.url" value="http://java.oracle.com/" />
-    <property name="java.vm.vendor" value="Oracle Corporation" />
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="java.class.path" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\build;E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\test\lib\junit.jar;E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\jars\miglayout-swing-4.2.jar;E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\jars\miglayout-core-4.2.jar;E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\jars\commons-cli-1.1.jar;E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\jars\cortado-0.6.0.jar;E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\jars\jogg-0.0.17.jar;E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\jars\jorbis-0.0.17.jar;E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-launcher.jar;E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant.jar;E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-junit.jar;E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-junit4.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner net.sf.freecol.AllTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\build\report\xml\TEST-net.sf.freecol.AllTests.xml crashfile=E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\junitvmwatcher12326411813592156795.properties propsfile=E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\junit2639926112092430622.properties" />
-    <property name="ant.version" value="Apache Ant(TM) version 1.10.1 compiled on February 2 2017" />
-    <property name="TSTAMP" value="1221" />
-    <property name="jar.classpath" value="jars/miglayout-swing-4.2.jar jars/miglayout-core-4.2.jar jars/commons-cli-1.1.jar jars/cortado-0.6.0.jar jars/jogg-0.0.17.jar jars/jorbis-0.0.17.jar" />
-    <property name="jdk.debug" value="release" />
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
-    <property name="env.windir" value="C:\WINDOWS" />
-    <property name="env.LOGONSERVER" value="\\DUMPLING" />
-    <property name="java.vm.specification.version" value="9" />
-    <property name="env.PROCESSOR_ARCHITECTURE" value="AMD64" />
-    <property name="sun.cpu.endian" value="little" />
-    <property name="sun.os.patch.level" value="" />
-    <property name="env.OneDrive" value="C:\Users\Kolbe\OneDrive" />
-    <property name="java.awt.headless" value="true" />
-    <property name="env.ANT_HOME" value="E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840" />
-    <property name="env.ProgramFiles" value="C:\Program Files" />
-    <property name="env.PROCESSOR_REVISION" value="3a09" />
-    <property name="java.io.tmpdir" value="C:\Users\Kolbe\AppData\Local\Temp\" />
-    <property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
-    <property name="freecol.src.dir" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/src" />
-    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/" />
-    <property name="env.SystemRoot" value="C:\WINDOWS" />
-    <property name="os.arch" value="amd64" />
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
-    <property name="env.NVM_SYMLINK" value="C:\Program Files\nodejs" />
-    <property name="user.dir" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol" />
-    <property name="env.LOCALAPPDATA" value="C:\Users\Kolbe\AppData\Local" />
-    <property name="line.separator" value="&#xd;&#xa;" />
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
-    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
-    <property name="env.Path" value="C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_20\bin;Path=C:\Program Files (x86)\Windows Resource Kits\Tools\;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Quarantine\;C:\Program Files\Perforce;C:\Program Files\Microsoft Network Monitor 3\;E:\My Documents\CSI 161;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\WinSCP\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;%NVM_HOME%;%NVM_SYMLINK%;C:\Users\Kolbe\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\Kolbe\AppData\Local\Programs\Python\Python36-32\;C:\Users\Kolbe\AppData\Local\.meteor\;C:\Users\Kolbe\AppData\Local\Microsoft\WindowsApps;C:\Users\Kolbe\AppData\Local\atom\bin;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Kolbe\AppData\Roaming\npm;E:\Program Files (x86)\Microsoft VS Code\Microsoft VS Code\bin;C:\Users\Kolbe\AppData\Local\Microsoft\WindowsApps;E:\Program Files\Microsoft VS Code\bin;C:\Users\Kolbe\AppData\Roaming\nvm;C:\Program Files\nodejs" />
-    <property name="basedir" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol" />
-    <property name="ant.java.version" value="9" />
-    <property name="ant.core.lib" value="E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant.jar" />
-    <property name="freecol.jar.file" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/FreeCol.jar" />
-    <property name="env.USERNAME" value="Kolbe" />
-    <property name="cli.jar" value="jars/commons-cli-1.1.jar" />
-    <property name="env.SystemDrive" value="C:" />
-    <property name="file.encoding" value="Cp1252" />
-    <property name="freecol.data.dir" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/data" />
-    <property name="env.USERDOMAIN" value="Dumpling" />
-    <property name="freecol.doc.dir" value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/doc" />
-    <property name="java.specification.version" value="9" />
-    <property name="ant.project.invoked-targets" value="package,testall" />
-    <property name="env.PROCESSOR_LEVEL" value="6" />
-  </properties>
-  <testcase classname="net.sf.freecol.common.i18n.CLDRTest" name="testRuleParsing" time="0.044" />
-  <testcase classname="net.sf.freecol.common.i18n.CLDRTest" name="testPlurals" time="0.003" />
-  <testcase classname="net.sf.freecol.common.i18n.MessagesTest" name="testReplaceArbitraryTag" time="0.016" />
-  <testcase classname="net.sf.freecol.common.i18n.MessagesTest" name="testReplaceNumber" time="0.015" />
-  <testcase classname="net.sf.freecol.common.i18n.MessagesTest" name="testReplaceChoicesGrammar" time="0.013" />
-  <testcase classname="net.sf.freecol.common.i18n.MessagesTest" name="testMessageWithSpecialChars" time="0.019" />
-  <testcase classname="net.sf.freecol.common.i18n.MessagesTest" name="testReplaceGarbage" time="0.014" />
-  <testcase classname="net.sf.freecol.common.i18n.MessagesTest" name="testAbstractUnitDescription" time="0.014" />
-  <testcase classname="net.sf.freecol.common.i18n.MessagesTest" name="testChangeLocaleSettings" time="0.047" />
-  <testcase classname="net.sf.freecol.common.i18n.MessagesTest" name="testMessageString" time="0.008" />
-  <testcase classname="net.sf.freecol.common.i18n.MessagesTest" name="testNestedChoices" time="0.007" />
-  <testcase classname="net.sf.freecol.common.i18n.MessagesTest" name="testStringTemplates" time="0.378" />
-  <testcase classname="net.sf.freecol.common.i18n.MessagesTest" name="testReplaceChoicesPlural" time="0.008" />
-  <testcase classname="net.sf.freecol.common.i18n.MessagesTest" name="testUnitDescription" time="0.014" />
-  <testcase classname="net.sf.freecol.common.i18n.MessagesTest" name="testREFMessages" time="0.004" />
-  <testcase classname="net.sf.freecol.common.io.ModTest" name="testGetRuleSets" time="0.004" />
-  <testcase classname="net.sf.freecol.common.io.ModTest" name="testGetAllMods" time="0.012" />
-  <testcase classname="net.sf.freecol.common.option.OptionTest" name="testGameOptions" time="0.001" />
-  <testcase classname="net.sf.freecol.common.option.OptionTest" name="testUnitListOption" time="0.0" />
-  <testcase classname="net.sf.freecol.common.option.OptionTest" name="testInheritsEditable" time="0.0" />
-  <testcase classname="net.sf.freecol.common.option.OptionTest" name="testCloneIntegerOption" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.SpecificationTest" name="testExtendsDelete" time="0.099" />
-  <testcase classname="net.sf.freecol.common.model.SpecificationTest" name="testLoadMods" time="0.051" />
-  <testcase classname="net.sf.freecol.common.model.SpecificationTest" name="testExtends" time="0.078" />
-  <testcase classname="net.sf.freecol.common.model.SpecificationTest" name="testModifiers" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.SpecificationTest" name="testLoad" time="0.031" />
-  <testcase classname="net.sf.freecol.common.model.SpecificationTest" name="testNationTypes" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.SpecificationTest" name="testGetDefaultUnitType" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.SpecificationTest" name="testGoodsTypes" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.SpecificationTest" name="testFoundingFathers" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.SpecificationTest" name="testRequiredAbilitiesForRoles" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.SpecificationTest" name="testNations" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.SpecificationTest" name="testUnitAbilities" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.BaseCostDeciderTest" name="testNavalUnitMoveToTileWithSettlement" time="0.056" />
-  <testcase classname="net.sf.freecol.common.model.BaseCostDeciderTest" name="testInvalidMoveThroughTileWithSettlement" time="0.006" />
-  <testcase classname="net.sf.freecol.common.model.BaseCostDeciderTest" name="testGetRemainingMovesAndNewTurn" time="0.004" />
-  <testcase classname="net.sf.freecol.common.model.BaseCostDeciderTest" name="testGetCostLandLand" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.BaseCostDeciderTest" name="testInvalidMoveOfLandUnitToAnOceanTile" time="0.004" />
-  <testcase classname="net.sf.freecol.common.model.BaseCostDeciderTest" name="testInvalidMoveOfNavalUnitToALandTile" time="0.004" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testStockade" time="0.014" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testCottonClothProduction" time="0.028" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testPasture" time="0.022" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testCanBuildNext" time="0.012" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testFortRequiresMinimumPopulation" time="0.015" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testUnitProduction" time="0.024" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testPrintingPressBonus" time="0.019" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testCanAddToBuilding" time="0.03" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testToolsMusketProduction" time="0.022" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testFortressRequiresMinimumPopulation" time="0.014" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testSerialize" time="0.018" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testTownhallProduction" time="0.012" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testChurch" time="0.026" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testInitialColony" time="0.004" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testStockadeRequiresMinimumPopulation" time="0.007" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testNewspaperBonus" time="0.012" />
-  <testcase classname="net.sf.freecol.common.model.BuildingTest" name="testCanAddToSchool" time="0.02" />
-  <testcase classname="net.sf.freecol.common.model.ColonyTest" name="testCopyColony" time="0.022" />
-  <testcase classname="net.sf.freecol.common.model.ColonyTest" name="testFoundColony" time="0.014" />
-  <testcase classname="net.sf.freecol.common.model.ColonyTest" name="testTeaParty" time="0.005" />
-  <testcase classname="net.sf.freecol.common.model.ColonyTest" name="testAddUnitToColony" time="0.016" />
-  <testcase classname="net.sf.freecol.common.model.ColonyTest" name="testCurrentlyBuilding" time="0.005" />
-  <testcase classname="net.sf.freecol.common.model.ColonyTest" name="testBuildQueueDoesNotAcceptBuildingDoubles" time="0.005" />
-  <testcase classname="net.sf.freecol.common.model.ColonyTest" name="testBuildQueueAcceptsUnitDoubles" time="0.005" />
-  <testcase classname="net.sf.freecol.common.model.ColonyTest" name="testUpkeep" time="0.009" />
-  <testcase classname="net.sf.freecol.common.model.ColonyTest" name="testUnderSiege" time="0.008" />
-  <testcase classname="net.sf.freecol.common.model.ColonyTest" name="testOccupationWithFood" time="0.008" />
-  <testcase classname="net.sf.freecol.common.model.ColonyProductionTest" name="testNoHorsesOverProduction" time="0.006" />
-  <testcase classname="net.sf.freecol.common.model.ColonyProductionTest" name="testBellNetProduction" time="0.013" />
-  <testcase classname="net.sf.freecol.common.model.ColonyProductionTest" name="testProductionMap" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ColonyProductionTest" name="testProductionSoldier" time="0.007" />
-  <testcase classname="net.sf.freecol.common.model.ColonyProductionTest" name="testConsumers" time="0.007" />
-  <testcase classname="net.sf.freecol.common.model.ColonyProductionTest" name="testProductionPioneer" time="0.004" />
-  <testcase classname="net.sf.freecol.common.model.ColonyProductionTest" name="testProduction" time="0.007" />
-  <testcase classname="net.sf.freecol.common.model.ColonyProductionTest" name="testGetPotentialProduction" time="0.005" />
-  <testcase classname="net.sf.freecol.common.model.CombatTest" name="testCaptureConvert" time="0.428" />
-  <testcase classname="net.sf.freecol.common.model.CombatTest" name="testGalleonAttackedByPrivateer" time="0.004" />
-  <testcase classname="net.sf.freecol.common.model.CombatTest" name="testDefendColonyWithUnarmedColonist" time="0.005" />
-  <testcase classname="net.sf.freecol.common.model.CombatTest" name="testRegulars" time="0.137" />
-  <testcase classname="net.sf.freecol.common.model.CombatTest" name="testSpanishAgainstNatives" time="0.004" />
-  <testcase classname="net.sf.freecol.common.model.CombatTest" name="testColonistAttackedByVeteran" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.CombatTest" name="testAttackIgnoresMovementPoints" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.CombatTest" name="testAttackShipWithLandUnit" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.CombatTest" name="testDefendColonyWithRevere" time="0.005" />
-  <testcase classname="net.sf.freecol.common.model.CombatTest" name="testDefendSettlement" time="0.004" />
-  <testcase classname="net.sf.freecol.common.model.DisasterTest" name="testDisastersPresent" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.EuropeTest" name="testMissionary" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.FoundingFatherTest" name="testAddAllFathers" time="0.008" />
-  <testcase classname="net.sf.freecol.common.model.FoundingFatherTest" name="testAvailableTo" time="0.004" />
-  <testcase classname="net.sf.freecol.common.model.FoundingFatherTest" name="testFeatures" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.FoundingFatherTest" name="testBellsRequired" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.GameTest" name="testGame" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.GameTest" name="testTurn" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.GameTest" name="testAddPlayer" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testGetTakeSpace" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testGetInputType" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testSetGetAmount" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testGoodsGameLocationIntInt" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testToString" time="0.006" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testBuildingMaterials" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testIsFarmedGoods" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testGetName" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testSerialize" time="0.089" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testGetOutputType" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testMilitaryGoods" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testTradeGoods" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testProductionChain" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testAdjustAmount" time="0.004" />
-  <testcase classname="net.sf.freecol.common.model.GoodsTest" name="testSetOwner" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.GoodsContainerTest" name="testContainer" time="0.007" />
-  <testcase classname="net.sf.freecol.common.model.IndianSettlementTest" name="testAutomaticEquipBraves" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.IndianSettlementTest" name="testSettlementDoesNotOwnWaterTiles" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.IndianSettlementTest" name="testTradeGoodsWithSetlement" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.IndividualFatherTest" name="testPaine" time="0.009" />
-  <testcase classname="net.sf.freecol.common.model.IndividualFatherTest" name="testBolivar" time="0.009" />
-  <testcase classname="net.sf.freecol.common.model.IndividualFatherTest" name="testBrebeuf" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.IndividualFatherTest" name="testStuyvesant" time="0.005" />
-  <testcase classname="net.sf.freecol.common.model.IndividualFatherTest" name="testBrewster" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.IndividualFatherTest" name="testCortes" time="0.007" />
-  <testcase classname="net.sf.freecol.common.model.IndividualFatherTest" name="testDeWitt" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.IndividualFatherTest" name="testJefferson" time="0.005" />
-  <testcase classname="net.sf.freecol.common.model.IndividualFatherTest" name="testMinuit" time="0.006" />
-  <testcase classname="net.sf.freecol.common.model.IndividualFatherTest" name="testRevere" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.IndividualFatherTest" name="testDeLasCasas" time="0.007" />
-  <testcase classname="net.sf.freecol.common.model.LimitTest" name="testSuccessionLimits" time="0.008" />
-  <testcase classname="net.sf.freecol.common.model.LimitTest" name="testWagonTrainLimit" time="0.009" />
-  <testcase classname="net.sf.freecol.common.model.LimitTest" name="testOperand" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.LimitTest" name="testIndependenceLimits" time="0.006" />
-  <testcase classname="net.sf.freecol.common.model.MapTest" name="testSearchForColony" time="0.038" />
-  <testcase classname="net.sf.freecol.common.model.MapTest" name="testCopy" time="0.017" />
-  <testcase classname="net.sf.freecol.common.model.MapTest" name="testNoPathAvailableDueToUnitInTheWay" time="0.004" />
-  <testcase classname="net.sf.freecol.common.model.MapTest" name="testGetAllTiles" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.MapTest" name="testGetSurroundingTiles" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.MapTest" name="testMapGameInt" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.MapTest" name="testLatitude" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.MapTest" name="testRandomDirection" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.MapTest" name="testShortestPathObstructed" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.MapTest" name="testFindPath" time="0.107" />
-  <testcase classname="net.sf.freecol.common.model.MapTest" name="testMoveThroughTileWithEnemyUnit" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.MapTest" name="testNoPathAvailableDueToColonyInTheWay" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.MapTest" name="testNoPathAvailableDueToCampInTheWay" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.MapTest" name="testGetReverseDirection" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.MarketTest" name="testSerialization" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.MarketTest" name="testTransactionListeners" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.MarketTest" name="testInitialMarket" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.ModelMessageTest" name="testDefaultId" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.ModelMessageTest" name="testHashCode" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.ModelMessageTest" name="testModelMapSet2" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.ModifierTest" name="testScope" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.ModifierTest" name="testCombinedModifier" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ModifierTest" name="testPercentageModifier" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ModifierTest" name="testHashEquals" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.ModifierTest" name="testAdditiveModifier" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ModifierTest" name="testTimeLimits" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ModifierTest" name="testCombinePercentageModifiers" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ModifierTest" name="testModifierUnknown" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ModifierTest" name="testCombineMultiplicativeModifiers" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ModifierTest" name="testMultiplicativeModifier" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.ModifierTest" name="testIncrements" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ModifierTest" name="testCombineAdditiveModifiers" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.MonarchTest" name="testTaxActionChoices" time="0.007" />
-  <testcase classname="net.sf.freecol.common.model.MonarchTest" name="testSerialize" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.MovementTest" name="testMoveAlongRoad" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.MovementTest" name="testMoveAlongRiver" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.MovementTest" name="testMoveFromPlainsToHills" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.MovementTest" name="testMoveFromPlainsToPlains" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.MovementTest" name="testScoutIndianSettlement" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.MovementTest" name="testScoutColony" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.NationTypeTest" name="testSettlementType" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.NationTypeTest" name="testIsREF" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.NationTypeTest" name="testisRef" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.NationTypeTest" name="testAdvantagesThatOnlyApplyToPersons" time="0.004" />
-  <testcase classname="net.sf.freecol.common.model.NationTypeTest" name="testHasType" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.NationTypeTest" name="testStartingUnits" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.PlayerTest" name="testAddAnotherPlayersUnit" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.PlayerTest" name="testFreecolPlayers" time="0.004" />
-  <testcase classname="net.sf.freecol.common.model.PlayerTest" name="testTension" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.PlayerTest" name="testUnits" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.PlayerTest" name="testClassicPlayers" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testOtherBuildings" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testRainForest" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testHorseProduction" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testSavannah" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testHills" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testMarsh" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testOcean" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testSwamp" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testCoatProduction" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testLake" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testHighSeas" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testPrairie" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testWetlandForest" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testGrassland" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testBroadleafForest" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testCrossProduction" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testGreatRiver" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testToolsProduction" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testMixedForest" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testBorealForest" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testBellProduction" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testClothProduction" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testMountains" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testArctic" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testConiferForest" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testDesert" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testHammerProduction" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testPlains" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testMusketProduction" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testCigarProduction" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testTundra" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testRumProduction" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testTropicalForest" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ProductionTypeTest" name="testScrubForest" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.RandomRangeTest" name="testRandomRange" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.RoleTest" name="testRoleComparator" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.RoleTest" name="testMilitaryRoles" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.RoleTest" name="testGoodsDifference" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.RoleTest" name="testCompatibleRoles" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.RoleTest" name="testGetRoleWithAbility" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.SchoolTest" name="testEducationOption" time="0.009" />
-  <testcase classname="net.sf.freecol.common.model.SchoolTest" name="testChangeTeachers" time="0.006" />
-  <testcase classname="net.sf.freecol.common.model.SchoolTest" name="testUpgrades" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.ScopeTest" name="testEmptyScope" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ScopeTest" name="testMethodScope" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ScopeTest" name="testCombinedScope" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ScopeTest" name="testTypeScope" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ScopeTest" name="testAbilityScope" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ScopeTest" name="testEquality" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ScopeTest" name="testMatchesNull" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.ScopeTest" name="testGameObjects" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.SerializationTest" name="testMapAmerica" time="0.586" />
-  <testcase classname="net.sf.freecol.common.model.SerializationTest" name="testSpecification" time="0.105" />
-  <testcase classname="net.sf.freecol.common.model.SerializationTest" name="testValidation" time="0.29" />
-  <testcase classname="net.sf.freecol.common.model.SerializationTest" name="testStringTemplate" time="0.013" />
-  <testcase classname="net.sf.freecol.common.model.SerializationTest" name="testMapAfrica" time="0.33" />
-  <testcase classname="net.sf.freecol.common.model.SerializationTest" name="testMapCaribbean" time="0.074" />
-  <testcase classname="net.sf.freecol.common.model.SerializationTest" name="testDifficulty" time="0.053" />
-  <testcase classname="net.sf.freecol.common.model.SerializationTest" name="testGeneratedLists" time="0.055" />
-  <testcase classname="net.sf.freecol.common.model.SerializationTest" name="testMapAustralia" time="0.111" />
-  <testcase classname="net.sf.freecol.common.model.SettlementTest" name="testColonyClaimsWater" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.SettlementTest" name="testLineOfSight" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.SettlementTest" name="testSettlementRadius" time="0.005" />
-  <testcase classname="net.sf.freecol.common.model.SettlementTest" name="testCanImproveUnitMilitaryRole" time="0.01" />
-  <testcase classname="net.sf.freecol.common.model.SettlementTest" name="testSettlementDoesNotClaimWater" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.SettlementTest" name="testColonyRadius" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.SoLTest" name="testSoL" time="0.011" />
-  <testcase classname="net.sf.freecol.common.model.TileImprovementTest" name="testRiverWithExtras" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.TileImprovementTest" name="testRiverNoExtras" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.TileImprovementTest" name="testAllFrills" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.TileImprovementTest" name="testOldStyle" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.TileImprovementTest" name="testEquality" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.TileItemContainerTest" name="testCopyFromWithEveryThing" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testTileTypeChangeProduction" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testDefenceModifiers" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testPrimarySecondaryGoods" time="0.004" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testPotential" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testCopy" time="0.005" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testImprovements" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testMinerals" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testMaximumPotential" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testIsTileTypeAllowed" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testGetWorkAmount" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testGetBestDisembarkTile" time="0.006" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testColonyImprovements" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testConiferForest" time="0.008" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testProductionModifiers" time="0.005" />
-  <testcase classname="net.sf.freecol.common.model.TileTest" name="testZIndex" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.TradeRouteTest" name="testTradeRoute" time="0.02" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testIsColonist" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testElement" time="0.006" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testUnitLosesExperienceWithRoleChange" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testUnitAvailability" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testOwnerChange" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testIndianDies" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testGetMovesAsString" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testCopy" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testDefaultRole" time="0.0" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testMissionary" time="0.005" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testUnitCanBuildColony" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testCarrierOwnerChange" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testTreasureTransportFee" time="0.003" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testFailedAddGoods" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testGetLineOfSight" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testCanAdd" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.UnitTest" name="testUnitLocationAfterBuildingColony" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.UnitTypeChangeTest" name="testEmptyScope" time="0.001" />
-  <testcase classname="net.sf.freecol.common.model.UnitTypeChangeTest" name="testCreation" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.UnitTypeChangeTest" name="testAbilityScope" time="0.002" />
-  <testcase classname="net.sf.freecol.common.model.UnitTypeChangeTest" name="testEquality" time="0.001" />
-  <testcase classname="net.sf.freecol.common.utils.UtilsTest" name="testComparator" time="0.001" />
-  <testcase classname="net.sf.freecol.common.utils.UtilsTest" name="testGetPermutations" time="0.002" />
-  <testcase classname="net.sf.freecol.common.sound.SoundTest" name="testSound" time="0.972" />
-  <testcase classname="net.sf.freecol.common.sound.SoundTest" name="testClassic" time="3.265" />
-  <testcase classname="net.sf.freecol.server.SaveLoadTest" name="testDelayedLoading" time="0.836" />
-  <testcase classname="net.sf.freecol.server.SaveLoadTest" name="testImmediateLoading" time="0.623" />
-  <testcase classname="net.sf.freecol.server.SaveLoadTest" name="testImport" time="0.682" />
-  <testcase classname="net.sf.freecol.server.ai.AIColonyTest" name="testBuildersAllocation" time="0.227" />
-  <testcase classname="net.sf.freecol.server.ai.AIColonyTest" name="testBestDefender" time="0.076" />
-  <testcase classname="net.sf.freecol.server.ai.AIColonyTest" name="testBuildersAllocNoRawMatTiles" time="0.186" />
-  <testcase classname="net.sf.freecol.server.ai.AIColonyTest" name="testExpertAllocColonyHasEnoughRawMat" time="0.09" />
-  <testcase classname="net.sf.freecol.server.ai.ContactTest" name="testNativeMeetsEuropean" time="0.085" />
-  <testcase classname="net.sf.freecol.server.ai.ContactTest" name="testNativeMeetsColony" time="0.089" />
-  <testcase classname="net.sf.freecol.server.ai.ContactTest" name="testShipMeetsShip" time="0.086" />
-  <testcase classname="net.sf.freecol.server.ai.ContactTest" name="testNativeMeetsNative" time="0.068" />
-  <testcase classname="net.sf.freecol.server.ai.ContactTest" name="testNativeMeetsIndianSettlement" time="0.069" />
-  <testcase classname="net.sf.freecol.server.ai.ContactTest" name="testEuropeanMeetsIndianSettlement" time="0.118" />
-  <testcase classname="net.sf.freecol.server.ai.ContactTest" name="testEuropeanMeetsNative" time="0.07" />
-  <testcase classname="net.sf.freecol.server.ai.ColonyPlanTest" name="testGetBestWorker" time="0.097" />
-  <testcase classname="net.sf.freecol.server.ai.ColonyPlanTest" name="testBestImprovements" time="0.002" />
-  <testcase classname="net.sf.freecol.server.ai.ColonyPlanTest" name="testNoBuildRawMatTiles" time="0.057" />
-  <testcase classname="net.sf.freecol.server.ai.ColonyPlanTest" name="testReqLumberAndHammersForBuild" time="0.063" />
-  <testcase classname="net.sf.freecol.server.ai.ColonyPlanTest" name="testReqOreAndToolsWithEnoughHammersForBuild" time="0.056" />
-  <testcase classname="net.sf.freecol.server.ai.MissionAssignmentTest" name="testIsTargetValidForSeekAndDestroy" time="0.061" />
-  <testcase classname="net.sf.freecol.server.ai.MissionAssignmentTest" name="testImpossibleConditionsForTargetSelection" time="0.065" />
-  <testcase classname="net.sf.freecol.server.ai.MissionAssignmentTest" name="testSecureIndianSettlementMissionIgnoreNavalThreat" time="0.1" />
-  <testcase classname="net.sf.freecol.server.ai.MissionAssignmentTest" name="testSecureIndianSettlementMission" time="0.067" />
-  <testcase classname="net.sf.freecol.server.ai.MissionAssignmentTest" name="testAssignDefendSettlementMission" time="0.056" />
-  <testcase classname="net.sf.freecol.server.ai.REFTest" name="testCreateREFPlayer" time="0.063" />
-  <testcase classname="net.sf.freecol.server.ai.StandardAIPlayerTest" name="testEquipBravesNotEnoughReqGoods" time="0.069" />
-  <testcase classname="net.sf.freecol.server.ai.StandardAIPlayerTest" name="testEquipBraves" time="0.066" />
-  <testcase classname="net.sf.freecol.server.ai.TensionTest" name="testTension" time="0.069" />
-  <testcase classname="net.sf.freecol.server.ai.mission.PioneeringMissionTest" name="testImprovementNoLongerValid" time="0.075" />
-  <testcase classname="net.sf.freecol.server.ai.mission.PrivateerMissionTest" name="testIsMissionValid" time="0.057" />
-  <testcase classname="net.sf.freecol.server.ai.mission.ScoutingMissionTest" name="testHorsesLost" time="0.058" />
-  <testcase classname="net.sf.freecol.server.ai.mission.TransportMissionTest" name="testGetNextStopAlreadyAtDestination" time="0.059" />
-  <testcase classname="net.sf.freecol.server.ai.mission.TransportMissionTest" name="testGetDefaultDestination" time="0.067" />
-  <testcase classname="net.sf.freecol.server.ai.mission.TransportMissionTest" name="testWagonTrain" time="0.078" />
-  <testcase classname="net.sf.freecol.server.ai.mission.TransportMissionTest" name="testGetNextStopIsColony" time="0.08" />
-  <testcase classname="net.sf.freecol.server.ai.mission.TransportMissionTest" name="testGetNextStopIsEurope" time="0.087" />
-  <testcase classname="net.sf.freecol.server.ai.mission.TransportMissionTest" name="testTransportMissionInvalidAfterCombatLost" time="0.08" />
-  <testcase classname="net.sf.freecol.server.ai.mission.UnitSeekAndDestroyMissionTest" name="testCapturedUnitsLoseMission" time="0.04" />
-  <testcase classname="net.sf.freecol.server.ai.mission.UnitSeekAndDestroyMissionTest" name="testDoNotPursueUnitsInColonies" time="0.047" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testWarDeclarationAffectsSettlementAlarm" time="0.054" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testArtilleryDemotedBySoldier" time="0.066" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testPeaceTreatyFromWarStance" time="0.046" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testScoutDiesNotLosesEquipment" time="0.062" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testDragoonDemotedByBrave" time="0.07" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testCeaseFireTreaty" time="0.05" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testDeclarationOfWarFromPeace" time="0.043" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testAttackColonyWithVeteran" time="0.099" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testDragoonDemotedBySoldier" time="0.077" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testAddFatherUnits" time="0.055" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testDumpGoods" time="0.049" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testAtackedNavalUnitIsDamaged" time="0.074" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testLaSalle" time="0.061" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testPocahontas" time="0.076" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testPioneerDiesNotLosesEquipment" time="0.055" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testPromotion" time="0.072" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testClearSpecialty" time="0.044" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testPeaceTreatyFromCeaseFireStance" time="0.048" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testUnitLosesExperienceWithWorkChange" time="0.048" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testEquipIndianNotEnoughReqGoods" time="0.048" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testCashInTreasure" time="0.052" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testAddFatherUpgrades" time="0.045" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testUnitTypeChangeOnEnterColony" time="0.05" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testSoldierDemotedBySoldier" time="0.052" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testUnarmedAttack" time="0.06" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testCarpenterHouseNationalAdvantage" time="0.05" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testCreateMission" time="0.056" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testDoAssignedWorkAmateurAndHardyPioneer" time="2.342" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testEmbark" time="0.039" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testVeteranSoldierDemotedBySoldier" time="0.047" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testLoseColonyDefenceWithRevere" time="0.056" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testBuildingBonus" time="0.051" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testColonistDemotedBySoldier" time="0.042" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testScoutDefeatedBySoldier" time="0.066" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testAddFatherBuildingEvent" time="0.05" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testAttackColonyWithBrave" time="0.09" />
-  <testcase classname="net.sf.freecol.server.control.InGameControllerTest" name="testEquipIndian" time="0.04" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testMoveTeacherOutside" time="0.052" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testTeacherStoresProgress" time="0.046" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testCaseTwoTeachersWithDifferentExp" time="0.052" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testMoveTeacherInside" time="0.072" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testConcurrentUpgrade" time="0.042" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testTeachingOrder" time="0.049" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testTeachPettyCriminalsByMaster" time="0.058" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testTeachingDoublePromotion" time="0.065" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testUniversity" time="0.055" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testTwoTeachersSimple" time="0.05" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testTrackerBug1616384" time="0.079" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testSingleGuyTwoTeachers2" time="0.054" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testCollege" time="0.048" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testSingleGuyTwoTeachers" time="0.048" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testSonsOfLiberty" time="0.083" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testTwoTeachersOfSameKind" time="0.035" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testTeachPettyCriminals" time="0.034" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testProductionBonus" time="0.039" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testPartTraining" time="0.051" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testExpertTeaching" time="0.038" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testColonialRegular" time="0.041" />
-  <testcase classname="net.sf.freecol.server.model.ServerBuildingTest" name="testTeachIndenturedServants" time="0.043" />
-  <testcase classname="net.sf.freecol.server.model.ServerColonyTest" name="testEqualFoodProductionConsumptionCase" time="0.039" />
-  <testcase classname="net.sf.freecol.server.model.ServerColonyTest" name="testDeathByStarvation" time="0.033" />
-  <testcase classname="net.sf.freecol.server.model.ServerColonyTest" name="testBuildingCompletion" time="0.037" />
-  <testcase classname="net.sf.freecol.server.model.ServerColonyTest" name="testInvalidCompletion" time="0.051" />
-  <testcase classname="net.sf.freecol.server.model.ServerColonyTest" name="testAvoidStarvation" time="0.033" />
-  <testcase classname="net.sf.freecol.server.model.ServerColonyTest" name="testNoBuildingMaterialsProductionWhenBuildingNothing" time="0.003" />
-  <testcase classname="net.sf.freecol.server.model.ServerColonyTest" name="testFoodConsumption" time="0.03" />
-  <testcase classname="net.sf.freecol.server.model.ServerColonyTest" name="testLibertyAndImmigration" time="0.041" />
-  <testcase classname="net.sf.freecol.server.model.ServerIndianSettlementTest" name="testHorseBreedingNoFoodAvail" time="0.049" />
-  <testcase classname="net.sf.freecol.server.model.ServerIndianSettlementTest" name="testPricing" time="0.036" />
-  <testcase classname="net.sf.freecol.server.model.ServerIndianSettlementTest" name="testHorseBreeding" time="0.033" />
-  <testcase classname="net.sf.freecol.server.model.ServerIndianSettlementTest" name="testFoodConsumption" time="0.055" />
-  <testcase classname="net.sf.freecol.server.model.ServerPlayerTest" name="testCheckNoGameOverEnoughMoney" time="0.03" />
-  <testcase classname="net.sf.freecol.server.model.ServerPlayerTest" name="testCheckGameOver1600Threshold" time="0.034" />
-  <testcase classname="net.sf.freecol.server.model.ServerPlayerTest" name="testCheckNoGameOverHasColonistInNewWorld" time="0.033" />
-  <testcase classname="net.sf.freecol.server.model.ServerPlayerTest" name="testHasExploredTile" time="0.07" />
-  <testcase classname="net.sf.freecol.server.model.ServerPlayerTest" name="testBuyingMakesPricesRaise" time="0.044" />
-  <testcase classname="net.sf.freecol.server.model.ServerPlayerTest" name="testCheckGameOverUnitsGoingToEurope" time="0.051" />
-  <testcase classname="net.sf.freecol.server.model.ServerPlayerTest" name="testDutchMarket" time="0.111" />
-  <testcase classname="net.sf.freecol.server.model.ServerPlayerTest" name="testCheckGameOverNoUnits" time="0.048" />
-  <testcase classname="net.sf.freecol.server.model.ServerPlayerTest" name="testCheckGameOverUnitsGoingToNewWorld" time="0.037" />
-  <testcase classname="net.sf.freecol.server.model.ServerPlayerTest" name="testSellingMakesPricesFall" time="0.032" />
-  <testcase classname="net.sf.freecol.server.model.ServerPlayerTest" name="testMarketRecovery" time="0.105" />
-  <testcase classname="net.sf.freecol.server.model.ServerPlayerTest" name="testLoadInColony" time="0.035" />
-  <testcase classname="net.sf.freecol.server.model.ServerPlayerTest" name="testLoadInEurope" time="0.04" />
-  <testcase classname="net.sf.freecol.server.model.ServerUnitTest" name="testDoAssignedWorkHardyPioneerPlowPlain" time="0.048" />
-  <testcase classname="net.sf.freecol.server.model.ServerUnitTest" name="testColonyProfitFromEnhancement" time="0.038" />
-  <testcase classname="net.sf.freecol.server.model.ServerUnitTest" name="testExposeResource" time="0.033" />
-  <testcase classname="net.sf.freecol.server.model.ServerUnitTest" name="testDoAssignedWorkHardyPioneerBuildRoad" time="0.051" />
-  <testcase classname="net.sf.freecol.server.model.ServerUnitTest" name="testUnitPromotionWorkingInWorkTile" time="0.054" />
-  <testcase classname="net.sf.freecol.server.model.ServerUnitTest" name="testUnitGetsExperienceThroughWork" time="0.04" />
-  <testcase classname="net.sf.freecol.server.model.ServerUnitTest" name="testUnitLumberDelivery" time="0.044" />
-  <testcase classname="net.sf.freecol.server.model.ServerUnitTest" name="testToggleHorses" time="0.035" />
-  <testcase classname="net.sf.freecol.server.generator.MapGeneratorTest" name="testSinglePlayerOnSmallMap" time="0.27" />
-  <testcase classname="net.sf.freecol.server.generator.MapGeneratorTest" name="testImportMap" time="0.514" />
-  <testcase classname="net.sf.freecol.server.generator.MapGeneratorTest" name="testRegions" time="0.222" />
-  <testcase classname="net.sf.freecol.server.generator.MapGeneratorTest" name="testWithNoIndians" time="0.189" />
-  <testcase classname="net.sf.freecol.server.generator.MapGeneratorTest" name="testIndianCapital" time="0.207" />
-  <testcase classname="net.sf.freecol.server.generator.MapGeneratorTest" name="testMapGenerator" time="0.234" />
-  <testcase classname="net.sf.freecol.client.gui.FontTest" name="testLogicalSerif" time="0.004" />
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[May 14, 2018 12:21:54 PM net.sf.freecol.common.model.Specification fixRoles
+<testsuite errors="0" failures="0" hostname="Dumpling"
+	name="net.sf.freecol.AllTests" skipped="0" tests="430" time="22.322"
+	timestamp="2018-05-14T16:21:55">
+	<properties>
+		<property name="java.vendor" value="Oracle Corporation" />
+		<property name="env.USERDOMAIN_ROAMINGPROFILE"
+			value="Dumpling" />
+		<property name="sun.java.launcher" value="SUN_STANDARD" />
+		<property name="miglayout-core.jar"
+			value="jars/miglayout-core-4.2.jar" />
+		<property name="sun.management.compiler"
+			value="HotSpot 64-Bit Tiered Compilers" />
+		<property name="env.PROMPT" value="$P$G" />
+		<property name="freecol.javadoc.dir"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/doc/javadoc" />
+		<property name="os.name" value="Windows 10" />
+		<property name="env.FP_NO_HOST_CHECK" value="NO" />
+		<property name="env.COMPUTERNAME" value="DUMPLING" />
+		<property name="env.CommonProgramW6432"
+			value="C:\Program Files\Common Files" />
+		<property name="TODAY" value="May 14 2018" />
+		<property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+		<property name="sun.desktop" value="windows" />
+		<property name="java.vm.specification.vendor"
+			value="Oracle Corporation" />
+		<property name="ant.home"
+			value="E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840" />
+		<property name="freecol.metaserver.jar.file"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/FreeCol-metaserver.jar" />
+		<property name="java.runtime.version" value="9.0.1+11" />
+		<property name="env.HOMEPATH" value="\Users\Kolbe" />
+		<property name="user.name" value="Kolbe" />
+		<property name="freecol.overview.file"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/src/overview.html" />
+		<property name="ant.file.type.FreeCol" value="file" />
+		<property name="freecol.release.dir"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/dist" />
+		<property name="user.language" value="en" />
+		<property name="env.windows_tracing_flags" value="3" />
+		<property name="sun.boot.library.path"
+			value="C:\Program Files\Java\jdk-9.0.1\bin" />
+		<property name="env.NVM_HOME"
+			value="C:\Users\Kolbe\AppData\Roaming\nvm" />
+		<property name="ant.project.default-target" value="package" />
+		<property name="ant.project.name" value="FreeCol" />
+		<property name="DSTAMP" value="20180514" />
+		<property name="cortado.jar" value="jars/cortado-0.6.0.jar" />
+		<property name="java.vm.compressedOopsMode" value="32-bit" />
+		<property name="java.version" value="9.0.1" />
+		<property name="env.PROCESSOR_IDENTIFIER"
+			value="Intel64 Family 6 Model 58 Stepping 9, GenuineIntel" />
+		<property name="user.timezone" value="" />
+		<property name="env.TEMP"
+			value="C:\Users\Kolbe\AppData\Local\Temp" />
+		<property name="env.asl.log" value="Destination=file" />
+		<property name="freecol.name" value="freecol" />
+		<property name="sun.arch.data.model" value="64" />
+		<property name="file.encoding.pkg" value="sun.io" />
+		<property name="sun.cpu.isalist" value="amd64" />
+		<property name="env.HOMEDRIVE" value="C:" />
+		<property name="sun.jnu.encoding" value="Cp1252" />
+		<property name="file.separator" value="\" />
+		<property name="isOsWindows" value="true" />
+		<property name="java.specification.name"
+			value="Java Platform API Specification" />
+		<property name="java.class.version" value="53.0" />
+		<property name="user.country" value="US" />
+		<property name="build.classes.dir"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\src\net\sf\freecol" />
+		<property name="java.home"
+			value="C:\Program Files\Java\jdk-9.0.1" />
+		<property name="env.PSModulePath"
+			value="C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\" />
+		<property name="env.APPDATA"
+			value="C:\Users\Kolbe\AppData\Roaming" />
+		<property name="java.vm.info" value="mixed mode" />
+		<property name="env.windows_tracing_logfile"
+			value="C:\BVTBin\Tests\installpackage\csilogfile.log" />
+		<property name="env.PUBLIC" value="C:\Users\Public" />
+		<property name="env.ComSpec"
+			value="C:\WINDOWS\system32\cmd.exe" />
+		<property name="env.OS" value="Windows_NT" />
+		<property name="env.CommonProgramFiles"
+			value="C:\Program Files\Common Files" />
+		<property name="os.version" value="10.0" />
+		<property name="ant.file"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\build.xml" />
+		<property name="env.MINITAB_LICENSE_FILE"
+			value="C:\Program Files (x86)\Minitab\Minitab 17" />
+		<property name="env.ProgramW6432" value="C:\Program Files" />
+		<property name="miglayout-swing.jar"
+			value="jars/miglayout-swing-4.2.jar" />
+		<property name="env.INTEL_DEV_REDIST"
+			value="C:\Program Files (x86)\Common Files\Intel\Shared Libraries\" />
+		<property name="env.javac"
+			value="C:\Program Files\Java\jdk1.8.0_20\bin\javac.exe" />
+		<property name="freecol.build.dir"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/build" />
+		<property name="env.AMDAPPSDKROOT"
+			value="C:\Program Files (x86)\AMD APP\" />
+		<property name="path.separator" value=";" />
+		<property name="java.vm.version" value="9.0.1+11" />
+		<property name="java.target.version" value="1.8" />
+		<property name="user.variant" value="" />
+		<property name="env.USERPROFILE" value="C:\Users\Kolbe" />
+		<property name="ant.library.dir"
+			value="E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib" />
+		<property name="java.awt.printerjob"
+			value="sun.awt.windows.WPrinterJob" />
+		<property name="freecol.packaging.dir"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/packaging" />
+		<property name="env.TMP"
+			value="C:\Users\Kolbe\AppData\Local\Temp" />
+		<property name="sun.io.unicode.encoding"
+			value="UnicodeLittle" />
+		<property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+		<property name="_jacoco.agentFile"
+			value="C:\Users\Kolbe\AppData\Local\Temp\jacocoagent3158558267805640937.jar" />
+		<property name="user.script" value="" />
+		<property name="ant.file.FreeCol"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\build.xml" />
+		<property name="user.home" value="C:\Users\Kolbe" />
+		<property name="freecol.rules.dir"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/data/rules" />
+		<property name="env.ProgramData" value="C:\ProgramData" />
+		<property name="env.ProgramFiles(x86)"
+			value="C:\Program Files (x86)" />
+		<property name="env.SESSIONNAME" value="Console" />
+		<property name="test" value="AllTests" />
+		<property name="java.specification.vendor"
+			value="Oracle Corporation" />
+		<property name="java.library.path"
+			value="C:\Program Files\Java\jdk-9.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_20\bin;Path=C:\Program Files (x86)\Windows Resource Kits\Tools\;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Quarantine\;C:\Program Files\Perforce;C:\Program Files\Microsoft Network Monitor 3\;E:\My Documents\CSI 161;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\WinSCP\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;%NVM_HOME%;%NVM_SYMLINK%;C:\Users\Kolbe\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\Kolbe\AppData\Local\Programs\Python\Python36-32\;C:\Users\Kolbe\AppData\Local\.meteor\;C:\Users\Kolbe\AppData\Local\Microsoft\WindowsApps;C:\Users\Kolbe\AppData\Local\atom\bin;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Kolbe\AppData\Roaming\npm;E:\Program Files (x86)\Microsoft VS Code\Microsoft VS Code\bin;C:\Users\Kolbe\AppData\Local\Microsoft\WindowsApps;E:\Program Files\Microsoft VS Code\bin;C:\Users\Kolbe\AppData\Roaming\nvm;C:\Program Files\nodejs;." />
+		<property name="env.NUMBER_OF_PROCESSORS" value="8" />
+		<property name="java.vendor.url"
+			value="http://java.oracle.com/" />
+		<property name="java.vm.vendor" value="Oracle Corporation" />
+		<property name="java.runtime.name"
+			value="Java(TM) SE Runtime Environment" />
+		<property name="java.class.path"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\build;E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\test\lib\junit.jar;E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\jars\miglayout-swing-4.2.jar;E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\jars\miglayout-core-4.2.jar;E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\jars\commons-cli-1.1.jar;E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\jars\cortado-0.6.0.jar;E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\jars\jogg-0.0.17.jar;E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\jars\jorbis-0.0.17.jar;E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-launcher.jar;E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant.jar;E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-junit.jar;E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-junit4.jar" />
+		<property name="sun.java.command"
+			value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner net.sf.freecol.AllTests skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\build\report\xml\TEST-net.sf.freecol.AllTests.xml crashfile=E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\junitvmwatcher12326411813592156795.properties propsfile=E:\My Documents\GitHub\COSC442-Final-Project\FreeCol\junit2639926112092430622.properties" />
+		<property name="ant.version"
+			value="Apache Ant(TM) version 1.10.1 compiled on February 2 2017" />
+		<property name="TSTAMP" value="1221" />
+		<property name="jar.classpath"
+			value="jars/miglayout-swing-4.2.jar jars/miglayout-core-4.2.jar jars/commons-cli-1.1.jar jars/cortado-0.6.0.jar jars/jogg-0.0.17.jar jars/jorbis-0.0.17.jar" />
+		<property name="jdk.debug" value="release" />
+		<property name="java.vm.specification.name"
+			value="Java Virtual Machine Specification" />
+		<property name="env.windir" value="C:\WINDOWS" />
+		<property name="env.LOGONSERVER" value="\\DUMPLING" />
+		<property name="java.vm.specification.version" value="9" />
+		<property name="env.PROCESSOR_ARCHITECTURE" value="AMD64" />
+		<property name="sun.cpu.endian" value="little" />
+		<property name="sun.os.patch.level" value="" />
+		<property name="env.OneDrive" value="C:\Users\Kolbe\OneDrive" />
+		<property name="java.awt.headless" value="true" />
+		<property name="env.ANT_HOME"
+			value="E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840" />
+		<property name="env.ProgramFiles" value="C:\Program Files" />
+		<property name="env.PROCESSOR_REVISION" value="3a09" />
+		<property name="java.io.tmpdir"
+			value="C:\Users\Kolbe\AppData\Local\Temp\" />
+		<property name="env.CommonProgramFiles(x86)"
+			value="C:\Program Files (x86)\Common Files" />
+		<property name="freecol.src.dir"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/src" />
+		<property name="java.vendor.url.bug"
+			value="http://bugreport.java.com/bugreport/" />
+		<property name="env.SystemRoot" value="C:\WINDOWS" />
+		<property name="os.arch" value="amd64" />
+		<property name="java.awt.graphicsenv"
+			value="sun.awt.Win32GraphicsEnvironment" />
+		<property name="env.NVM_SYMLINK"
+			value="C:\Program Files\nodejs" />
+		<property name="user.dir"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol" />
+		<property name="env.LOCALAPPDATA"
+			value="C:\Users\Kolbe\AppData\Local" />
+		<property name="line.separator" value="&#xd;&#xa;" />
+		<property name="java.vm.name"
+			value="Java HotSpot(TM) 64-Bit Server VM" />
+		<property name="env.PATHEXT"
+			value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+		<property name="env.Path"
+			value="C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_20\bin;Path=C:\Program Files (x86)\Windows Resource Kits\Tools\;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Quarantine\;C:\Program Files\Perforce;C:\Program Files\Microsoft Network Monitor 3\;E:\My Documents\CSI 161;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\WinSCP\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;%NVM_HOME%;%NVM_SYMLINK%;C:\Users\Kolbe\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\Kolbe\AppData\Local\Programs\Python\Python36-32\;C:\Users\Kolbe\AppData\Local\.meteor\;C:\Users\Kolbe\AppData\Local\Microsoft\WindowsApps;C:\Users\Kolbe\AppData\Local\atom\bin;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Kolbe\AppData\Roaming\npm;E:\Program Files (x86)\Microsoft VS Code\Microsoft VS Code\bin;C:\Users\Kolbe\AppData\Local\Microsoft\WindowsApps;E:\Program Files\Microsoft VS Code\bin;C:\Users\Kolbe\AppData\Roaming\nvm;C:\Program Files\nodejs" />
+		<property name="basedir"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol" />
+		<property name="ant.java.version" value="9" />
+		<property name="ant.core.lib"
+			value="E:\Program Files\eclipse\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant.jar" />
+		<property name="freecol.jar.file"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/FreeCol.jar" />
+		<property name="env.USERNAME" value="Kolbe" />
+		<property name="cli.jar" value="jars/commons-cli-1.1.jar" />
+		<property name="env.SystemDrive" value="C:" />
+		<property name="file.encoding" value="Cp1252" />
+		<property name="freecol.data.dir"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/data" />
+		<property name="env.USERDOMAIN" value="Dumpling" />
+		<property name="freecol.doc.dir"
+			value="E:\My Documents\GitHub\COSC442-Final-Project\FreeCol/doc" />
+		<property name="java.specification.version" value="9" />
+		<property name="ant.project.invoked-targets"
+			value="package,testall" />
+		<property name="env.PROCESSOR_LEVEL" value="6" />
+	</properties>
+	<testcase classname="net.sf.freecol.common.i18n.CLDRTest"
+		name="testRuleParsing" time="0.044" />
+	<testcase classname="net.sf.freecol.common.i18n.CLDRTest"
+		name="testPlurals" time="0.003" />
+	<testcase classname="net.sf.freecol.common.i18n.MessagesTest"
+		name="testReplaceArbitraryTag" time="0.016" />
+	<testcase classname="net.sf.freecol.common.i18n.MessagesTest"
+		name="testReplaceNumber" time="0.015" />
+	<testcase classname="net.sf.freecol.common.i18n.MessagesTest"
+		name="testReplaceChoicesGrammar" time="0.013" />
+	<testcase classname="net.sf.freecol.common.i18n.MessagesTest"
+		name="testMessageWithSpecialChars" time="0.019" />
+	<testcase classname="net.sf.freecol.common.i18n.MessagesTest"
+		name="testReplaceGarbage" time="0.014" />
+	<testcase classname="net.sf.freecol.common.i18n.MessagesTest"
+		name="testAbstractUnitDescription" time="0.014" />
+	<testcase classname="net.sf.freecol.common.i18n.MessagesTest"
+		name="testChangeLocaleSettings" time="0.047" />
+	<testcase classname="net.sf.freecol.common.i18n.MessagesTest"
+		name="testMessageString" time="0.008" />
+	<testcase classname="net.sf.freecol.common.i18n.MessagesTest"
+		name="testNestedChoices" time="0.007" />
+	<testcase classname="net.sf.freecol.common.i18n.MessagesTest"
+		name="testStringTemplates" time="0.378" />
+	<testcase classname="net.sf.freecol.common.i18n.MessagesTest"
+		name="testReplaceChoicesPlural" time="0.008" />
+	<testcase classname="net.sf.freecol.common.i18n.MessagesTest"
+		name="testUnitDescription" time="0.014" />
+	<testcase classname="net.sf.freecol.common.i18n.MessagesTest"
+		name="testREFMessages" time="0.004" />
+	<testcase classname="net.sf.freecol.common.io.ModTest"
+		name="testGetRuleSets" time="0.004" />
+	<testcase classname="net.sf.freecol.common.io.ModTest"
+		name="testGetAllMods" time="0.012" />
+	<testcase classname="net.sf.freecol.common.option.OptionTest"
+		name="testGameOptions" time="0.001" />
+	<testcase classname="net.sf.freecol.common.option.OptionTest"
+		name="testUnitListOption" time="0.0" />
+	<testcase classname="net.sf.freecol.common.option.OptionTest"
+		name="testInheritsEditable" time="0.0" />
+	<testcase classname="net.sf.freecol.common.option.OptionTest"
+		name="testCloneIntegerOption" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.SpecificationTest"
+		name="testExtendsDelete" time="0.099" />
+	<testcase
+		classname="net.sf.freecol.common.model.SpecificationTest"
+		name="testLoadMods" time="0.051" />
+	<testcase
+		classname="net.sf.freecol.common.model.SpecificationTest"
+		name="testExtends" time="0.078" />
+	<testcase
+		classname="net.sf.freecol.common.model.SpecificationTest"
+		name="testModifiers" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.SpecificationTest"
+		name="testLoad" time="0.031" />
+	<testcase
+		classname="net.sf.freecol.common.model.SpecificationTest"
+		name="testNationTypes" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.SpecificationTest"
+		name="testGetDefaultUnitType" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.SpecificationTest"
+		name="testGoodsTypes" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.SpecificationTest"
+		name="testFoundingFathers" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.SpecificationTest"
+		name="testRequiredAbilitiesForRoles" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.SpecificationTest"
+		name="testNations" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.SpecificationTest"
+		name="testUnitAbilities" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.BaseCostDeciderTest"
+		name="testNavalUnitMoveToTileWithSettlement" time="0.056" />
+	<testcase
+		classname="net.sf.freecol.common.model.BaseCostDeciderTest"
+		name="testInvalidMoveThroughTileWithSettlement" time="0.006" />
+	<testcase
+		classname="net.sf.freecol.common.model.BaseCostDeciderTest"
+		name="testGetRemainingMovesAndNewTurn" time="0.004" />
+	<testcase
+		classname="net.sf.freecol.common.model.BaseCostDeciderTest"
+		name="testGetCostLandLand" time="0.003" />
+	<testcase
+		classname="net.sf.freecol.common.model.BaseCostDeciderTest"
+		name="testInvalidMoveOfLandUnitToAnOceanTile" time="0.004" />
+	<testcase
+		classname="net.sf.freecol.common.model.BaseCostDeciderTest"
+		name="testInvalidMoveOfNavalUnitToALandTile" time="0.004" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testStockade" time="0.014" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testCottonClothProduction" time="0.028" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testPasture" time="0.022" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testCanBuildNext" time="0.012" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testFortRequiresMinimumPopulation" time="0.015" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testUnitProduction" time="0.024" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testPrintingPressBonus" time="0.019" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testCanAddToBuilding" time="0.03" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testToolsMusketProduction" time="0.022" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testFortressRequiresMinimumPopulation" time="0.014" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testSerialize" time="0.018" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testTownhallProduction" time="0.012" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testChurch" time="0.026" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testInitialColony" time="0.004" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testStockadeRequiresMinimumPopulation" time="0.007" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testNewspaperBonus" time="0.012" />
+	<testcase classname="net.sf.freecol.common.model.BuildingTest"
+		name="testCanAddToSchool" time="0.02" />
+	<testcase classname="net.sf.freecol.common.model.ColonyTest"
+		name="testCopyColony" time="0.022" />
+	<testcase classname="net.sf.freecol.common.model.ColonyTest"
+		name="testFoundColony" time="0.014" />
+	<testcase classname="net.sf.freecol.common.model.ColonyTest"
+		name="testTeaParty" time="0.005" />
+	<testcase classname="net.sf.freecol.common.model.ColonyTest"
+		name="testAddUnitToColony" time="0.016" />
+	<testcase classname="net.sf.freecol.common.model.ColonyTest"
+		name="testCurrentlyBuilding" time="0.005" />
+	<testcase classname="net.sf.freecol.common.model.ColonyTest"
+		name="testBuildQueueDoesNotAcceptBuildingDoubles" time="0.005" />
+	<testcase classname="net.sf.freecol.common.model.ColonyTest"
+		name="testBuildQueueAcceptsUnitDoubles" time="0.005" />
+	<testcase classname="net.sf.freecol.common.model.ColonyTest"
+		name="testUpkeep" time="0.009" />
+	<testcase classname="net.sf.freecol.common.model.ColonyTest"
+		name="testUnderSiege" time="0.008" />
+	<testcase classname="net.sf.freecol.common.model.ColonyTest"
+		name="testOccupationWithFood" time="0.008" />
+	<testcase
+		classname="net.sf.freecol.common.model.ColonyProductionTest"
+		name="testNoHorsesOverProduction" time="0.006" />
+	<testcase
+		classname="net.sf.freecol.common.model.ColonyProductionTest"
+		name="testBellNetProduction" time="0.013" />
+	<testcase
+		classname="net.sf.freecol.common.model.ColonyProductionTest"
+		name="testProductionMap" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ColonyProductionTest"
+		name="testProductionSoldier" time="0.007" />
+	<testcase
+		classname="net.sf.freecol.common.model.ColonyProductionTest"
+		name="testConsumers" time="0.007" />
+	<testcase
+		classname="net.sf.freecol.common.model.ColonyProductionTest"
+		name="testProductionPioneer" time="0.004" />
+	<testcase
+		classname="net.sf.freecol.common.model.ColonyProductionTest"
+		name="testProduction" time="0.007" />
+	<testcase
+		classname="net.sf.freecol.common.model.ColonyProductionTest"
+		name="testGetPotentialProduction" time="0.005" />
+	<testcase classname="net.sf.freecol.common.model.CombatTest"
+		name="testCaptureConvert" time="0.428" />
+	<testcase classname="net.sf.freecol.common.model.CombatTest"
+		name="testGalleonAttackedByPrivateer" time="0.004" />
+	<testcase classname="net.sf.freecol.common.model.CombatTest"
+		name="testDefendColonyWithUnarmedColonist" time="0.005" />
+	<testcase classname="net.sf.freecol.common.model.CombatTest"
+		name="testRegulars" time="0.137" />
+	<testcase classname="net.sf.freecol.common.model.CombatTest"
+		name="testSpanishAgainstNatives" time="0.004" />
+	<testcase classname="net.sf.freecol.common.model.CombatTest"
+		name="testColonistAttackedByVeteran" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.CombatTest"
+		name="testAttackIgnoresMovementPoints" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.CombatTest"
+		name="testAttackShipWithLandUnit" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.CombatTest"
+		name="testDefendColonyWithRevere" time="0.005" />
+	<testcase classname="net.sf.freecol.common.model.CombatTest"
+		name="testDefendSettlement" time="0.004" />
+	<testcase classname="net.sf.freecol.common.model.DisasterTest"
+		name="testDisastersPresent" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.EuropeTest"
+		name="testMissionary" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.FoundingFatherTest"
+		name="testAddAllFathers" time="0.008" />
+	<testcase
+		classname="net.sf.freecol.common.model.FoundingFatherTest"
+		name="testAvailableTo" time="0.004" />
+	<testcase
+		classname="net.sf.freecol.common.model.FoundingFatherTest"
+		name="testFeatures" time="0.003" />
+	<testcase
+		classname="net.sf.freecol.common.model.FoundingFatherTest"
+		name="testBellsRequired" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.GameTest"
+		name="testGame" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.GameTest"
+		name="testTurn" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.GameTest"
+		name="testAddPlayer" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testGetTakeSpace" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testGetInputType" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testSetGetAmount" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testGoodsGameLocationIntInt" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testToString" time="0.006" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testBuildingMaterials" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testIsFarmedGoods" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testGetName" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testSerialize" time="0.089" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testGetOutputType" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testMilitaryGoods" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testTradeGoods" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testProductionChain" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testAdjustAmount" time="0.004" />
+	<testcase classname="net.sf.freecol.common.model.GoodsTest"
+		name="testSetOwner" time="0.002" />
+	<testcase
+		classname="net.sf.freecol.common.model.GoodsContainerTest"
+		name="testContainer" time="0.007" />
+	<testcase
+		classname="net.sf.freecol.common.model.IndianSettlementTest"
+		name="testAutomaticEquipBraves" time="0.002" />
+	<testcase
+		classname="net.sf.freecol.common.model.IndianSettlementTest"
+		name="testSettlementDoesNotOwnWaterTiles" time="0.003" />
+	<testcase
+		classname="net.sf.freecol.common.model.IndianSettlementTest"
+		name="testTradeGoodsWithSetlement" time="0.003" />
+	<testcase
+		classname="net.sf.freecol.common.model.IndividualFatherTest"
+		name="testPaine" time="0.009" />
+	<testcase
+		classname="net.sf.freecol.common.model.IndividualFatherTest"
+		name="testBolivar" time="0.009" />
+	<testcase
+		classname="net.sf.freecol.common.model.IndividualFatherTest"
+		name="testBrebeuf" time="0.002" />
+	<testcase
+		classname="net.sf.freecol.common.model.IndividualFatherTest"
+		name="testStuyvesant" time="0.005" />
+	<testcase
+		classname="net.sf.freecol.common.model.IndividualFatherTest"
+		name="testBrewster" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.IndividualFatherTest"
+		name="testCortes" time="0.007" />
+	<testcase
+		classname="net.sf.freecol.common.model.IndividualFatherTest"
+		name="testDeWitt" time="0.002" />
+	<testcase
+		classname="net.sf.freecol.common.model.IndividualFatherTest"
+		name="testJefferson" time="0.005" />
+	<testcase
+		classname="net.sf.freecol.common.model.IndividualFatherTest"
+		name="testMinuit" time="0.006" />
+	<testcase
+		classname="net.sf.freecol.common.model.IndividualFatherTest"
+		name="testRevere" time="0.003" />
+	<testcase
+		classname="net.sf.freecol.common.model.IndividualFatherTest"
+		name="testDeLasCasas" time="0.007" />
+	<testcase classname="net.sf.freecol.common.model.LimitTest"
+		name="testSuccessionLimits" time="0.008" />
+	<testcase classname="net.sf.freecol.common.model.LimitTest"
+		name="testWagonTrainLimit" time="0.009" />
+	<testcase classname="net.sf.freecol.common.model.LimitTest"
+		name="testOperand" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.LimitTest"
+		name="testIndependenceLimits" time="0.006" />
+	<testcase classname="net.sf.freecol.common.model.MapTest"
+		name="testSearchForColony" time="0.038" />
+	<testcase classname="net.sf.freecol.common.model.MapTest"
+		name="testCopy" time="0.017" />
+	<testcase classname="net.sf.freecol.common.model.MapTest"
+		name="testNoPathAvailableDueToUnitInTheWay" time="0.004" />
+	<testcase classname="net.sf.freecol.common.model.MapTest"
+		name="testGetAllTiles" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.MapTest"
+		name="testGetSurroundingTiles" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.MapTest"
+		name="testMapGameInt" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.MapTest"
+		name="testLatitude" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.MapTest"
+		name="testRandomDirection" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.MapTest"
+		name="testShortestPathObstructed" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.MapTest"
+		name="testFindPath" time="0.107" />
+	<testcase classname="net.sf.freecol.common.model.MapTest"
+		name="testMoveThroughTileWithEnemyUnit" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.MapTest"
+		name="testNoPathAvailableDueToColonyInTheWay" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.MapTest"
+		name="testNoPathAvailableDueToCampInTheWay" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.MapTest"
+		name="testGetReverseDirection" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.MarketTest"
+		name="testSerialization" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.MarketTest"
+		name="testTransactionListeners" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.MarketTest"
+		name="testInitialMarket" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.ModelMessageTest"
+		name="testDefaultId" time="0.002" />
+	<testcase
+		classname="net.sf.freecol.common.model.ModelMessageTest"
+		name="testHashCode" time="0.003" />
+	<testcase
+		classname="net.sf.freecol.common.model.ModelMessageTest"
+		name="testModelMapSet2" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.ModifierTest"
+		name="testScope" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.ModifierTest"
+		name="testCombinedModifier" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ModifierTest"
+		name="testPercentageModifier" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ModifierTest"
+		name="testHashEquals" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.ModifierTest"
+		name="testAdditiveModifier" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ModifierTest"
+		name="testTimeLimits" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ModifierTest"
+		name="testCombinePercentageModifiers" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ModifierTest"
+		name="testModifierUnknown" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ModifierTest"
+		name="testCombineMultiplicativeModifiers" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ModifierTest"
+		name="testMultiplicativeModifier" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.ModifierTest"
+		name="testIncrements" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ModifierTest"
+		name="testCombineAdditiveModifiers" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.MonarchTest"
+		name="testTaxActionChoices" time="0.007" />
+	<testcase classname="net.sf.freecol.common.model.MonarchTest"
+		name="testSerialize" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.MovementTest"
+		name="testMoveAlongRoad" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.MovementTest"
+		name="testMoveAlongRiver" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.MovementTest"
+		name="testMoveFromPlainsToHills" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.MovementTest"
+		name="testMoveFromPlainsToPlains" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.MovementTest"
+		name="testScoutIndianSettlement" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.MovementTest"
+		name="testScoutColony" time="0.003" />
+	<testcase
+		classname="net.sf.freecol.common.model.NationTypeTest"
+		name="testSettlementType" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.NationTypeTest"
+		name="testIsREF" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.NationTypeTest"
+		name="testisRef" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.NationTypeTest"
+		name="testAdvantagesThatOnlyApplyToPersons" time="0.004" />
+	<testcase
+		classname="net.sf.freecol.common.model.NationTypeTest"
+		name="testHasType" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.NationTypeTest"
+		name="testStartingUnits" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.PlayerTest"
+		name="testAddAnotherPlayersUnit" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.PlayerTest"
+		name="testFreecolPlayers" time="0.004" />
+	<testcase classname="net.sf.freecol.common.model.PlayerTest"
+		name="testTension" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.PlayerTest"
+		name="testUnits" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.PlayerTest"
+		name="testClassicPlayers" time="0.002" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testOtherBuildings" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testRainForest" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testHorseProduction" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testSavannah" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testHills" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testMarsh" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testOcean" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testSwamp" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testCoatProduction" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testLake" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testHighSeas" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testPrairie" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testWetlandForest" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testGrassland" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testBroadleafForest" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testCrossProduction" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testGreatRiver" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testToolsProduction" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testMixedForest" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testBorealForest" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testBellProduction" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testClothProduction" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testMountains" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testArctic" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testConiferForest" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testDesert" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testHammerProduction" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testPlains" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testMusketProduction" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testCigarProduction" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testTundra" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testRumProduction" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testTropicalForest" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.ProductionTypeTest"
+		name="testScrubForest" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.RandomRangeTest"
+		name="testRandomRange" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.RoleTest"
+		name="testRoleComparator" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.RoleTest"
+		name="testMilitaryRoles" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.RoleTest"
+		name="testGoodsDifference" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.RoleTest"
+		name="testCompatibleRoles" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.RoleTest"
+		name="testGetRoleWithAbility" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.SchoolTest"
+		name="testEducationOption" time="0.009" />
+	<testcase classname="net.sf.freecol.common.model.SchoolTest"
+		name="testChangeTeachers" time="0.006" />
+	<testcase classname="net.sf.freecol.common.model.SchoolTest"
+		name="testUpgrades" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.ScopeTest"
+		name="testEmptyScope" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ScopeTest"
+		name="testMethodScope" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ScopeTest"
+		name="testCombinedScope" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ScopeTest"
+		name="testTypeScope" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ScopeTest"
+		name="testAbilityScope" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ScopeTest"
+		name="testEquality" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ScopeTest"
+		name="testMatchesNull" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.ScopeTest"
+		name="testGameObjects" time="0.002" />
+	<testcase
+		classname="net.sf.freecol.common.model.SerializationTest"
+		name="testMapAmerica" time="0.586" />
+	<testcase
+		classname="net.sf.freecol.common.model.SerializationTest"
+		name="testSpecification" time="0.105" />
+	<testcase
+		classname="net.sf.freecol.common.model.SerializationTest"
+		name="testValidation" time="0.29" />
+	<testcase
+		classname="net.sf.freecol.common.model.SerializationTest"
+		name="testStringTemplate" time="0.013" />
+	<testcase
+		classname="net.sf.freecol.common.model.SerializationTest"
+		name="testMapAfrica" time="0.33" />
+	<testcase
+		classname="net.sf.freecol.common.model.SerializationTest"
+		name="testMapCaribbean" time="0.074" />
+	<testcase
+		classname="net.sf.freecol.common.model.SerializationTest"
+		name="testDifficulty" time="0.053" />
+	<testcase
+		classname="net.sf.freecol.common.model.SerializationTest"
+		name="testGeneratedLists" time="0.055" />
+	<testcase
+		classname="net.sf.freecol.common.model.SerializationTest"
+		name="testMapAustralia" time="0.111" />
+	<testcase
+		classname="net.sf.freecol.common.model.SettlementTest"
+		name="testColonyClaimsWater" time="0.003" />
+	<testcase
+		classname="net.sf.freecol.common.model.SettlementTest"
+		name="testLineOfSight" time="0.003" />
+	<testcase
+		classname="net.sf.freecol.common.model.SettlementTest"
+		name="testSettlementRadius" time="0.005" />
+	<testcase
+		classname="net.sf.freecol.common.model.SettlementTest"
+		name="testCanImproveUnitMilitaryRole" time="0.01" />
+	<testcase
+		classname="net.sf.freecol.common.model.SettlementTest"
+		name="testSettlementDoesNotClaimWater" time="0.002" />
+	<testcase
+		classname="net.sf.freecol.common.model.SettlementTest"
+		name="testColonyRadius" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.SoLTest"
+		name="testSoL" time="0.011" />
+	<testcase
+		classname="net.sf.freecol.common.model.TileImprovementTest"
+		name="testRiverWithExtras" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.TileImprovementTest"
+		name="testRiverNoExtras" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.TileImprovementTest"
+		name="testAllFrills" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.TileImprovementTest"
+		name="testOldStyle" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.TileImprovementTest"
+		name="testEquality" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.TileItemContainerTest"
+		name="testCopyFromWithEveryThing" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testTileTypeChangeProduction" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testDefenceModifiers" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testPrimarySecondaryGoods" time="0.004" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testPotential" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testCopy" time="0.005" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testImprovements" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testMinerals" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testMaximumPotential" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testIsTileTypeAllowed" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testGetWorkAmount" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testGetBestDisembarkTile" time="0.006" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testColonyImprovements" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testConiferForest" time="0.008" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testProductionModifiers" time="0.005" />
+	<testcase classname="net.sf.freecol.common.model.TileTest"
+		name="testZIndex" time="0.0" />
+	<testcase
+		classname="net.sf.freecol.common.model.TradeRouteTest"
+		name="testTradeRoute" time="0.02" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testIsColonist" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testElement" time="0.006" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testUnitLosesExperienceWithRoleChange" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testUnitAvailability" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testOwnerChange" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testIndianDies" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testGetMovesAsString" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testCopy" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testDefaultRole" time="0.0" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testMissionary" time="0.005" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testUnitCanBuildColony" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testCarrierOwnerChange" time="0.001" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testTreasureTransportFee" time="0.003" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testFailedAddGoods" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testGetLineOfSight" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testCanAdd" time="0.002" />
+	<testcase classname="net.sf.freecol.common.model.UnitTest"
+		name="testUnitLocationAfterBuildingColony" time="0.002" />
+	<testcase
+		classname="net.sf.freecol.common.model.UnitTypeChangeTest"
+		name="testEmptyScope" time="0.001" />
+	<testcase
+		classname="net.sf.freecol.common.model.UnitTypeChangeTest"
+		name="testCreation" time="0.002" />
+	<testcase
+		classname="net.sf.freecol.common.model.UnitTypeChangeTest"
+		name="testAbilityScope" time="0.002" />
+	<testcase
+		classname="net.sf.freecol.common.model.UnitTypeChangeTest"
+		name="testEquality" time="0.001" />
+	<testcase classname="net.sf.freecol.common.utils.UtilsTest"
+		name="testComparator" time="0.001" />
+	<testcase classname="net.sf.freecol.common.utils.UtilsTest"
+		name="testGetPermutations" time="0.002" />
+	<testcase classname="net.sf.freecol.common.sound.SoundTest"
+		name="testSound" time="0.972" />
+	<testcase classname="net.sf.freecol.common.sound.SoundTest"
+		name="testClassic" time="3.265" />
+	<testcase classname="net.sf.freecol.server.SaveLoadTest"
+		name="testDelayedLoading" time="0.836" />
+	<testcase classname="net.sf.freecol.server.SaveLoadTest"
+		name="testImmediateLoading" time="0.623" />
+	<testcase classname="net.sf.freecol.server.SaveLoadTest"
+		name="testImport" time="0.682" />
+	<testcase classname="net.sf.freecol.server.ai.AIColonyTest"
+		name="testBuildersAllocation" time="0.227" />
+	<testcase classname="net.sf.freecol.server.ai.AIColonyTest"
+		name="testBestDefender" time="0.076" />
+	<testcase classname="net.sf.freecol.server.ai.AIColonyTest"
+		name="testBuildersAllocNoRawMatTiles" time="0.186" />
+	<testcase classname="net.sf.freecol.server.ai.AIColonyTest"
+		name="testExpertAllocColonyHasEnoughRawMat" time="0.09" />
+	<testcase classname="net.sf.freecol.server.ai.ContactTest"
+		name="testNativeMeetsEuropean" time="0.085" />
+	<testcase classname="net.sf.freecol.server.ai.ContactTest"
+		name="testNativeMeetsColony" time="0.089" />
+	<testcase classname="net.sf.freecol.server.ai.ContactTest"
+		name="testShipMeetsShip" time="0.086" />
+	<testcase classname="net.sf.freecol.server.ai.ContactTest"
+		name="testNativeMeetsNative" time="0.068" />
+	<testcase classname="net.sf.freecol.server.ai.ContactTest"
+		name="testNativeMeetsIndianSettlement" time="0.069" />
+	<testcase classname="net.sf.freecol.server.ai.ContactTest"
+		name="testEuropeanMeetsIndianSettlement" time="0.118" />
+	<testcase classname="net.sf.freecol.server.ai.ContactTest"
+		name="testEuropeanMeetsNative" time="0.07" />
+	<testcase classname="net.sf.freecol.server.ai.ColonyPlanTest"
+		name="testGetBestWorker" time="0.097" />
+	<testcase classname="net.sf.freecol.server.ai.ColonyPlanTest"
+		name="testBestImprovements" time="0.002" />
+	<testcase classname="net.sf.freecol.server.ai.ColonyPlanTest"
+		name="testNoBuildRawMatTiles" time="0.057" />
+	<testcase classname="net.sf.freecol.server.ai.ColonyPlanTest"
+		name="testReqLumberAndHammersForBuild" time="0.063" />
+	<testcase classname="net.sf.freecol.server.ai.ColonyPlanTest"
+		name="testReqOreAndToolsWithEnoughHammersForBuild" time="0.056" />
+	<testcase
+		classname="net.sf.freecol.server.ai.MissionAssignmentTest"
+		name="testIsTargetValidForSeekAndDestroy" time="0.061" />
+	<testcase
+		classname="net.sf.freecol.server.ai.MissionAssignmentTest"
+		name="testImpossibleConditionsForTargetSelection" time="0.065" />
+	<testcase
+		classname="net.sf.freecol.server.ai.MissionAssignmentTest"
+		name="testSecureIndianSettlementMissionIgnoreNavalThreat" time="0.1" />
+	<testcase
+		classname="net.sf.freecol.server.ai.MissionAssignmentTest"
+		name="testSecureIndianSettlementMission" time="0.067" />
+	<testcase
+		classname="net.sf.freecol.server.ai.MissionAssignmentTest"
+		name="testAssignDefendSettlementMission" time="0.056" />
+	<testcase classname="net.sf.freecol.server.ai.REFTest"
+		name="testCreateREFPlayer" time="0.063" />
+	<testcase
+		classname="net.sf.freecol.server.ai.StandardAIPlayerTest"
+		name="testEquipBravesNotEnoughReqGoods" time="0.069" />
+	<testcase
+		classname="net.sf.freecol.server.ai.StandardAIPlayerTest"
+		name="testEquipBraves" time="0.066" />
+	<testcase classname="net.sf.freecol.server.ai.TensionTest"
+		name="testTension" time="0.069" />
+	<testcase
+		classname="net.sf.freecol.server.ai.mission.PioneeringMissionTest"
+		name="testImprovementNoLongerValid" time="0.075" />
+	<testcase
+		classname="net.sf.freecol.server.ai.mission.PrivateerMissionTest"
+		name="testIsMissionValid" time="0.057" />
+	<testcase
+		classname="net.sf.freecol.server.ai.mission.ScoutingMissionTest"
+		name="testHorsesLost" time="0.058" />
+	<testcase
+		classname="net.sf.freecol.server.ai.mission.TransportMissionTest"
+		name="testGetNextStopAlreadyAtDestination" time="0.059" />
+	<testcase
+		classname="net.sf.freecol.server.ai.mission.TransportMissionTest"
+		name="testGetDefaultDestination" time="0.067" />
+	<testcase
+		classname="net.sf.freecol.server.ai.mission.TransportMissionTest"
+		name="testWagonTrain" time="0.078" />
+	<testcase
+		classname="net.sf.freecol.server.ai.mission.TransportMissionTest"
+		name="testGetNextStopIsColony" time="0.08" />
+	<testcase
+		classname="net.sf.freecol.server.ai.mission.TransportMissionTest"
+		name="testGetNextStopIsEurope" time="0.087" />
+	<testcase
+		classname="net.sf.freecol.server.ai.mission.TransportMissionTest"
+		name="testTransportMissionInvalidAfterCombatLost" time="0.08" />
+	<testcase
+		classname="net.sf.freecol.server.ai.mission.UnitSeekAndDestroyMissionTest"
+		name="testCapturedUnitsLoseMission" time="0.04" />
+	<testcase
+		classname="net.sf.freecol.server.ai.mission.UnitSeekAndDestroyMissionTest"
+		name="testDoNotPursueUnitsInColonies" time="0.047" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testWarDeclarationAffectsSettlementAlarm" time="0.054" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testArtilleryDemotedBySoldier" time="0.066" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testPeaceTreatyFromWarStance" time="0.046" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testScoutDiesNotLosesEquipment" time="0.062" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testDragoonDemotedByBrave" time="0.07" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testCeaseFireTreaty" time="0.05" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testDeclarationOfWarFromPeace" time="0.043" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testAttackColonyWithVeteran" time="0.099" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testDragoonDemotedBySoldier" time="0.077" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testAddFatherUnits" time="0.055" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testDumpGoods" time="0.049" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testAtackedNavalUnitIsDamaged" time="0.074" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testLaSalle" time="0.061" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testPocahontas" time="0.076" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testPioneerDiesNotLosesEquipment" time="0.055" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testPromotion" time="0.072" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testClearSpecialty" time="0.044" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testPeaceTreatyFromCeaseFireStance" time="0.048" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testUnitLosesExperienceWithWorkChange" time="0.048" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testEquipIndianNotEnoughReqGoods" time="0.048" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testCashInTreasure" time="0.052" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testAddFatherUpgrades" time="0.045" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testUnitTypeChangeOnEnterColony" time="0.05" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testSoldierDemotedBySoldier" time="0.052" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testUnarmedAttack" time="0.06" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testCarpenterHouseNationalAdvantage" time="0.05" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testCreateMission" time="0.056" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testDoAssignedWorkAmateurAndHardyPioneer" time="2.342" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testEmbark" time="0.039" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testVeteranSoldierDemotedBySoldier" time="0.047" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testLoseColonyDefenceWithRevere" time="0.056" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testBuildingBonus" time="0.051" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testColonistDemotedBySoldier" time="0.042" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testScoutDefeatedBySoldier" time="0.066" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testAddFatherBuildingEvent" time="0.05" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testAttackColonyWithBrave" time="0.09" />
+	<testcase
+		classname="net.sf.freecol.server.control.InGameControllerTest"
+		name="testEquipIndian" time="0.04" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testMoveTeacherOutside" time="0.052" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testTeacherStoresProgress" time="0.046" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testCaseTwoTeachersWithDifferentExp" time="0.052" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testMoveTeacherInside" time="0.072" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testConcurrentUpgrade" time="0.042" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testTeachingOrder" time="0.049" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testTeachPettyCriminalsByMaster" time="0.058" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testTeachingDoublePromotion" time="0.065" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testUniversity" time="0.055" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testTwoTeachersSimple" time="0.05" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testTrackerBug1616384" time="0.079" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testSingleGuyTwoTeachers2" time="0.054" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testCollege" time="0.048" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testSingleGuyTwoTeachers" time="0.048" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testSonsOfLiberty" time="0.083" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testTwoTeachersOfSameKind" time="0.035" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testTeachPettyCriminals" time="0.034" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testProductionBonus" time="0.039" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testPartTraining" time="0.051" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testExpertTeaching" time="0.038" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testColonialRegular" time="0.041" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerBuildingTest"
+		name="testTeachIndenturedServants" time="0.043" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerColonyTest"
+		name="testEqualFoodProductionConsumptionCase" time="0.039" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerColonyTest"
+		name="testDeathByStarvation" time="0.033" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerColonyTest"
+		name="testBuildingCompletion" time="0.037" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerColonyTest"
+		name="testInvalidCompletion" time="0.051" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerColonyTest"
+		name="testAvoidStarvation" time="0.033" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerColonyTest"
+		name="testNoBuildingMaterialsProductionWhenBuildingNothing"
+		time="0.003" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerColonyTest"
+		name="testFoodConsumption" time="0.03" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerColonyTest"
+		name="testLibertyAndImmigration" time="0.041" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerIndianSettlementTest"
+		name="testHorseBreedingNoFoodAvail" time="0.049" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerIndianSettlementTest"
+		name="testPricing" time="0.036" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerIndianSettlementTest"
+		name="testHorseBreeding" time="0.033" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerIndianSettlementTest"
+		name="testFoodConsumption" time="0.055" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerPlayerTest"
+		name="testCheckNoGameOverEnoughMoney" time="0.03" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerPlayerTest"
+		name="testCheckGameOver1600Threshold" time="0.034" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerPlayerTest"
+		name="testCheckNoGameOverHasColonistInNewWorld" time="0.033" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerPlayerTest"
+		name="testHasExploredTile" time="0.07" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerPlayerTest"
+		name="testBuyingMakesPricesRaise" time="0.044" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerPlayerTest"
+		name="testCheckGameOverUnitsGoingToEurope" time="0.051" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerPlayerTest"
+		name="testDutchMarket" time="0.111" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerPlayerTest"
+		name="testCheckGameOverNoUnits" time="0.048" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerPlayerTest"
+		name="testCheckGameOverUnitsGoingToNewWorld" time="0.037" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerPlayerTest"
+		name="testSellingMakesPricesFall" time="0.032" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerPlayerTest"
+		name="testMarketRecovery" time="0.105" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerPlayerTest"
+		name="testLoadInColony" time="0.035" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerPlayerTest"
+		name="testLoadInEurope" time="0.04" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerUnitTest"
+		name="testDoAssignedWorkHardyPioneerPlowPlain" time="0.048" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerUnitTest"
+		name="testColonyProfitFromEnhancement" time="0.038" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerUnitTest"
+		name="testExposeResource" time="0.033" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerUnitTest"
+		name="testDoAssignedWorkHardyPioneerBuildRoad" time="0.051" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerUnitTest"
+		name="testUnitPromotionWorkingInWorkTile" time="0.054" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerUnitTest"
+		name="testUnitGetsExperienceThroughWork" time="0.04" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerUnitTest"
+		name="testUnitLumberDelivery" time="0.044" />
+	<testcase
+		classname="net.sf.freecol.server.model.ServerUnitTest"
+		name="testToggleHorses" time="0.035" />
+	<testcase
+		classname="net.sf.freecol.server.generator.MapGeneratorTest"
+		name="testSinglePlayerOnSmallMap" time="0.27" />
+	<testcase
+		classname="net.sf.freecol.server.generator.MapGeneratorTest"
+		name="testImportMap" time="0.514" />
+	<testcase
+		classname="net.sf.freecol.server.generator.MapGeneratorTest"
+		name="testRegions" time="0.222" />
+	<testcase
+		classname="net.sf.freecol.server.generator.MapGeneratorTest"
+		name="testWithNoIndians" time="0.189" />
+	<testcase
+		classname="net.sf.freecol.server.generator.MapGeneratorTest"
+		name="testIndianCapital" time="0.207" />
+	<testcase
+		classname="net.sf.freecol.server.generator.MapGeneratorTest"
+		name="testMapGenerator" time="0.234" />
+	<testcase classname="net.sf.freecol.client.gui.FontTest"
+		name="testLogicalSerif" time="0.004" />
+	<system-out><![CDATA[]]>
+	</system-out>
+	<system-err><![CDATA[May 14, 2018 12:21:54 PM net.sf.freecol.common.model.Specification fixRoles
 INFO: Loading role backward compatibility fragment: roles-compat.xml with roles: model.role.defaultmodel.role.scoutmodel.role.soldiermodel.role.dragoonmodel.role.pioneermodel.role.missionarymodel.role.infantrymodel.role.cavalrymodel.role.mountedBravemodel.role.armedBravemodel.role.nativeDragoon
 May 14, 2018 12:21:55 PM net.sf.freecol.common.model.Specification checkDifficultyOptionGroup
 INFO: Check group model.difficulty.immigration
